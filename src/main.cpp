@@ -1278,22 +1278,21 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 50 * COIN;
-
-            if(nHeight == 1)
-            {
-            nSubsidy = 49000000 * COIN;
-            }
-
+    int64 nSubsidy = 49 * COIN + 95 * CENT;
     // Subsidy is cut in half every 210000 blocks
     nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 10 * 60;
-static const int64 nTargetSpacing = 5 * 60;
-static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+static const int64 nTargetTimespan = 600;
+static const int64 nTargetSpacing = 300;
+//static const int64 nLowerBound = 150;
+//static const int64 nUpperBound = 2400;
+static const int64 nLowerBound = 570;
+static const int64 nUpperBound = 660;
+
+static const int64 nInterval = 2;
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -1304,7 +1303,7 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     const CBigNum &bnLimit = Params().ProofOfWorkLimit();
     // Testnet has min-difficulty blocks
     // after nTargetSpacing*2 time between blocks:
-    if (TestNet() && nTime > nTargetSpacing*2)
+    if (TestNet() && nTime > 600)
         return bnLimit.GetCompact();
 
     CBigNum bnResult;
@@ -1312,9 +1311,10 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     while (nTime > 0 && bnResult < bnLimit)
     {
         // Maximum 400% adjustment...
-        bnResult *= 4;
+        bnResult *= 600;
+        bnResult /= nLowerBound;
         // ... in best-case exactly 4-times-normal target time
-        nTime -= nTargetTimespan*4;
+        nTime -= nUpperBound;
     }
     if (bnResult > bnLimit)
         bnResult = bnLimit;
@@ -1337,7 +1337,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
             // Special difficulty rule for testnet:
             // If the new block's timestamp is more than 2* 10 minutes
             // then allow mining of a min-difficulty block.
-            if (pblock->nTime > pindexLast->nTime + nTargetSpacing*2)
+            if (pblock->nTime > pindexLast->nTime + 600)
                 return nProofOfWorkLimit;
             else
             {
@@ -1356,31 +1356,49 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     for (int i = 0; pindexFirst && i < nInterval-1; i++)
         pindexFirst = pindexFirst->pprev;
     assert(pindexFirst);
-
     // Limit adjustment step
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
     printf("  nActualTimespan = %" PRI64d"  before bounds\n", nActualTimespan);
-    if (nActualTimespan < nTargetTimespan/4)
-        nActualTimespan = nTargetTimespan/4;
-    if (nActualTimespan > nTargetTimespan*4)
-        nActualTimespan = nTargetTimespan*4;
+    if (nActualTimespan < nLowerBound)
+        nActualTimespan = nLowerBound;
+    if (nActualTimespan > nUpperBound)
+        nActualTimespan = nUpperBound;
 
     // Retarget
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
     bnNew *= nActualTimespan;
-    bnNew /= nTargetTimespan;
+    bnNew /= 600;
 
     if (bnNew > Params().ProofOfWorkLimit())
         bnNew = Params().ProofOfWorkLimit();
 
     /// debug print
+    printf("Difficulty before retarget %f. Difficulty after retarget %f\n",Difficulty(pindexLast->nBits),Difficulty(bnNew.GetCompact()));
     printf("GetNextWorkRequired RETARGET\n");
-    printf("nTargetTimespan = %" PRI64d"    nActualTimespan = %" PRI64d"\n", nTargetTimespan, nActualTimespan);
+    printf("nTargetTimespan = %" PRI64d"    nActualTimespan = %" PRI64d"\n", 600, nActualTimespan);
     printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
     printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
 
     return bnNew.GetCompact();
+}
+
+double Difficulty(unsigned int bnDiff)
+{
+    int nShift = (bnDiff >> 24) & 0xff;
+    double dDiff =
+    (double)0x0000ffff / (double)(bnDiff & 0x00ffffff);
+    while (nShift < 29)
+    {
+        dDiff *= 256.0;
+        nShift++;
+    }
+    while (nShift > 29)
+    {
+        dDiff /= 256.0;
+        nShift--;
+    }
+    return dDiff;
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)

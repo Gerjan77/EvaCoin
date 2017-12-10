@@ -177,7 +177,8 @@ bool SetBestChain(CValidationState &state, CBlockIndex* pindexNew);
 bool ConnectBestBlock(CValidationState &state);
 int64 GetBlockValue(int nHeight, int64 nFees);
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock);
-
+/** Get the difficulty in user readable format */
+double Difficulty(unsigned int bnDiff);
 void UpdateTime(CBlockHeader& block, const CBlockIndex* pindexPrev);
 
 /** Create a new block index entry for a given block hash */
