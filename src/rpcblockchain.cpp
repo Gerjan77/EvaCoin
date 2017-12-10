@@ -42,7 +42,6 @@ double GetDifficulty(const CBlockIndex* blockindex)
     return dDiff;
 }
 
-
 Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex)
 {
     Object result;
@@ -62,7 +61,6 @@ Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex)
     result.push_back(Pair("nonce", (boost::uint64_t)block.nNonce));
     result.push_back(Pair("bits", HexBits(block.nBits)));
     result.push_back(Pair("difficulty", GetDifficulty(blockindex)));
-
     if (blockindex->pprev)
         result.push_back(Pair("previousblockhash", blockindex->pprev->GetBlockHash().GetHex()));
     CBlockIndex *pnext = blockindex->GetNextInMainChain();
@@ -101,7 +99,6 @@ Value getdifficulty(const Array& params, bool fHelp)
 
     return GetDifficulty();
 }
-
 
 Value settxfee(const Array& params, bool fHelp)
 {

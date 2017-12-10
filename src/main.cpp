@@ -1318,6 +1318,7 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     }
     if (bnResult > bnLimit)
         bnResult = bnLimit;
+    printf("Minimum work difficulty %f",Difficulty(bnResult.GetCompact()));
     return bnResult.GetCompact();
 }
 
@@ -1376,7 +1377,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     /// debug print
     printf("Difficulty before retarget %f. Difficulty after retarget %f\n",Difficulty(pindexLast->nBits),Difficulty(bnNew.GetCompact()));
     printf("GetNextWorkRequired RETARGET\n");
-    printf("nTargetTimespan = %" PRI64d"    nActualTimespan = %" PRI64d"\n", 600, nActualTimespan);
+    int64 nCurrTime = pblock->nTime;
+    int64 nPrevTime = pindexFirst->nTime;
+    int64 nCurrentTimespan = nCurrTime - nPrevTime;
+    printf("Working on current block %" PRI64d" sec.\n",nCurrentTimespan);
+    printf("nTargetTimespan %d sec.  nActualTimespan %" PRI64d" sec. \n", 600, nActualTimespan);
     printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
     printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
 
