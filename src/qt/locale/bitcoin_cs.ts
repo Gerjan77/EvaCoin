@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About EvaCoin</source>
-        <translation>O EvaCoinu</translation>
+        <source>About notEvilDime</source>
+        <translation>O notEvilDimeu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;EvaCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;EvaCoin&lt;/b&gt; verze</translation>
+        <source>&lt;b&gt;notEvilDime&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;notEvilDime&lt;/b&gt; verze</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The EvaCoin developers</source>
-        <translation>Vývojáři EvaCoinu</translation>
+        <source>The notEvilDime developers</source>
+        <translation>Vývojáři notEvilDimeu</translation>
     </message>
 </context>
 <context>
@@ -66,8 +66,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your EvaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tohle jsou tvé EvaCoinové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
+        <source>These are your notEvilDime addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tohle jsou tvé notEvilDimeové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -81,8 +81,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EvaCoin address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem EvaCoinové adresy</translation>
+        <source>Sign a message to prove you own a notEvilDime address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem notEvilDimeové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -106,8 +106,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified EvaCoin address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou EvaCoinovou adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified notEvilDime address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou notEvilDimeovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -121,8 +121,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your EvaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tohle jsou tvé EvaCoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+        <source>These are your notEvilDime addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tohle jsou tvé notEvilDimeové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -274,8 +274,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-56"/>
-        <source>EvaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EvaCoins from being stolen by malware infecting your computer.</source>
-        <translation>EvaCoin se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých EvaCoinů malwarem, kterým se může počítač nakazit.</translation>
+        <source>notEvilDime will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your notevildimes from being stolen by malware infecting your computer.</source>
+        <translation>notEvilDime se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých notevildimeů malwarem, kterým se může počítač nakazit.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -320,7 +320,7 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
 </context>
 <context>
-    <name>EvaCoinGUI</name>
+    <name>notEvilDimeGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+254"/>
         <source>Sign &amp;message...</source>
@@ -373,8 +373,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about EvaCoin</source>
-        <translation>Zobraz informace o EvaCoinu</translation>
+        <source>Show information about notEvilDime</source>
+        <translation>Zobraz informace o notEvilDimeu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -418,13 +418,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-319"/>
-        <source>Send coins to a EvaCoin address</source>
-        <translation>Pošli mince na EvaCoinovou adresu</translation>
+        <source>Send coins to a notEvilDime address</source>
+        <translation>Pošli mince na notEvilDimeovou adresu</translation>
     </message>
     <message>
         <location line="+52"/>
-        <source>Modify configuration options for EvaCoin</source>
-        <translation>Uprav nastavení EvaCoinu</translation>
+        <source>Modify configuration options for notEvilDime</source>
+        <translation>Uprav nastavení notEvilDimeu</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -455,8 +455,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
         <location line="-183"/>
         <location line="+6"/>
         <location line="+508"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime</source>
+        <translation>notEvilDime</translation>
     </message>
     <message>
         <location line="-514"/>
@@ -482,8 +482,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     <message>
         <location line="+23"/>
         <location line="+2"/>
-        <source>&amp;About EvaCoin</source>
-        <translation>O &amp;EvaCoinu</translation>
+        <source>&amp;About notEvilDime</source>
+        <translation>O &amp;notEvilDimeu</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -503,13 +503,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your EvaCoin addresses to prove you own them</source>
-        <translation>Podepiš zprávy svými EvaCoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+        <source>Sign messages with your notEvilDime addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými notEvilDimeovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified EvaCoin addresses</source>
-        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými EvaCoinovými adresami</translation>
+        <source>Verify messages to ensure they were signed with specified notEvilDime addresses</source>
+        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými notEvilDimeovými adresami</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -540,13 +540,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     <message>
         <location line="-5"/>
         <location line="+5"/>
-        <source>EvaCoin client</source>
-        <translation>EvaCoin klient</translation>
+        <source>notEvilDime client</source>
+        <translation>notEvilDime klient</translation>
     </message>
     <message numerus="yes">
         <location line="+121"/>
-        <source>%n active connection(s) to EvaCoin network</source>
-        <translation><numerusform>%n aktivní spojení do EvaCoinové sítě</numerusform><numerusform>%n aktivní spojení do EvaCoinové sítě</numerusform><numerusform>%n aktivních spojení do EvaCoinové sítě</numerusform></translation>
+        <source>%n active connection(s) to notEvilDime network</source>
+        <translation><numerusform>%n aktivní spojení do notEvilDimeové sítě</numerusform><numerusform>%n aktivní spojení do notEvilDimeové sítě</numerusform><numerusform>%n aktivních spojení do notEvilDimeové sítě</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -660,8 +660,8 @@ Adresa: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid EvaCoin address or malformed URI parameters.</source>
-        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná EvaCoinová adresa nebo poškozené parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid notEvilDime address or malformed URI parameters.</source>
+        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná notEvilDimeová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -675,8 +675,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. EvaCoin can no longer continue safely and will quit.</source>
-        <translation>Stala se fatální chyba. EvaCoin nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
+        <source>A fatal error occurred. notEvilDime can no longer continue safely and will quit.</source>
+        <translation>Stala se fatální chyba. notEvilDime nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
     </message>
 </context>
 <context>
@@ -741,8 +741,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid EvaCoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; není platná EvaCoinová adresa.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid notEvilDime address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; není platná notEvilDimeová adresa.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -788,8 +788,8 @@ Adresa: %4
     <message>
         <location filename="../guiutil.cpp" line="+517"/>
         <location line="+13"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime-Qt</source>
+        <translation>notEvilDime-Qt</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -841,18 +841,18 @@ Adresa: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to EvaCoin.</source>
-        <translation>Vítej v EvaCoin.</translation>
+        <source>Welcome to notEvilDime-Qt.</source>
+        <translation>Vítej v notEvilDime-Qt.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where EvaCoin will store its data.</source>
-        <translation>Tohle je poprvé, co spouštíš EvaCoin, takže si můžeš zvolit, kam bude ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where notEvilDime-Qt will store its data.</source>
+        <translation>Tohle je poprvé, co spouštíš notEvilDime-Qt, takže si můžeš zvolit, kam bude ukládat svá data.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>EvaCoin will download and store a copy of the EvaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>EvaCoin bude stahovat kopii řetězce bloků. Proto bude potřeba do tohoto adresáře uložit nejméně %1 GB dat – toto číslo bude navíc v průběhu času pomalu růst. Tvá peněženka bude rovněž uložena v tomto adresáři.</translation>
+        <source>notEvilDime-Qt will download and store a copy of the notEvilDime block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>notEvilDime-Qt bude stahovat kopii řetězce bloků. Proto bude potřeba do tohoto adresáře uložit nejméně %1 GB dat – toto číslo bude navíc v průběhu času pomalu růst. Tvá peněženka bude rovněž uložena v tomto adresáři.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -904,13 +904,13 @@ Adresa: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start EvaCoin after logging in to the system.</source>
-        <translation>Automaticky spustí EvaCoin po přihlášení do systému.</translation>
+        <source>Automatically start notEvilDime after logging in to the system.</source>
+        <translation>Automaticky spustí notEvilDime po přihlášení do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start EvaCoin on system login</source>
-        <translation>S&amp;pustit EvaCoin po přihlášení do systému</translation>
+        <source>&amp;Start notEvilDime on system login</source>
+        <translation>S&amp;pustit notEvilDime po přihlášení do systému</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -929,7 +929,7 @@ Adresa: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the EvaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the notEvilDime client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otevře potřebný port na routeru. Tohle funguje jen za předpokladu, že tvůj router podporuje UPnP a že je UPnP povolené.</translation>
     </message>
     <message>
@@ -939,8 +939,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the EvaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Připojí se do EvaCoinové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
+        <source>Connect to the notEvilDime network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Připojí se do notEvilDimeové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1014,8 +1014,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting EvaCoin.</source>
-        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování EvaCoinu.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting notEvilDime.</source>
+        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování notEvilDimeu.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1029,8 +1029,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show EvaCoin addresses in the transaction list or not.</source>
-        <translation>Zda ukazovat EvaCoinové adresy ve výpisu transakcí nebo ne.</translation>
+        <source>Whether to show notEvilDime addresses in the transaction list or not.</source>
+        <translation>Zda ukazovat notevildimeové adresy ve výpisu transakcí nebo ne.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1081,8 +1081,8 @@ Adresa: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting EvaCoin.</source>
-        <translation>Nastavení se projeví až po restartování EvaCoinu.</translation>
+        <source>This setting will take effect after restarting notEvilDime.</source>
+        <translation>Nastavení se projeví až po restartování notEvilDimeu.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1100,8 +1100,8 @@ Adresa: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EvaCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s EvaCoinovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the notEvilDime network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s notEvilDimeovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1164,8 +1164,8 @@ Adresa: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+108"/>
-        <source>Cannot start EvaCoin: click-to-pay handler</source>
-        <translation>Nemůžu spustit EvaCoin: obsluha click-to-pay</translation>
+        <source>Cannot start notevildime: click-to-pay handler</source>
+        <translation>Nemůžu spustit notevildime: obsluha click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -1173,8 +1173,8 @@ Adresa: %4
     <message>
         <location filename="../bitcoin.cpp" line="+92"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime</source>
+        <translation>notEvilDime</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1333,8 +1333,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the EvaCoin help message to get a list with possible EvaCoin command-line options.</source>
-        <translation>Seznam parametrů EvaCoinu pro příkazovou řádku získáš v nápovědě EvaCoinu Qt.</translation>
+        <source>Show the notEvilDime-Qt help message to get a list with possible notEvilDime command-line options.</source>
+        <translation>Seznam parametrů notEvilDimeu pro příkazovou řádku získáš v nápovědě notEvilDimeu Qt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1353,13 +1353,13 @@ Adresa: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>EvaCoin - Debug window</source>
-        <translation>EvaCoin - ladicí okno</translation>
+        <source>notEvilDime - Debug window</source>
+        <translation>notEvilDime - ladicí okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>EvaCoin Core</source>
-        <translation>Jádro EvaCoinu</translation>
+        <source>notEvilDime Core</source>
+        <translation>Jádro notEvilDimeu</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1368,8 +1368,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the EvaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otevři soubor s ladicími záznamy EvaCoinu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
+        <source>Open the notEvilDime debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otevři soubor s ladicími záznamy notEvilDimeu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1378,8 +1378,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the EvaCoin RPC console.</source>
-        <translation>Vítej v EvaCoinové RPC konzoli.</translation>
+        <source>Welcome to the notEvilDime RPC console.</source>
+        <translation>Vítej v notEvilDimeové RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1563,8 +1563,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Zadej EvaCoinovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Zadej notEvilDimeovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1628,8 +1628,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this EvaCoin address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této EvaCoinové adresy</translation>
+        <source>Sign the message to prove you own this notEvilDime address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této notEvilDimeové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1664,8 +1664,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified EvaCoin address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou EvaCoinovou adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified notEvilDime address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou notEvilDimeovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1680,8 +1680,8 @@ Adresa: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Zadej EvaCoinovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Zadej notEvilDimeovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1690,8 +1690,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter EvaCoin signature</source>
-        <translation>Vlož EvaCoinový podpis</translation>
+        <source>Enter notEvilDime signature</source>
+        <translation>Vlož notEvilDimeový podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1764,8 +1764,8 @@ Adresa: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The EvaCoin developers</source>
-        <translation>Vývojáři EvaCoinu</translation>
+        <source>The notEvilDime developers</source>
+        <translation>Vývojáři notEvilDimeu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2302,8 +2302,8 @@ Adresa: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+98"/>
-        <source>EvaCoin version</source>
-        <translation>Verze EvaCoinu</translation>
+        <source>notEvilDime version</source>
+        <translation>Verze notEvilDimeu</translation>
     </message>
     <message>
         <location line="+104"/>
@@ -2312,8 +2312,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-30"/>
-        <source>Send command to -server or EvaCoind</source>
-        <translation>Poslat příkaz pro -server nebo EvaCoind</translation>
+        <source>Send command to -server or notevildimed</source>
+        <translation>Poslat příkaz pro -server nebo notevildimed</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2332,13 +2332,13 @@ Adresa: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: EvaCoin.conf)</source>
-        <translation>Konfigurační soubor (výchozí: EvaCoin.conf)</translation>
+        <source>Specify configuration file (default: notevildime.conf)</source>
+        <translation>Konfigurační soubor (výchozí: notevildime.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: EvaCoind.pid)</source>
-        <translation>PID soubor (výchozí: EvaCoind.pid)</translation>
+        <source>Specify pid file (default: notevildimed.pid)</source>
+        <translation>PID soubor (výchozí: notevildimed.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2415,24 +2415,24 @@ Adresa: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=EvaCoinrpc
+rpcuser=notevildimerpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíš nastavit rpcpassword v konfiguračním souboru:
 %s
 Je vhodné použít následující náhodné heslo:
-rpcuser=EvaCoinrpc
+rpcuser=notevildimerpc
 rpcpassword=%s
 (není potřeba si ho pamatovat)
 rpcuser a rpcpassword NESMÍ být stejné.
 Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl číst pouze vlastník.
 Je také doporučeno si nastavit alertnotify, abys byl upozorněn na případné problémy;
-například: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
+například: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2447,8 +2447,8 @@ například: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. EvaCoin is probably already running.</source>
-        <translation>Nedaří se mi získat zámek na datový adresář %s. EvaCoin pravděpodobně už jednou běží.</translation>
+        <source>Cannot obtain a lock on data directory %s. notEvilDime is probably already running.</source>
+        <translation>Nedaří se mi získat zámek na datový adresář %s. notEvilDime pravděpodobně už jednou běží.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2497,8 +2497,8 @@ například: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EvaCoin will not work properly.</source>
-        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, EvaCoin nebude fungovat správně.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong notEvilDime will not work properly.</source>
+        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, notEvilDime nebude fungovat správně.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2767,8 +2767,8 @@ například: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the EvaCoin Wiki for SSL setup instructions)</source>
-        <translation>Možnosti SSL: (viz instrukce nastavení SSL v EvaCoin Wiki)</translation>
+        <source>SSL options: (see the notEvilDime Wiki for SSL setup instructions)</source>
+        <translation>Možnosti SSL: (viz instrukce nastavení SSL v notEvilDime Wiki)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2952,13 +2952,13 @@ například: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of EvaCoin</source>
-        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi EvaCoinu</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of notEvilDime</source>
+        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi notEvilDimeu</translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>Wallet needed to be rewritten: restart EvaCoin to complete</source>
-        <translation>Soubor s peněženkou potřeboval přepsat: restartuj EvaCoin, aby se operace dokončila</translation>
+        <source>Wallet needed to be rewritten: restart notEvilDime to complete</source>
+        <translation>Soubor s peněženkou potřeboval přepsat: restartuj notEvilDime, aby se operace dokončila</translation>
     </message>
     <message>
         <location line="-98"/>
@@ -3017,8 +3017,8 @@ například: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. EvaCoin is probably already running.</source>
-        <translation>Nedaří se mi připojit na %s na tomhle počítači. EvaCoin už pravděpodobně jednou běží.</translation>
+        <source>Unable to bind to %s on this computer. notEvilDime is probably already running.</source>
+        <translation>Nedaří se mi připojit na %s na tomhle počítači. notEvilDime už pravděpodobně jednou běží.</translation>
     </message>
     <message>
         <location line="+64"/>

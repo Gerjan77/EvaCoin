@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About EvaCoin</source>
-        <translation>A EvaCoinról</translation>
+        <source>About notEvilDime</source>
+        <translation>A notEvilDimeról</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;EvaCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;EvaCoin&lt;/b&gt; verzió</translation>
+        <source>&lt;b&gt;notEvilDime&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;notEvilDime&lt;/b&gt; verzió</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -32,8 +32,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+0"/>
-        <source>The EvaCoin developers</source>
-        <translation>A EvaCoin fejlesztői</translation>
+        <source>The notEvilDime developers</source>
+        <translation>A notEvilDime fejlesztői</translation>
     </message>
 </context>
 <context>
@@ -65,8 +65,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your EvaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Ezekkel a EvaCoin-címekkel fogadhatod kifizetéseket. Érdemes lehet minden egyes kifizető számára külön címet létrehozni, hogy könnyebben nyomon követhesd, kitől kaptál már pénzt.</translation>
+        <source>These are your notEvilDime addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Ezekkel a notEvilDime-címekkel fogadhatod kifizetéseket. Érdemes lehet minden egyes kifizető számára külön címet létrehozni, hogy könnyebben nyomon követhesd, kitől kaptál már pénzt.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -80,7 +80,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EvaCoin address</source>
+        <source>Sign a message to prove you own a notEvilDime address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -105,8 +105,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified EvaCoin address</source>
-        <translation>Üzenet ellenőrzése, hogy valóban a megjelölt EvaCoin címekkel van-e aláírva.</translation>
+        <source>Verify a message to ensure it was signed with a specified notEvilDime address</source>
+        <translation>Üzenet ellenőrzése, hogy valóban a megjelölt notEvilDime címekkel van-e aláírva.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -120,7 +120,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your EvaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your notEvilDime addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -273,8 +273,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-56"/>
-        <source>EvaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EvaCoins from being stolen by malware infecting your computer.</source>
-        <translation>EvaCoin will close now to finish the encryption process. Ne feledd, hogy a tárca titkosítása sem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
+        <source>notEvilDime will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your notevildimes from being stolen by malware infecting your computer.</source>
+        <translation>notEvilDime will close now to finish the encryption process. Ne feledd, hogy a tárca titkosítása sem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -319,7 +319,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
 </context>
 <context>
-    <name>EvaCoinGUI</name>
+    <name>notEvilDimeGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+254"/>
         <source>Sign &amp;message...</source>
@@ -372,8 +372,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about EvaCoin</source>
-        <translation>Információk a EvaCoinról</translation>
+        <source>Show information about notEvilDime</source>
+        <translation>Információk a notEvilDimeról</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -417,13 +417,13 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-319"/>
-        <source>Send coins to a EvaCoin address</source>
+        <source>Send coins to a notEvilDime address</source>
         <translation>Érmék küldése megadott címre</translation>
     </message>
     <message>
         <location line="+52"/>
-        <source>Modify configuration options for EvaCoin</source>
-        <translation>EvaCoin konfigurációs opciók</translation>
+        <source>Modify configuration options for notEvilDime</source>
+        <translation>notEvilDime konfigurációs opciók</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -454,8 +454,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
         <location line="-183"/>
         <location line="+6"/>
         <location line="+508"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime</source>
+        <translation>notEvilDime</translation>
     </message>
     <message>
         <location line="-514"/>
@@ -481,8 +481,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     <message>
         <location line="+23"/>
         <location line="+2"/>
-        <source>&amp;About EvaCoin</source>
-        <translation>&amp;A EvaCoinról</translation>
+        <source>&amp;About notEvilDime</source>
+        <translation>&amp;A notEvilDimeról</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -502,13 +502,13 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your EvaCoin addresses to prove you own them</source>
-        <translation>Üzenet aláírása a EvaCoin címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
+        <source>Sign messages with your notEvilDime addresses to prove you own them</source>
+        <translation>Üzenet aláírása a notEvilDime címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified EvaCoin addresses</source>
-        <translation>Annak ellenőrzése, hogy az üzenetek valóban a megjelölt EvaCoin címekkel vannak-e alaírva</translation>
+        <source>Verify messages to ensure they were signed with specified notEvilDime addresses</source>
+        <translation>Annak ellenőrzése, hogy az üzenetek valóban a megjelölt notEvilDime címekkel vannak-e alaírva</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -539,13 +539,13 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     <message>
         <location line="-5"/>
         <location line="+5"/>
-        <source>EvaCoin client</source>
-        <translation>EvaCoin kliens</translation>
+        <source>notEvilDime client</source>
+        <translation>notEvilDime kliens</translation>
     </message>
     <message numerus="yes">
         <location line="+121"/>
-        <source>%n active connection(s) to EvaCoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a EvaCoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a EvaCoin-hálózattal</numerusform></translation>
+        <source>%n active connection(s) to notEvilDime network</source>
+        <translation><numerusform>%n aktív kapcsolat a notEvilDime-hálózattal</numerusform><numerusform>%n aktív kapcsolat a notEvilDime-hálózattal</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -659,7 +659,7 @@ Cím: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid EvaCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid notEvilDime address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -674,7 +674,7 @@ Cím: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. EvaCoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. notEvilDime can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -740,8 +740,8 @@ Cím: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid EvaCoin address.</source>
-        <translation>A megadott &quot;%1&quot; cím nem egy érvényes EvaCoin-cím.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid notEvilDime address.</source>
+        <translation>A megadott &quot;%1&quot; cím nem egy érvényes notEvilDime-cím.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -787,8 +787,8 @@ Cím: %4
     <message>
         <location filename="../guiutil.cpp" line="+517"/>
         <location line="+13"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime-Qt</source>
+        <translation>notEvilDime-Qt</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -841,17 +841,17 @@ Cím: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to EvaCoin.</source>
+        <source>Welcome to notEvilDime-Qt.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where EvaCoin will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where notEvilDime-Qt will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>EvaCoin will download and store a copy of the EvaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>notEvilDime-Qt will download and store a copy of the notEvilDime block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -904,12 +904,12 @@ Cím: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start EvaCoin after logging in to the system.</source>
-        <translation>Induljon el a EvaCoin a számítógép bekapcsolásakor</translation>
+        <source>Automatically start notEvilDime after logging in to the system.</source>
+        <translation>Induljon el a notEvilDime a számítógép bekapcsolásakor</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start EvaCoin on system login</source>
+        <source>&amp;Start notEvilDime on system login</source>
         <translation>&amp;Induljon el a számítógép bekapcsolásakor</translation>
     </message>
     <message>
@@ -929,8 +929,8 @@ Cím: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the EvaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A EvaCoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the notEvilDime client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A notEvilDime-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -939,8 +939,8 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the EvaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>SOCKS proxyn keresztüli csatlakozás a EvaCoin hálózatához (pl. Tor-on keresztüli csatlakozás esetén)</translation>
+        <source>Connect to the notEvilDime network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>SOCKS proxyn keresztüli csatlakozás a notEvilDime hálózatához (pl. Tor-on keresztüli csatlakozás esetén)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1014,8 +1014,8 @@ Cím: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting EvaCoin.</source>
-        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a EvaCoin ujraindítása után lép érvénybe.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting notEvilDime.</source>
+        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a notEvilDime ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1029,8 +1029,8 @@ Cím: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show EvaCoin addresses in the transaction list or not.</source>
-        <translation>Mutassa-e a EvaCoin címeket a tranzakciólistában.</translation>
+        <source>Whether to show notEvilDime addresses in the transaction list or not.</source>
+        <translation>Mutassa-e a notEvilDime címeket a tranzakciólistában.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1081,8 +1081,8 @@ Cím: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting EvaCoin.</source>
-        <translation>Ez a beállítás a EvaCoin ujraindítása után lép érvénybe.</translation>
+        <source>This setting will take effect after restarting notEvilDime.</source>
+        <translation>Ez a beállítás a notEvilDime ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1100,8 +1100,8 @@ Cím: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EvaCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a EvaCoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the notEvilDime network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a notEvilDime hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1164,8 +1164,8 @@ Cím: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+108"/>
-        <source>Cannot start EvaCoin: click-to-pay handler</source>
-        <translation>A EvaCoint nem lehet elindítani: click-to-pay handler</translation>
+        <source>Cannot start notevildime: click-to-pay handler</source>
+        <translation>A notevildimet nem lehet elindítani: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1173,8 +1173,8 @@ Cím: %4
     <message>
         <location filename="../bitcoin.cpp" line="+92"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime</source>
+        <translation>notEvilDime</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1333,7 +1333,7 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the EvaCoin help message to get a list with possible EvaCoin command-line options.</source>
+        <source>Show the notEvilDime-Qt help message to get a list with possible notEvilDime command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1353,13 +1353,13 @@ Cím: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>EvaCoin - Debug window</source>
-        <translation>EvaCoin - Debug ablak</translation>
+        <source>notEvilDime - Debug window</source>
+        <translation>notEvilDime - Debug ablak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>EvaCoin Core</source>
-        <translation>EvaCoin Core</translation>
+        <source>notEvilDime Core</source>
+        <translation>notEvilDime Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1368,7 +1368,7 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the EvaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the notEvilDime debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1378,8 +1378,8 @@ Cím: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the EvaCoin RPC console.</source>
-        <translation>Üdv a EvaCoin RPC konzoljában!</translation>
+        <source>Welcome to the notEvilDime RPC console.</source>
+        <translation>Üdv a notEvilDime RPC konzoljában!</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1480,7 +1480,7 @@ Cím: %4
     <message>
         <location line="+5"/>
         <source>The amount exceeds your balance.</source>
-        <translation>Nincs ennyi EvaCoin az egyenlegeden.</translation>
+        <translation>Nincs ennyi notevildime az egyenlegeden.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1564,8 +1564,8 @@ Cím: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adj meg egy EvaCoin-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
+        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Adj meg egy notEvilDime-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
     </message>
 </context>
 <context>
@@ -1588,7 +1588,7 @@ Cím: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adj meg egy EvaCoin-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
+        <translation>Adj meg egy notEvilDime-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1629,7 +1629,7 @@ Cím: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this EvaCoin address</source>
+        <source>Sign the message to prove you own this notEvilDime address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1661,11 +1661,11 @@ Cím: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adj meg egy EvaCoin-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
+        <translation>Adj meg egy notEvilDime-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified EvaCoin address</source>
+        <source>Verify the message to ensure it was signed with the specified notEvilDime address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1681,8 +1681,8 @@ Cím: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adj meg egy EvaCoin-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
+        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Adj meg egy notEvilDime-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1691,8 +1691,8 @@ Cím: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter EvaCoin signature</source>
-        <translation>Adja meg a EvaCoin aláírást</translation>
+        <source>Enter notEvilDime signature</source>
+        <translation>Adja meg a notEvilDime aláírást</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1765,8 +1765,8 @@ Cím: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The EvaCoin developers</source>
-        <translation>A EvaCoin fejlesztői</translation>
+        <source>The notEvilDime developers</source>
+        <translation>A notEvilDime fejlesztői</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2303,8 +2303,8 @@ Cím: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+98"/>
-        <source>EvaCoin version</source>
-        <translation>EvaCoin verzió</translation>
+        <source>notEvilDime version</source>
+        <translation>notEvilDime verzió</translation>
     </message>
     <message>
         <location line="+104"/>
@@ -2313,8 +2313,8 @@ Cím: %4
     </message>
     <message>
         <location line="-30"/>
-        <source>Send command to -server or EvaCoind</source>
-        <translation>Parancs küldése a -serverhez vagy a EvaCoindhez
+        <source>Send command to -server or notevildimed</source>
+        <translation>Parancs küldése a -serverhez vagy a notevildimedhez
 </translation>
     </message>
     <message>
@@ -2337,14 +2337,14 @@ Cím: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: EvaCoin.conf)</source>
-        <translation>Konfigurációs fájl (alapértelmezett: EvaCoin.conf)
+        <source>Specify configuration file (default: notevildime.conf)</source>
+        <translation>Konfigurációs fájl (alapértelmezett: notevildime.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: EvaCoind.pid)</source>
-        <translation>pid-fájl (alapértelmezett: EvaCoind.pid)
+        <source>Specify pid file (default: notevildimed.pid)</source>
+        <translation>pid-fájl (alapértelmezett: notevildimed.pid)
 </translation>
     </message>
     <message>
@@ -2426,13 +2426,13 @@ Cím: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=EvaCoinrpc
+rpcuser=notevildimerpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2448,8 +2448,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. EvaCoin is probably already running.</source>
-        <translation>Az %s adatkönyvtár nem zárható.  A EvaCoin valószínűleg fut már.</translation>
+        <source>Cannot obtain a lock on data directory %s. notEvilDime is probably already running.</source>
+        <translation>Az %s adatkönyvtár nem zárható.  A notEvilDime valószínűleg fut már.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2498,8 +2498,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EvaCoin will not work properly.</source>
-        <translation>Figyelem: Ellenőrizd, hogy helyesen van-e beállítva a gépeden a dátum és az idő.  A EvaCoin nem fog megfelelően működni, ha rosszul van beállítvaaz órád.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong notEvilDime will not work properly.</source>
+        <translation>Figyelem: Ellenőrizd, hogy helyesen van-e beállítva a gépeden a dátum és az idő.  A notEvilDime nem fog megfelelően működni, ha rosszul van beállítvaaz órád.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2768,8 +2768,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the EvaCoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-opciók: (lásd a EvaCoin Wiki SSL-beállítási instrukcióit)</translation>
+        <source>SSL options: (see the notEvilDime Wiki for SSL setup instructions)</source>
+        <translation>SSL-opciók: (lásd a notEvilDime Wiki SSL-beállítási instrukcióit)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2964,13 +2964,13 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of EvaCoin</source>
-        <translation>Hiba a wallet.dat betöltése közben: ehhez a tárcához újabb verziójú EvaCoin-kliens szükséges</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of notEvilDime</source>
+        <translation>Hiba a wallet.dat betöltése közben: ehhez a tárcához újabb verziójú notEvilDime-kliens szükséges</translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>Wallet needed to be rewritten: restart EvaCoin to complete</source>
-        <translation>A Tárca újraírása szükséges: Indítsa újra a teljesen a EvaCoin-t</translation>
+        <source>Wallet needed to be rewritten: restart notEvilDime to complete</source>
+        <translation>A Tárca újraírása szükséges: Indítsa újra a teljesen a notEvilDime-t</translation>
     </message>
     <message>
         <location line="-98"/>
@@ -3015,7 +3015,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     <message>
         <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation>Nincs elég EvaCoinod.</translation>
+        <translation>Nincs elég notevildimeod.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -3029,8 +3029,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. EvaCoin is probably already running.</source>
-        <translation>A %s nem elérhető ezen a gépen. A EvaCoin valószínűleg fut már.</translation>
+        <source>Unable to bind to %s on this computer. notEvilDime is probably already running.</source>
+        <translation>A %s nem elérhető ezen a gépen. A notEvilDime valószínűleg fut már.</translation>
     </message>
     <message>
         <location line="+64"/>

@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About EvaCoin</source>
-        <translation>Despre EvaCoin</translation>
+        <source>About notEvilDime</source>
+        <translation>Despre notEvilDime</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;EvaCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;EvaCoin&lt;/b&gt; versiunea</translation>
+        <source>&lt;b&gt;notEvilDime&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;notEvilDime&lt;/b&gt; versiunea</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -28,8 +28,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The EvaCoin developers</source>
-        <translation>Dezvoltatorii EvaCoin</translation>
+        <source>The notEvilDime developers</source>
+        <translation>Dezvoltatorii notEvilDime</translation>
     </message>
 </context>
 <context>
@@ -61,8 +61,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your EvaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele dumneavoastră EvaCoin pentru a primi plăţi. Dacă doriţi, puteți da o adresa diferită fiecărui expeditor, pentru a putea ţine evidenţa plăţilor.</translation>
+        <source>These are your notEvilDime addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele dumneavoastră notEvilDime pentru a primi plăţi. Dacă doriţi, puteți da o adresa diferită fiecărui expeditor, pentru a putea ţine evidenţa plăţilor.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -76,7 +76,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EvaCoin address</source>
+        <source>Sign a message to prove you own a notEvilDime address</source>
         <translation>Semneaza mesajul pentru a dovedi ca detii aceasta adresa Bitocin</translation>
     </message>
     <message>
@@ -101,8 +101,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified EvaCoin address</source>
-        <translation>Verifica mesajul pentru a te asigura ca a fost insemnat cu o adresa EvaCoin specifica</translation>
+        <source>Verify a message to ensure it was signed with a specified notEvilDime address</source>
+        <translation>Verifica mesajul pentru a te asigura ca a fost insemnat cu o adresa notevildime specifica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -116,7 +116,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your EvaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your notEvilDime addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -269,8 +269,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>EvaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EvaCoins from being stolen by malware infecting your computer.</source>
-        <translation>EvaCoin se va închide acum pentru a termina procesul de criptare. Amintiți-vă că criptarea portofelului dumneavoastră nu poate proteja în totalitate EvaCoins dvs. de a fi furate de intentii rele.</translation>
+        <source>notEvilDime will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your notevildimes from being stolen by malware infecting your computer.</source>
+        <translation>notEvilDime se va închide acum pentru a termina procesul de criptare. Amintiți-vă că criptarea portofelului dumneavoastră nu poate proteja în totalitate notevildimes dvs. de a fi furate de intentii rele.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -315,7 +315,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>EvaCoinGUI</name>
+    <name>notEvilDimeGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+254"/>
         <source>Sign &amp;message...</source>
@@ -368,8 +368,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about EvaCoin</source>
-        <translation>Informaţii despre EvaCoin</translation>
+        <source>Show information about notEvilDime</source>
+        <translation>Informaţii despre notEvilDime</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -413,13 +413,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-319"/>
-        <source>Send coins to a EvaCoin address</source>
-        <translation>&amp;Trimiteţi EvaCoin către o anumită adresă</translation>
+        <source>Send coins to a notEvilDime address</source>
+        <translation>&amp;Trimiteţi notEvilDime către o anumită adresă</translation>
     </message>
     <message>
         <location line="+52"/>
-        <source>Modify configuration options for EvaCoin</source>
-        <translation>Modifică setările pentru EvaCoin</translation>
+        <source>Modify configuration options for notEvilDime</source>
+        <translation>Modifică setările pentru notEvilDime</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -450,8 +450,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="-183"/>
         <location line="+6"/>
         <location line="+508"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime</source>
+        <translation>notEvilDime</translation>
     </message>
     <message>
         <location line="-514"/>
@@ -477,8 +477,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+23"/>
         <location line="+2"/>
-        <source>&amp;About EvaCoin</source>
-        <translation>&amp;Despre EvaCoin</translation>
+        <source>&amp;About notEvilDime</source>
+        <translation>&amp;Despre notEvilDime</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -498,13 +498,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your EvaCoin addresses to prove you own them</source>
-        <translation>Semnează mesaje cu adresa ta EvaCoin pentru a dovedi că îți aparțin</translation>
+        <source>Sign messages with your notEvilDime addresses to prove you own them</source>
+        <translation>Semnează mesaje cu adresa ta notEvilDime pentru a dovedi că îți aparțin</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified EvaCoin addresses</source>
-        <translation>Verifică mesaje pentru a te asigura că au fost semnate cu adresa EvaCoin specificată</translation>
+        <source>Verify messages to ensure they were signed with specified notEvilDime addresses</source>
+        <translation>Verifică mesaje pentru a te asigura că au fost semnate cu adresa notEvilDime specificată</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -535,13 +535,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-5"/>
         <location line="+5"/>
-        <source>EvaCoin client</source>
-        <translation>Client EvaCoin</translation>
+        <source>notEvilDime client</source>
+        <translation>Client notEvilDime</translation>
     </message>
     <message numerus="yes">
         <location line="+121"/>
-        <source>%n active connection(s) to EvaCoin network</source>
-        <translation><numerusform>%n active connections to EvaCoin network</numerusform><numerusform>%n active connections to EvaCoin network</numerusform><numerusform>%n active connections to EvaCoin network</numerusform></translation>
+        <source>%n active connection(s) to notEvilDime network</source>
+        <translation><numerusform>%n active connections to notEvilDime network</numerusform><numerusform>%n active connections to notEvilDime network</numerusform><numerusform>%n active connections to notEvilDime network</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -651,7 +651,7 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid EvaCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid notEvilDime address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -666,7 +666,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. EvaCoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. notEvilDime can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -732,8 +732,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid EvaCoin address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă EvaCoin valabilă.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid notEvilDime address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă notevildime valabilă.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -779,8 +779,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+517"/>
         <location line="+13"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime-Qt</source>
+        <translation>notEvilDime-Qt</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -832,17 +832,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to EvaCoin.</source>
+        <source>Welcome to notEvilDime-Qt.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where EvaCoin will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where notEvilDime-Qt will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>EvaCoin will download and store a copy of the EvaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>notEvilDime-Qt will download and store a copy of the notEvilDime block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -895,13 +895,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start EvaCoin after logging in to the system.</source>
-        <translation>Porneşte automat programul EvaCoin la pornirea computerului.</translation>
+        <source>Automatically start notEvilDime after logging in to the system.</source>
+        <translation>Porneşte automat programul notEvilDime la pornirea computerului.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start EvaCoin on system login</source>
-        <translation>&amp;S Porneşte EvaCoin la pornirea sistemului</translation>
+        <source>&amp;Start notEvilDime on system login</source>
+        <translation>&amp;S Porneşte notEvilDime la pornirea sistemului</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -920,8 +920,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the EvaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat în router portul aferent clientului EvaCoin. Funcţionează doar în cazul în care routerul e compatibil UPnP şi opţiunea e activată.</translation>
+        <source>Automatically open the notEvilDime client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat în router portul aferent clientului notEvilDime. Funcţionează doar în cazul în care routerul e compatibil UPnP şi opţiunea e activată.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -930,8 +930,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the EvaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conectare la reţeaua EvaCoin folosind un proxy SOCKS (de exemplu, când conexiunea se stabileşte prin reţeaua Tor)</translation>
+        <source>Connect to the notEvilDime network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conectare la reţeaua notEvilDime folosind un proxy SOCKS (de exemplu, când conexiunea se stabileşte prin reţeaua Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1005,8 +1005,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting EvaCoin.</source>
-        <translation>Limba interfeței utilizatorului poate fi setat aici. Această setare va avea efect după repornirea EvaCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting notEvilDime.</source>
+        <translation>Limba interfeței utilizatorului poate fi setat aici. Această setare va avea efect după repornirea notEvilDime.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1016,12 +1016,12 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de EvaCoin.</translation>
+        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de notevildime.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show EvaCoin addresses in the transaction list or not.</source>
-        <translation>Vezi dacă adresele EvaCoin sunt în lista de tranzacție sau nu</translation>
+        <source>Whether to show notEvilDime addresses in the transaction list or not.</source>
+        <translation>Vezi dacă adresele notEvilDime sunt în lista de tranzacție sau nu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1072,13 +1072,13 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting EvaCoin.</source>
-        <translation>Această setare va avea efect după repornirea EvaCoin.</translation>
+        <source>This setting will take effect after restarting notEvilDime.</source>
+        <translation>Această setare va avea efect după repornirea notEvilDime.</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa EvaCoin pe care a-ti specificat-o este invalida</translation>
+        <translation>Adresa notevildime pe care a-ti specificat-o este invalida</translation>
     </message>
 </context>
 <context>
@@ -1091,8 +1091,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EvaCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informațiile afișate pot fi expirate. Portofelul tău se sincronizează automat cu rețeaua EvaCoin după ce o conexiune este stabilita, dar acest proces nu a fost finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the notEvilDime network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informațiile afișate pot fi expirate. Portofelul tău se sincronizează automat cu rețeaua notEvilDime după ce o conexiune este stabilita, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1155,7 +1155,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+108"/>
-        <source>Cannot start EvaCoin: click-to-pay handler</source>
+        <source>Cannot start notevildime: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1164,8 +1164,8 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+92"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>EvaCoin</source>
-        <translation>EvaCoin</translation>
+        <source>notEvilDime</source>
+        <translation>notEvilDime</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1324,8 +1324,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the EvaCoin help message to get a list with possible EvaCoin command-line options.</source>
-        <translation>Arata mesajul de ajutor EvaCoin pentru a obtine o lista cu posibilele optiuni ale comenzilor EvaCoin</translation>
+        <source>Show the notEvilDime-Qt help message to get a list with possible notEvilDime command-line options.</source>
+        <translation>Arata mesajul de ajutor notEvilDime-QT pentru a obtine o lista cu posibilele optiuni ale comenzilor notEvilDime</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1344,13 +1344,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>EvaCoin - Debug window</source>
-        <translation>EvaCoin-Fereastra pentru debug</translation>
+        <source>notEvilDime - Debug window</source>
+        <translation>notEvilDime-Fereastra pentru debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>EvaCoin Core</source>
-        <translation>EvaCoin Core</translation>
+        <source>notEvilDime Core</source>
+        <translation>notEvilDime Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1359,7 +1359,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the EvaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the notEvilDime debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Deschide logurile debug din directorul curent. Aceasta poate dura cateva secunde pentru fisierele mai mari</translation>
     </message>
     <message>
@@ -1369,8 +1369,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the EvaCoin RPC console.</source>
-        <translation>Bun venit la consola EvaCoin RPC</translation>
+        <source>Welcome to the notEvilDime RPC console.</source>
+        <translation>Bun venit la consola notevildime RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1395,7 +1395,7 @@ Address: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Trimite EvaCoin</translation>
+        <translation>Trimite notEvilDime</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1446,7 +1446,7 @@ Address: %4
     <message>
         <location line="+6"/>
         <source>Confirm send coins</source>
-        <translation>Confirmaţi trimiterea de EvaCoin</translation>
+        <translation>Confirmaţi trimiterea de notevildime</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1491,7 +1491,7 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Eroare: Tranyacţia a fost respinsă.  Acesta poate fi rezultatul cheltuirii prealabile a unei sume de EvaCoin din portofelul electronic, ca în cazul folosirii unei copii a fisierului wallet.dat, în care s-au efectuat tranzacţii neînregistrate în fisierul curent.</translation>
+        <translation>Eroare: Tranyacţia a fost respinsă.  Acesta poate fi rezultatul cheltuirii prealabile a unei sume de notevildime din portofelul electronic, ca în cazul folosirii unei copii a fisierului wallet.dat, în care s-au efectuat tranzacţii neînregistrate în fisierul curent.</translation>
     </message>
 </context>
 <context>
@@ -1554,8 +1554,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă EvaCoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Introduceţi o adresă notEvilDime (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1578,7 +1578,7 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă EvaCoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Introduceţi o adresă notEvilDime (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1619,8 +1619,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this EvaCoin address</source>
-        <translation>Semneaza mesajul pentru a dovedi ca detii acesta adresa EvaCoin</translation>
+        <source>Sign the message to prove you own this notEvilDime address</source>
+        <translation>Semneaza mesajul pentru a dovedi ca detii acesta adresa notEvilDime</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1651,12 +1651,12 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă EvaCoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Introduceţi o adresă notEvilDime (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified EvaCoin address</source>
-        <translation>Verifica mesajul pentru a fi sigur ca a fost semnat cu adresa EvaCoin specifica</translation>
+        <source>Verify the message to ensure it was signed with the specified notEvilDime address</source>
+        <translation>Verifica mesajul pentru a fi sigur ca a fost semnat cu adresa notEvilDime specifica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1671,8 +1671,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă EvaCoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Introduceţi o adresă notEvilDime (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1681,7 +1681,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter EvaCoin signature</source>
+        <source>Enter notEvilDime signature</source>
         <translation>Introduce semnatura bitocin</translation>
     </message>
     <message>
@@ -1755,8 +1755,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The EvaCoin developers</source>
-        <translation>Dezvoltatorii EvaCoin</translation>
+        <source>The notEvilDime developers</source>
+        <translation>Dezvoltatorii notEvilDime</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1890,7 +1890,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 20 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Monedele EvaCoin generate se pot cheltui dupa parcurgerea a 20 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
+        <translation>Monedele notevildime generate se pot cheltui dupa parcurgerea a 20 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2243,7 +2243,7 @@ Address: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Trimite EvaCoin</translation>
+        <translation>Trimite notEvilDime</translation>
     </message>
 </context>
 <context>
@@ -2293,8 +2293,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+98"/>
-        <source>EvaCoin version</source>
-        <translation>versiunea EvaCoin</translation>
+        <source>notEvilDime version</source>
+        <translation>versiunea notEvilDime</translation>
     </message>
     <message>
         <location line="+104"/>
@@ -2303,8 +2303,8 @@ Address: %4
     </message>
     <message>
         <location line="-30"/>
-        <source>Send command to -server or EvaCoind</source>
-        <translation>Trimite comanda la -server sau EvaCoind</translation>
+        <source>Send command to -server or notevildimed</source>
+        <translation>Trimite comanda la -server sau notevildimed</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2323,13 +2323,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: EvaCoin.conf)</source>
-        <translation>Specifica-ți configurația fisierului (in mod normal: EvaCoin.conf)</translation>
+        <source>Specify configuration file (default: notevildime.conf)</source>
+        <translation>Specifica-ți configurația fisierului (in mod normal: notevildime.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: EvaCoind.pid)</source>
-        <translation>Specifica fisierul pid (normal: EvaCoind.pid)</translation>
+        <source>Specify pid file (default: notevildimed.pid)</source>
+        <translation>Specifica fisierul pid (normal: notevildimed.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2407,13 +2407,13 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=EvaCoinrpc
+rpcuser=notevildimerpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2429,8 +2429,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. EvaCoin is probably already running.</source>
-        <translation>Nu se poate obține o blocare a directorului de date %s. EvaCoin probabil rulează deja.</translation>
+        <source>Cannot obtain a lock on data directory %s. notEvilDime is probably already running.</source>
+        <translation>Nu se poate obține o blocare a directorului de date %s. notEvilDime probabil rulează deja.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2479,7 +2479,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EvaCoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong notEvilDime will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2749,8 +2749,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the EvaCoin Wiki for SSL setup instructions)</source>
-        <translation>Optiuni SSl (vezi EvaCoin wiki pentru intructiunile de instalare)</translation>
+        <source>SSL options: (see the notEvilDime Wiki for SSL setup instructions)</source>
+        <translation>Optiuni SSl (vezi notEvilDime wiki pentru intructiunile de instalare)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2936,13 +2936,13 @@ for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of EvaCoin</source>
-        <translation>Eroare incarcare wallet.dat: Portofelul are nevoie de o versiune EvaCoin mai noua</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of notEvilDime</source>
+        <translation>Eroare incarcare wallet.dat: Portofelul are nevoie de o versiune notEvilDime mai noua</translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>Wallet needed to be rewritten: restart EvaCoin to complete</source>
-        <translation>Portofelul trebuie rescris: restarteaza aplicatia EvaCoin pentru a face asta.</translation>
+        <source>Wallet needed to be rewritten: restart notEvilDime to complete</source>
+        <translation>Portofelul trebuie rescris: restarteaza aplicatia notevildime pentru a face asta.</translation>
     </message>
     <message>
         <location line="-98"/>
@@ -3003,8 +3003,8 @@ details suggestions history
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. EvaCoin is probably already running.</source>
-        <translation>Imposibilitatea de a lega la% s pe acest computer. EvaCoin este, probabil, deja în execuție.</translation>
+        <source>Unable to bind to %s on this computer. notEvilDime is probably already running.</source>
+        <translation>Imposibilitatea de a lega la% s pe acest computer. notEvilDime este, probabil, deja în execuție.</translation>
     </message>
     <message>
         <location line="+64"/>

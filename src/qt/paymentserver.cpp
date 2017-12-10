@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2012 The EvaCoin developers
+// Copyright (c) 2009-2012 The notEvilDime developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,7 +24,7 @@
 using namespace boost;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("EvaCoin:");
+const QString BITCOIN_IPC_PREFIX("notevildime:");
 
 //
 // Create a name that is unique for:
@@ -33,7 +33,7 @@ const QString BITCOIN_IPC_PREFIX("EvaCoin:");
 //
 static QString ipcServerName()
 {
-    QString name("EvaCoinQt");
+    QString name("notEvilDimeQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path

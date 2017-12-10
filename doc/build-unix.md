@@ -1,99 +1,15 @@
 UNIX BUILD NOTES
 ====================
+Some notes on how to build notEvilDime in Unix. 
 
-
-Building prerequisites of EvaCoin v1.0.0 on Ubuntu 12.04
----------------------
-prerequisites used in this release:
-
-GCC                4.9
-OpenSSL        1.0.1c
-Berkeley DB    4.8.30.NC
-Boost              1.48
-miniupnpc       1.6
-
-
-Update gcc
----------------------
- you get a Configure: error: *** A compiler with support for C++11 language features is required,
- if you run version gcc < 4.9
- 
-    sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-    sudo apt-get update
-    sudo apt-get install gcc-4.9 g++-4.9
-    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
-    sudo apt-get install gcc-4.8 g++-4.8
-    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8
-    sudo update-alternatives --config gcc
-
-And select the right compiler.
-
-Git:
----------------------
-    sudo apt-get install git
-
-Boost library:
----------------------
-    sudo apt-get install libboost1.48-all-dev
-
-Build requirements:
----------------------
-    sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
-
-Libminiupc:
----------------------
-    sudo apt-get install libminiupnpc-dev
-
-
-libzmq3-dev (no okay)
----------------------
-
-    git clone https://github.com/zeromq/libzmq
-    cd libzmq
-    ./autogen.sh
-    ./configure
-    make -j 4
-
-Qt 4:
----------------------
-
-    sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
-
-BerkeleyDB
----------------------
-
-    COIN=~/EvaCoin
-    BDB="${COIN}/db4"
-    mkdir -p $BDB
-    wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
-    echo '12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef  db-4.8.30.NC.tar.gz' | sha256sum -c
-    tar -xzvf db-4.8.30.NC.tar.gz
-    cd db-4.8.30.NC/build_unix/
-    ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB
-    make install
-
-
-Clone From Github:
-----------------
-
-    git clone https://github.com/Gerjan77/EvaCoin
-
-Configure Litecoin Core to use our own-built instance of BDB
----------------------
-    cd $COIN
-    ./autogen.sh
-    ./configure LDFLAGS="-L${BDB}/lib/" CPPFLAGS="-I${BDB}/include/"
-    make
-    make install (optional)
-
-
-To Build EvaCoin without GUI
+To Build
 ---------------------
 
 	cd src/
-	make -f makefile.unix	USE_UPNP=-
+(fail)	make -f makefile.unix		      # Headless notevildime
+(okay)  make -f makefile.unix USE_UPNP=-
 
-See [readme-qt.md](readme-qt.md) for instructions on building EvaCoin, the graphical user interface.
+See [readme-qt.md](readme-qt.md) for instructions on building notEvilDime-Qt, the graphical user interface.
 
 Dependencies
 ---------------------
@@ -109,7 +25,7 @@ Dependencies
 http://miniupnp.tuxfamily.org/files/).  UPnP support is compiled in and
 turned off by default.  Set USE_UPNP to a different value to control this:
 
-	USE_UPNP=-     No UPnP support miniupnp not required
+	USE_UPNP=     No UPnP support miniupnp not required
 	USE_UPNP=0    (the default) UPnP support turned off by default at runtime
 	USE_UPNP=1    UPnP support turned on by default at runtime
 
@@ -123,6 +39,12 @@ Licenses of statically linked libraries:
  Boost         MIT-like license
  miniupnpc     New (3-clause) BSD license
 
+- Versions used in this release:
+-  GCC           4.3.3
+-  OpenSSL       1.0.1c
+-  Berkeley DB   4.8.30.NC
+-  Boost         1.37
+-  miniupnpc     1.6
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
@@ -131,7 +53,11 @@ Build requirements:
 	sudo apt-get install build-essential
 	sudo apt-get install libssl-dev
 
- db4.8 packages are available [here](https://launchpad.net/~EvaCoin/+archive/EvaCoin).
+for Ubuntu 12.04:
+
+	sudo apt-get install libboost-all-dev
+
+ db4.8 packages are available [here](https://launchpad.net/~notevildime/+archive/notevildime).
 
  Ubuntu precise has packages for libdb5.1-dev and libdb5.1++-dev,
  but using these will break binary wallet compatibility, and is not recommended.
@@ -151,21 +77,21 @@ Optional:
 Dependency Build Instructions: Gentoo
 -------------------------------------
 
-Note: If you just want to install EvaCoind on Gentoo, you can add the EvaCoin overlay and use your package manager:
+Note: If you just want to install notevildimed on Gentoo, you can add the notEvilDime overlay and use your package manager:
 
-	layman -a EvaCoin && emerge EvaCoind
+	layman -a notevildime && emerge notevildimed
 	emerge -av1 --noreplace boost glib openssl sys-libs/db:4.8
 
 Take the following steps to build (no UPnP support):
 
 	cd ${BITCOIN_DIR}/src
 	make -f makefile.unix USE_UPNP= USE_IPV6=1 BDB_INCLUDE_PATH='/usr/include/db4.8'
-	strip EvaCoind
+	strip notevildimed
 
 
 Notes
 -----
-The release is built with GCC and then "strip EvaCoind" to strip the debug
+The release is built with GCC and then "strip notevildimed" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -197,7 +123,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your EvaCoin installation more secure by making certain attacks impossible to
+To help make your notevildime installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, you can take the following measures:
 
 * Position Independent Executable
@@ -216,7 +142,7 @@ exploit even if a vulnerability is found, you can take the following measures:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./EvaCoin
+    	scanelf -e ./notevildime
 
     The output should contain:
      TYPE
@@ -224,13 +150,13 @@ exploit even if a vulnerability is found, you can take the following measures:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, EvaCoin should be built with a non-executable stack
+    vulnerable buffers are found. By default, notevildime should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./EvaCoin`
+    `scanelf -e ./notevildime`
 
     the output should contain:
 	STK/REL/PTL

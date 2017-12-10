@@ -1,14 +1,14 @@
-Compiling/running EvaCoind unit tests
+Compiling/running notevildimed unit tests
 ------------------------------------
 
-EvaCoind unit tests are in the `src/test/` directory; they
+notevildimed unit tests are in the `src/test/` directory; they
 use the Boost::Test unit-testing framework.
 
 To compile and run the tests:
 
 	cd src
-	make -f makefile.unix test_EvaCoin  # Replace makefile.unix if you're not on unix
-	./test_EvaCoin   # Runs the unit tests
+	make -f makefile.unix test_notevildime  # Replace makefile.unix if you're not on unix
+	./test_notevildime   # Runs the unit tests
 
 If all tests succeed the last line of output will be:
 `*** No errors detected`
@@ -16,20 +16,20 @@ If all tests succeed the last line of output will be:
 To add more tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections (the makefiles are
-set up to add test/*.cpp to test_EvaCoin automatically).
+set up to add test/*.cpp to test_notevildime automatically).
 
 
-Compiling/running EvaCoin unit tests
+Compiling/running notEvilDime-Qt unit tests
 ---------------------------------------
 
-EvaCoin unit tests are in the src/qt/test/ directory; they
+notEvilDime-Qt unit tests are in the src/qt/test/ directory; they
 use the Qt unit-testing framework.
 
 To compile and run the tests:
 
-	qmake EvaCoin.pro BITCOIN_QT_TEST=1
+	qmake notevildime-qt.pro BITCOIN_QT_TEST=1
 	make
-	./EvaCoin_test
+	./notevildime-qt_test
 
 To add more tests, add them to the `src/qt/test/` directory,
-the `src/qt/test/test_main.cpp` file, and EvaCoin.pro.
+the `src/qt/test/test_main.cpp` file, and notevildime-qt.pro.

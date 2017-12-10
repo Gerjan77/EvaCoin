@@ -8,7 +8,7 @@ namespace Ui {
 }
 class ClientModel;
 
-/** Local EvaCoin RPC console. */
+/** Local notEvilDime RPC console. */
 class RPCConsole: public QDialog
 {
     Q_OBJECT

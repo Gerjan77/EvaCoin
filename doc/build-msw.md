@@ -1,12 +1,13 @@
 WINDOWS BUILD NOTES
 ===================
 
-See [readme-qt.md](readme-qt.md) for instructions on building EvaCoin, the
+See [readme-qt.md](readme-qt.md) for instructions on building notEvilDime-Qt, the
 graphical user interface.
 
 Compilers Supported
 -------------------
-    GCC              4.9 +
+TODO: What works?
+Note: releases are cross-compiled using mingw running on Linux.
 
 
 Dependencies
@@ -18,7 +19,7 @@ Libraries you need to download separately and build:
 	OpenSSL         \openssl-1.0.1c-mgw        http://www.openssl.org/source/
 	Berkeley DB     \db-4.8.30.NC-mgw          http://www.oracle.com/technology/software/products/berkeley-db/index.html
 	Boost           \boost-1.50.0-mgw          http://www.boost.org/users/download/
-	MiniUPnP Client \miniupnpc-1.6-mgw         http://miniupnp.tuxfamily.org/files/
+	miniupnpc       \miniupnpc-1.6-mgw         http://miniupnp.tuxfamily.org/files/
 
 Their licenses:
 
@@ -73,10 +74,10 @@ MSYS shell:
 	mkdir miniupnpc
 	cp *.h miniupnpc/
 
-EvaCoin
+notEvilDime
 -------
 DOS prompt:
 
-	cd \EvaCoin\src
+	cd \notevildime\src
 	mingw32-make -f makefile.mingw
-	strip EvaCoind.exe
+	strip notevildimed.exe

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The EvaCoin developers
+// Copyright (c) 2009-2012 The notEvilDime developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -459,7 +459,7 @@ void CDBEnv::Flush(bool fShutdown)
             else
                 mi++;
         }
-        printf("DBFlush(%s)%s ended %15" PRI64d"ms\n", fShutdown ? "true" : "false", fDbEnvInit ? "" : " db not started", GetTimeMillis() - nStart);
+        printf("DBFlush(%s)%s ended %15"PRI64d"ms\n", fShutdown ? "true" : "false", fDbEnvInit ? "" : " db not started", GetTimeMillis() - nStart);
         if (fShutdown)
         {
             char** listp;

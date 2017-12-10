@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The EvaCoin developers
+// Copyright (c) 2009-2012 The notEvilDime developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -47,12 +47,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("EvaCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("notEvilDime version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  EvaCoind [options]                     " + "\n" +
-                  "  EvaCoind [options] <command> [params]  " + _("Send command to -server or EvaCoind") + "\n" +
-                  "  EvaCoind [options] help                " + _("List commands") + "\n" +
-                  "  EvaCoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  notevildimed [options]                     " + "\n" +
+                  "  notevildimed [options] <command> [params]  " + _("Send command to -server or notevildimed") + "\n" +
+                  "  notevildimed [options] help                " + _("List commands") + "\n" +
+                  "  notevildimed [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -62,7 +62,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "EvaCoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "notevildime:"))
                 fCommandLine = true;
 
         if (fCommandLine)

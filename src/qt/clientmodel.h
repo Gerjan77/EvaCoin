@@ -20,7 +20,7 @@ enum BlockSource {
     BLOCK_SOURCE_NETWORK
 };
 
-/** Model for EvaCoin network client. */
+/** Model for notEvilDime network client. */
 class ClientModel : public QObject
 {
     Q_OBJECT

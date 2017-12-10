@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The EvaCoin developers
+// Copyright (c) 2009-2012 The notEvilDime developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_SERIALIZE_H
@@ -908,18 +908,18 @@ public:
             vch.insert(it, first, last);
     }
 
-    //void insert(iterator it, std::vector<char>::const_iterator first, std::vector<char>::const_iterator last)
-//    {
-//        assert(last - first >= 0);
-//        if (it == vch.begin() + nReadPos && (unsigned int)(last - first) <= nReadPos)
-//        {
+    void insert(iterator it, std::vector<char>::const_iterator first, std::vector<char>::const_iterator last)
+    {
+        assert(last - first >= 0);
+        if (it == vch.begin() + nReadPos && (unsigned int)(last - first) <= nReadPos)
+        {
             // special case for inserting at the front when there's room
-//            nReadPos -= (last - first);
- //           memcpy(&vch[nReadPos], &first[0], last - first);
-//        }
-//        else
-//            vch.insert(it, first, last);
-//    }
+            nReadPos -= (last - first);
+            memcpy(&vch[nReadPos], &first[0], last - first);
+        }
+        else
+            vch.insert(it, first, last);
+    }
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1300
     void insert(iterator it, const char* first, const char* last)

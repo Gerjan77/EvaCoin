@@ -1,4 +1,4 @@
-The following is a list of assets used in the EvaCoin source and their proper attribution.
+The following is a list of assets used in the notevildime source and their proper attribution.
 
 [Wladimir van der Laan](https://github.com/laanwj)
 -----------------------
@@ -45,7 +45,7 @@ md2k7
 
 ### Info
 * Designer: md2k7
-* Site: https://EvaCointalk.org/index.php?topic=15276.0
+* Site: https://notevildimetalk.org/index.php?topic=15276.0
 * License: You are free to do with these icons as you wish, including selling,
  copying, modifying etc.
 * License: MIT
@@ -93,7 +93,7 @@ Jonas Schnelli
 -----------------------
 
 ### Info
-* Designer: Jonas Schnelli (based on the original EvaCoin logo from Bitboy)
+* Designer: Jonas Schnelli (based on the original notevildime logo from Bitboy)
 * License: MIT
 
 ### Assets Used

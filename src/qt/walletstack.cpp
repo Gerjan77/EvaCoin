@@ -2,7 +2,7 @@
  * Qt4 bitcoin GUI.
  *
  * W.J. van der Laan 2011-2012
- * The EvaCoin Developers 2011-2013
+ * The notEvilDime Developers 2011-2013
  */
 #include "walletstack.h"
 #include "walletview.h"
