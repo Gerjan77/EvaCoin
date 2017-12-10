@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'sendcoinsentry.h'
 **
-** Created: Sun Nov 26 05:22:24 2017
+** Created: Sun Dec 10 11:15:26 2017
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!
