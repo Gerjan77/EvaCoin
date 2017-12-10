@@ -166,11 +166,11 @@ public:
         copyAddress->setText(QApplication::translate("AddressBookPage", "&Copy Address", Q_NULLPTR));
         showQRCode->setText(QApplication::translate("AddressBookPage", "Show &QR Code", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        signMessage->setToolTip(QApplication::translate("AddressBookPage", "Sign a message to prove you own a notEvilDime address", Q_NULLPTR));
+        signMessage->setToolTip(QApplication::translate("AddressBookPage", "Sign a message to prove you own a EvaCoin address", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         signMessage->setText(QApplication::translate("AddressBookPage", "Sign &Message", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        verifyMessage->setToolTip(QApplication::translate("AddressBookPage", "Verify a message to ensure it was signed with a specified notEvilDime address", Q_NULLPTR));
+        verifyMessage->setToolTip(QApplication::translate("AddressBookPage", "Verify a message to ensure it was signed with a specified EvaCoin address", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         verifyMessage->setText(QApplication::translate("AddressBookPage", "&Verify Message", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP

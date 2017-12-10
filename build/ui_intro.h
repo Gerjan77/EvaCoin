@@ -182,9 +182,9 @@ public:
     void retranslateUi(QDialog *Intro)
     {
         Intro->setWindowTitle(QApplication::translate("Intro", "Welcome", Q_NULLPTR));
-        label_2->setText(QApplication::translate("Intro", "Welcome to notEvilDime-Qt.", Q_NULLPTR));
-        label_4->setText(QApplication::translate("Intro", "As this is the first time the program is launched, you can choose where notEvilDime-Qt will store its data.", Q_NULLPTR));
-        sizeWarningLabel->setText(QApplication::translate("Intro", "notEvilDime-Qt will download and store a copy of the notEvilDime block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.", Q_NULLPTR));
+        label_2->setText(QApplication::translate("Intro", "Welcome to EvaCoin.", Q_NULLPTR));
+        label_4->setText(QApplication::translate("Intro", "As this is the first time the program is launched, you can choose where EvaCoin will store its data.", Q_NULLPTR));
+        sizeWarningLabel->setText(QApplication::translate("Intro", "EvaCoin will download and store a copy of the EvaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.", Q_NULLPTR));
         dataDirDefault->setText(QApplication::translate("Intro", "Use the default data directory", Q_NULLPTR));
         dataDirCustom->setText(QApplication::translate("Intro", "Use a custom data directory:", Q_NULLPTR));
         freeSpace->setText(QString());

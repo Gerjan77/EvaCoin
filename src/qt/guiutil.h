@@ -16,7 +16,7 @@ class QUrl;
 class QAbstractItemView;
 QT_END_NAMESPACE
 
-/** Utility functions used by the notEvilDime Qt UI.
+/** Utility functions used by the EvaCoin Qt UI.
  */
 namespace GUIUtil
 {
@@ -24,7 +24,7 @@ namespace GUIUtil
     QString dateTimeStr(const QDateTime &datetime);
     QString dateTimeStr(qint64 nTime);
 
-    // Render notEvilDime addresses in monospace font
+    // Render EvaCoin addresses in monospace font
     QFont bitcoinAddressFont();
 
     // Set up widgets for address and amounts
@@ -32,7 +32,7 @@ namespace GUIUtil
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
     // Parse "bitcoin:" URI into recipient object, return true on successful parsing
-    // See notEvilDime URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
+    // See EvaCoin URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
     bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
 
@@ -101,7 +101,7 @@ namespace GUIUtil
     /** Restore window size and position */
     void restoreWindowGeometry(const QString& strSetting, const QSize &defaultSizeIn, QWidget *parent);
 
-    /** Help message for notEvilDime-Qt, shown with --help. */
+    /** Help message for EvaCoin, shown with --help. */
     class HelpMessageBox : public QMessageBox
     {
         Q_OBJECT

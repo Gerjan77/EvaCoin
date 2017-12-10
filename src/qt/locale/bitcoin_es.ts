@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About notEvilDime</source>
-        <translation>Acerca de notEvilDime</translation>
+        <source>About EvaCoin</source>
+        <translation>Acerca de EvaCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;notEvilDime&lt;/b&gt; version</source>
-        <translation>Versión de &lt;b&gt;notEvilDime&lt;/b&gt;</translation>
+        <source>&lt;b&gt;EvaCoin&lt;/b&gt; version</source>
+        <translation>Versión de &lt;b&gt;EvaCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -36,8 +36,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+0"/>
-        <source>The notEvilDime developers</source>
-        <translation>Los programadores notEvilDime</translation>
+        <source>The EvaCoin developers</source>
+        <translation>Los programadores EvaCoin</translation>
     </message>
 </context>
 <context>
@@ -69,8 +69,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your notEvilDime addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estas son sus direcciones notEvilDime para recibir pagos. Puede utilizar una diferente por cada persona emisora para saber quién le está pagando.</translation>
+        <source>These are your EvaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Estas son sus direcciones EvaCoin para recibir pagos. Puede utilizar una diferente por cada persona emisora para saber quién le está pagando.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -84,8 +84,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a notEvilDime address</source>
-        <translation>Firmar un mensaje para demostrar que se posee una dirección notEvilDime</translation>
+        <source>Sign a message to prove you own a EvaCoin address</source>
+        <translation>Firmar un mensaje para demostrar que se posee una dirección EvaCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -109,8 +109,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified notEvilDime address</source>
-        <translation>Verificar un mensaje para comprobar que fue firmado con la dirección notEvilDime indicada</translation>
+        <source>Verify a message to ensure it was signed with a specified EvaCoin address</source>
+        <translation>Verificar un mensaje para comprobar que fue firmado con la dirección EvaCoin indicada</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -124,8 +124,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your notEvilDime addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones notEvilDime para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
+        <source>These are your EvaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones EvaCoin para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -277,8 +277,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-56"/>
-        <source>notEvilDime will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your notevildimes from being stolen by malware infecting your computer.</source>
-        <translation>notEvilDime se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus notevildimes de robo por malware que infecte su sistema.</translation>
+        <source>EvaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EvaCoins from being stolen by malware infecting your computer.</source>
+        <translation>EvaCoin se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus EvaCoins de robo por malware que infecte su sistema.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -323,7 +323,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
 </context>
 <context>
-    <name>notEvilDimeGUI</name>
+    <name>EvaCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+254"/>
         <source>Sign &amp;message...</source>
@@ -376,8 +376,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about notEvilDime</source>
-        <translation>Mostrar información acerca de notEvilDime</translation>
+        <source>Show information about EvaCoin</source>
+        <translation>Mostrar información acerca de EvaCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -421,13 +421,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-319"/>
-        <source>Send coins to a notEvilDime address</source>
-        <translation>Enviar monedas a una dirección notEvilDime</translation>
+        <source>Send coins to a EvaCoin address</source>
+        <translation>Enviar monedas a una dirección EvaCoin</translation>
     </message>
     <message>
         <location line="+52"/>
-        <source>Modify configuration options for notEvilDime</source>
-        <translation>Modificar las opciones de configuración de notEvilDime</translation>
+        <source>Modify configuration options for EvaCoin</source>
+        <translation>Modificar las opciones de configuración de EvaCoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -458,8 +458,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <location line="-183"/>
         <location line="+6"/>
         <location line="+508"/>
-        <source>notEvilDime</source>
-        <translation>notEvilDime</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="-514"/>
@@ -485,8 +485,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+23"/>
         <location line="+2"/>
-        <source>&amp;About notEvilDime</source>
-        <translation>&amp;Acerca de notEvilDime</translation>
+        <source>&amp;About EvaCoin</source>
+        <translation>&amp;Acerca de EvaCoin</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -506,13 +506,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your notEvilDime addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones notEvilDime para demostrar la propiedad</translation>
+        <source>Sign messages with your EvaCoin addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones EvaCoin para demostrar la propiedad</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified notEvilDime addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones notEvilDime concretas</translation>
+        <source>Verify messages to ensure they were signed with specified EvaCoin addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones EvaCoin concretas</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -543,13 +543,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="-5"/>
         <location line="+5"/>
-        <source>notEvilDime client</source>
-        <translation>Cliente notEvilDime</translation>
+        <source>EvaCoin client</source>
+        <translation>Cliente EvaCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+121"/>
-        <source>%n active connection(s) to notEvilDime network</source>
-        <translation><numerusform>%n conexión activa hacia la red notEvilDime</numerusform><numerusform>%n conexiones activas hacia la red notEvilDime</numerusform></translation>
+        <source>%n active connection(s) to EvaCoin network</source>
+        <translation><numerusform>%n conexión activa hacia la red EvaCoin</numerusform><numerusform>%n conexiones activas hacia la red EvaCoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -663,8 +663,8 @@ Dirección: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid notEvilDime address or malformed URI parameters.</source>
-        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección notEvilDime inválida o a parámetros de URI mal formados.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EvaCoin address or malformed URI parameters.</source>
+        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección EvaCoin inválida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -678,8 +678,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. notEvilDime can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error crítico. notEvilDime ya no puede continuar con seguridad y se cerrará.</translation>
+        <source>A fatal error occurred. EvaCoin can no longer continue safely and will quit.</source>
+        <translation>Ha ocurrido un error crítico. EvaCoin ya no puede continuar con seguridad y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -744,8 +744,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid notEvilDime address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección notEvilDime válida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EvaCoin address.</source>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección EvaCoin válida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -791,8 +791,8 @@ Dirección: %4
     <message>
         <location filename="../guiutil.cpp" line="+517"/>
         <location line="+13"/>
-        <source>notEvilDime-Qt</source>
-        <translation>notEvilDime-Qt</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -844,18 +844,18 @@ Dirección: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to notEvilDime-Qt.</source>
-        <translation>Bienvenido a notEvilDime-Qt.</translation>
+        <source>Welcome to EvaCoin.</source>
+        <translation>Bienvenido a EvaCoin.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where notEvilDime-Qt will store its data.</source>
-        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos notEvilDime-Qt.</translation>
+        <source>As this is the first time the program is launched, you can choose where EvaCoin will store its data.</source>
+        <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos EvaCoin.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>notEvilDime-Qt will download and store a copy of the notEvilDime block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>notEvilDime-Qt va a descargar y guardar una copia de la cadena de bloques de notEvilDime. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
+        <source>EvaCoin will download and store a copy of the EvaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>EvaCoin va a descargar y guardar una copia de la cadena de bloques de EvaCoin. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -907,13 +907,13 @@ Dirección: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start notEvilDime after logging in to the system.</source>
-        <translation>Iniciar notEvilDime automáticamente al encender el sistema.</translation>
+        <source>Automatically start EvaCoin after logging in to the system.</source>
+        <translation>Iniciar EvaCoin automáticamente al encender el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start notEvilDime on system login</source>
-        <translation>&amp;Iniciar notEvilDime al iniciar el sistema</translation>
+        <source>&amp;Start EvaCoin on system login</source>
+        <translation>&amp;Iniciar EvaCoin al iniciar el sistema</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -932,8 +932,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the notEvilDime client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente notEvilDime en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the EvaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente EvaCoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -942,8 +942,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the notEvilDime network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conectar a la red notEvilDime a través de un proxy SOCKS (ej. para conectar con la red Tor)</translation>
+        <source>Connect to the EvaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conectar a la red EvaCoin a través de un proxy SOCKS (ej. para conectar con la red Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1017,8 +1017,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting notEvilDime.</source>
-        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie notEvilDime.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EvaCoin.</source>
+        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie EvaCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1032,8 +1032,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show notEvilDime addresses in the transaction list or not.</source>
-        <translation>Mostrar o no las direcciones notEvilDime en la lista de transacciones.</translation>
+        <source>Whether to show EvaCoin addresses in the transaction list or not.</source>
+        <translation>Mostrar o no las direcciones EvaCoin en la lista de transacciones.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1084,8 +1084,8 @@ Dirección: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting notEvilDime.</source>
-        <translation>Esta configuración tendrá efecto tras reiniciar notEvilDime.</translation>
+        <source>This setting will take effect after restarting EvaCoin.</source>
+        <translation>Esta configuración tendrá efecto tras reiniciar EvaCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1103,8 +1103,8 @@ Dirección: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the notEvilDime network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red notEvilDime después de que se haya establecido una conexión , pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EvaCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red EvaCoin después de que se haya establecido una conexión , pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1167,8 +1167,8 @@ Dirección: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+108"/>
-        <source>Cannot start notevildime: click-to-pay handler</source>
-        <translation>No se pudo iniciar notevildime: manejador de pago-al-clic</translation>
+        <source>Cannot start EvaCoin: click-to-pay handler</source>
+        <translation>No se pudo iniciar EvaCoin: manejador de pago-al-clic</translation>
     </message>
 </context>
 <context>
@@ -1176,8 +1176,8 @@ Dirección: %4
     <message>
         <location filename="../bitcoin.cpp" line="+92"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>notEvilDime</source>
-        <translation>notEvilDime</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1336,8 +1336,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the notEvilDime-Qt help message to get a list with possible notEvilDime command-line options.</source>
-        <translation>Mostrar el mensaje de ayuda de notEvilDime-Qt que enumera las opciones disponibles de línea de órdenes para notEvilDime.</translation>
+        <source>Show the EvaCoin help message to get a list with possible EvaCoin command-line options.</source>
+        <translation>Mostrar el mensaje de ayuda de EvaCoin que enumera las opciones disponibles de línea de órdenes para EvaCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1356,13 +1356,13 @@ Dirección: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>notEvilDime - Debug window</source>
-        <translation>notEvilDime - Ventana de depuración</translation>
+        <source>EvaCoin - Debug window</source>
+        <translation>EvaCoin - Ventana de depuración</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>notEvilDime Core</source>
-        <translation>Núcleo de notEvilDime</translation>
+        <source>EvaCoin Core</source>
+        <translation>Núcleo de EvaCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1371,7 +1371,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the notEvilDime debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the EvaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede llevar varios segundos para archivos de registro grandes.</translation>
     </message>
     <message>
@@ -1381,8 +1381,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the notEvilDime RPC console.</source>
-        <translation>Bienvenido a la consola RPC de notEvilDime</translation>
+        <source>Welcome to the EvaCoin RPC console.</source>
+        <translation>Bienvenido a la consola RPC de EvaCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1566,8 +1566,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduzca una dirección notEvilDime (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Introduzca una dirección EvaCoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1631,8 +1631,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this notEvilDime address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección notEvilDime</translation>
+        <source>Sign the message to prove you own this EvaCoin address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección EvaCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1667,8 +1667,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified notEvilDime address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección notEvilDime indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified EvaCoin address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección EvaCoin indicada</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1683,8 +1683,8 @@ Dirección: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduzca una dirección notEvilDime (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Introduzca una dirección EvaCoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1693,8 +1693,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter notEvilDime signature</source>
-        <translation>Introduzca una firma notEvilDime</translation>
+        <source>Enter EvaCoin signature</source>
+        <translation>Introduzca una firma EvaCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1767,8 +1767,8 @@ Dirección: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The notEvilDime developers</source>
-        <translation>Los programadores notEvilDime</translation>
+        <source>The EvaCoin developers</source>
+        <translation>Los programadores EvaCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2305,8 +2305,8 @@ Dirección: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+98"/>
-        <source>notEvilDime version</source>
-        <translation>Versión de notEvilDime</translation>
+        <source>EvaCoin version</source>
+        <translation>Versión de EvaCoin</translation>
     </message>
     <message>
         <location line="+104"/>
@@ -2315,8 +2315,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-30"/>
-        <source>Send command to -server or notevildimed</source>
-        <translation>Envíar comando a -server o notevildimed</translation>
+        <source>Send command to -server or EvaCoind</source>
+        <translation>Envíar comando a -server o EvaCoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2338,14 +2338,14 @@ Dirección: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: notevildime.conf)</source>
-        <translation>Especificar archivo de configuración (predeterminado: notevildime.conf)
+        <source>Specify configuration file (default: EvaCoin.conf)</source>
+        <translation>Especificar archivo de configuración (predeterminado: EvaCoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: notevildimed.pid)</source>
-        <translation>Especificar archivo pid (predeterminado: notevildime.pid)
+        <source>Specify pid file (default: EvaCoind.pid)</source>
+        <translation>Especificar archivo pid (predeterminado: EvaCoin.pid)
 </translation>
     </message>
     <message>
@@ -2426,24 +2426,24 @@ Dirección: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=notevildimerpc
+rpcuser=EvaCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, debe establecer un valor rpcpassword en el archivo de configuración:
 %s
 Se recomienda utilizar la siguiente contraseña aleatoria:
-rpcuser=notevildimerpc
+rpcuser=EvaCoinrpc
 rpcpassword=%s
 (no es necesario recordar esta contraseña)
 El nombre de usuario y la contraseña DEBEN NO ser iguales.
 Si el archivo no existe, créelo con permisos de archivo de solo lectura.
 Se recomienda también establecer alertnotify para recibir notificaciones de problemas.
-Por ejemplo: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
+Por ejemplo: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2458,8 +2458,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. notEvilDime is probably already running.</source>
-        <translation>No se puede bloquear el directorio de datos %s. Probablemente notEvilDime ya se está ejecutando.</translation>
+        <source>Cannot obtain a lock on data directory %s. EvaCoin is probably already running.</source>
+        <translation>No se puede bloquear el directorio de datos %s. Probablemente EvaCoin ya se está ejecutando.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2508,8 +2508,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong notEvilDime will not work properly.</source>
-        <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, notEvilDime no funcionará correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EvaCoin will not work properly.</source>
+        <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, EvaCoin no funcionará correctamente.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2778,8 +2778,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the notEvilDime Wiki for SSL setup instructions)</source>
-        <translation>Opciones SSL: (ver la notEvilDime Wiki para instrucciones de configuración SSL)</translation>
+        <source>SSL options: (see the EvaCoin Wiki for SSL setup instructions)</source>
+        <translation>Opciones SSL: (ver la EvaCoin Wiki para instrucciones de configuración SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2973,13 +2973,13 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of notEvilDime</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de notEvilDime</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EvaCoin</source>
+        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de EvaCoin</translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>Wallet needed to be rewritten: restart notEvilDime to complete</source>
-        <translation>El monedero ha necesitado ser reescrito. Reinicie notEvilDime para completar el proceso</translation>
+        <source>Wallet needed to be rewritten: restart EvaCoin to complete</source>
+        <translation>El monedero ha necesitado ser reescrito. Reinicie EvaCoin para completar el proceso</translation>
     </message>
     <message>
         <location line="-98"/>
@@ -3038,8 +3038,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. notEvilDime is probably already running.</source>
-        <translation>No es posible conectar con %s en este sistema. Probablemente notEvilDime ya está ejecutándose.</translation>
+        <source>Unable to bind to %s on this computer. EvaCoin is probably already running.</source>
+        <translation>No es posible conectar con %s en este sistema. Probablemente EvaCoin ya está ejecutándose.</translation>
     </message>
     <message>
         <location line="+64"/>

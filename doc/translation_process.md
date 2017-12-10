@@ -7,7 +7,7 @@ handle those translations.
 Files and Folders
 -----------------
 
-### notevildime-qt.pro
+### EvaCoin.pro
 
 This file takes care of generating `.qm` files from `.ts` files. It is mostly
 automated.
@@ -69,7 +69,7 @@ Syncing with Transifex
 
 We are using https://transifex.com as a frontend for translating the client.
 
-https://www.transifex.com/projects/p/notevildime/resource/tx/
+https://www.transifex.com/projects/p/EvaCoin/resource/tx/
 
 The "Transifex client" (see: http://help.transifex.com/features/client/)
 will help with fetching new translations from Transifex. Use the following

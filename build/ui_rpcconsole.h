@@ -330,8 +330,8 @@ public:
 
     void retranslateUi(QDialog *RPCConsole)
     {
-        RPCConsole->setWindowTitle(QApplication::translate("RPCConsole", "notEvilDime - Debug window", Q_NULLPTR));
-        label_9->setText(QApplication::translate("RPCConsole", "notEvilDime Core", Q_NULLPTR));
+        RPCConsole->setWindowTitle(QApplication::translate("RPCConsole", "EvaCoin - Debug window", Q_NULLPTR));
+        label_9->setText(QApplication::translate("RPCConsole", "EvaCoin Core", Q_NULLPTR));
         label_5->setText(QApplication::translate("RPCConsole", "Client name", Q_NULLPTR));
         clientName->setText(QApplication::translate("RPCConsole", "N/A", Q_NULLPTR));
         label_6->setText(QApplication::translate("RPCConsole", "Client version", Q_NULLPTR));
@@ -356,12 +356,12 @@ public:
         lastBlockTime->setText(QApplication::translate("RPCConsole", "N/A", Q_NULLPTR));
         labelDebugLogfile->setText(QApplication::translate("RPCConsole", "Debug log file", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        openDebugLogfileButton->setToolTip(QApplication::translate("RPCConsole", "Open the notEvilDime debug log file from the current data directory. This can take a few seconds for large log files.", Q_NULLPTR));
+        openDebugLogfileButton->setToolTip(QApplication::translate("RPCConsole", "Open the EvaCoin debug log file from the current data directory. This can take a few seconds for large log files.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         openDebugLogfileButton->setText(QApplication::translate("RPCConsole", "&Open", Q_NULLPTR));
         labelCLOptions->setText(QApplication::translate("RPCConsole", "Command-line options", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        showCLOptionsButton->setToolTip(QApplication::translate("RPCConsole", "Show the notEvilDime-Qt help message to get a list with possible notEvilDime command-line options.", Q_NULLPTR));
+        showCLOptionsButton->setToolTip(QApplication::translate("RPCConsole", "Show the EvaCoin help message to get a list with possible EvaCoin command-line options.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         showCLOptionsButton->setText(QApplication::translate("RPCConsole", "&Show", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_info), QApplication::translate("RPCConsole", "&Information", Q_NULLPTR));

@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About notEvilDime</source>
-        <translation>Om notEvilDime</translation>
+        <source>About EvaCoin</source>
+        <translation>Om EvaCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;notEvilDime&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;notEvilDime&lt;/b&gt;-version</translation>
+        <source>&lt;b&gt;EvaCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;EvaCoin&lt;/b&gt;-version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+0"/>
-        <source>The notEvilDime developers</source>
-        <translation>notEvilDime-utvecklarna</translation>
+        <source>The EvaCoin developers</source>
+        <translation>EvaCoin-utvecklarna</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your notEvilDime addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Detta är dina notEvilDime-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
+        <source>These are your EvaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Detta är dina EvaCoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,7 +82,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a notEvilDime address</source>
+        <source>Sign a message to prove you own a EvaCoin address</source>
         <translation>Signera ett meddelande för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -107,8 +107,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified notEvilDime address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade notEvilDime-adressen</translation>
+        <source>Verify a message to ensure it was signed with a specified EvaCoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade EvaCoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your notEvilDime addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina notEvilDime adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar notEvilDimes.</translation>
+        <source>These are your EvaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Detta är dina EvaCoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar EvaCoins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -138,7 +138,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation>Skicka &amp;notEvilDimes</translation>
+        <translation>Skicka &amp;EvaCoins</translation>
     </message>
     <message>
         <location line="+265"/>
@@ -275,7 +275,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-56"/>
-        <source>notEvilDime will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your notevildimes from being stolen by malware infecting your computer.</source>
+        <source>EvaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EvaCoins from being stolen by malware infecting your computer.</source>
         <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -321,7 +321,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
 </context>
 <context>
-    <name>notEvilDimeGUI</name>
+    <name>EvaCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+254"/>
         <source>Sign &amp;message...</source>
@@ -374,8 +374,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about notEvilDime</source>
-        <translation>Visa information om notEvilDime</translation>
+        <source>Show information about EvaCoin</source>
+        <translation>Visa information om EvaCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-319"/>
-        <source>Send coins to a notEvilDime address</source>
-        <translation>Skicka mynt till en notEvilDime-adress</translation>
+        <source>Send coins to a EvaCoin address</source>
+        <translation>Skicka mynt till en EvaCoin-adress</translation>
     </message>
     <message>
         <location line="+52"/>
-        <source>Modify configuration options for notEvilDime</source>
-        <translation>Ändra konfigurationsalternativ för notEvilDime</translation>
+        <source>Modify configuration options for EvaCoin</source>
+        <translation>Ändra konfigurationsalternativ för EvaCoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -456,8 +456,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <location line="-183"/>
         <location line="+6"/>
         <location line="+508"/>
-        <source>notEvilDime</source>
-        <translation>notEvilDime</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="-514"/>
@@ -483,8 +483,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="+23"/>
         <location line="+2"/>
-        <source>&amp;About notEvilDime</source>
-        <translation>&amp;Om notEvilDime</translation>
+        <source>&amp;About EvaCoin</source>
+        <translation>&amp;Om EvaCoin</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -504,13 +504,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your notEvilDime addresses to prove you own them</source>
-        <translation>Signera meddelanden med din notEvilDimeadress för att bevisa att du äger dem</translation>
+        <source>Sign messages with your EvaCoin addresses to prove you own them</source>
+        <translation>Signera meddelanden med din EvaCoinadress för att bevisa att du äger dem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified notEvilDime addresses</source>
-        <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade notEvilDime-adressen</translation>
+        <source>Verify messages to ensure they were signed with specified EvaCoin addresses</source>
+        <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade EvaCoin-adressen</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -541,13 +541,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="-5"/>
         <location line="+5"/>
-        <source>notEvilDime client</source>
-        <translation>notEvilDime-klient</translation>
+        <source>EvaCoin client</source>
+        <translation>EvaCoin-klient</translation>
     </message>
     <message numerus="yes">
         <location line="+121"/>
-        <source>%n active connection(s) to notEvilDime network</source>
-        <translation><numerusform>%n aktiv anslutning till notEvilDime-nätverket</numerusform><numerusform>%n aktiva anslutningar till notEvilDime-nätverket</numerusform></translation>
+        <source>%n active connection(s) to EvaCoin network</source>
+        <translation><numerusform>%n aktiv anslutning till EvaCoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till EvaCoin-nätverket</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -661,8 +661,8 @@ Adress: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid notEvilDime address or malformed URI parameters.</source>
-        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig notEvilDime-adress eller felaktiga URI parametrar.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EvaCoin address or malformed URI parameters.</source>
+        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig EvaCoin-adress eller felaktiga URI parametrar.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -676,8 +676,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. notEvilDime can no longer continue safely and will quit.</source>
-        <translation>Ett allvarligt fel har uppstått. notEvilDime kan inte längre köras säkert och kommer att avslutas.</translation>
+        <source>A fatal error occurred. EvaCoin can no longer continue safely and will quit.</source>
+        <translation>Ett allvarligt fel har uppstått. EvaCoin kan inte längre köras säkert och kommer att avslutas.</translation>
     </message>
 </context>
 <context>
@@ -742,8 +742,8 @@ Adress: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid notEvilDime address.</source>
-        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig notEvilDime-adress.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EvaCoin address.</source>
+        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig EvaCoin-adress.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -789,8 +789,8 @@ Adress: %4
     <message>
         <location filename="../guiutil.cpp" line="+517"/>
         <location line="+13"/>
-        <source>notEvilDime-Qt</source>
-        <translation>notEvilDime-Qt</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -842,18 +842,18 @@ Adress: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to notEvilDime-Qt.</source>
-        <translation>Välkommen till notEvilDime-Qt.</translation>
+        <source>Welcome to EvaCoin.</source>
+        <translation>Välkommen till EvaCoin.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where notEvilDime-Qt will store its data.</source>
-        <translation>Eftersom detta är första gången programmet startas, kan du välja var notEvilDime-Qt ska lagra sina data.</translation>
+        <source>As this is the first time the program is launched, you can choose where EvaCoin will store its data.</source>
+        <translation>Eftersom detta är första gången programmet startas, kan du välja var EvaCoin ska lagra sina data.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>notEvilDime-Qt will download and store a copy of the notEvilDime block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>notEvilDime-QT kommer att ladda ner och spara en kopia av notEvilDime blockkedjan. Åtminstone %1GB av data kommer att sparas i denna katalog, och den kommer att växa övertiden. Plånboken kommer också att sparas i denna katalog.</translation>
+        <source>EvaCoin will download and store a copy of the EvaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>EvaCoin kommer att ladda ner och spara en kopia av EvaCoin blockkedjan. Åtminstone %1GB av data kommer att sparas i denna katalog, och den kommer att växa övertiden. Plånboken kommer också att sparas i denna katalog.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -905,13 +905,13 @@ Adress: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start notEvilDime after logging in to the system.</source>
-        <translation>Starta notEvilDime automatiskt efter inloggning.</translation>
+        <source>Automatically start EvaCoin after logging in to the system.</source>
+        <translation>Starta EvaCoin automatiskt efter inloggning.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start notEvilDime on system login</source>
-        <translation>&amp;Starta notEvilDime vid systemstart</translation>
+        <source>&amp;Start EvaCoin on system login</source>
+        <translation>&amp;Starta EvaCoin vid systemstart</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -930,8 +930,8 @@ Adress: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the notEvilDime client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt notEvilDime-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
+        <source>Automatically open the EvaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt EvaCoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -940,8 +940,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the notEvilDime network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Anslut till notEvilDime-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
+        <source>Connect to the EvaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Anslut till EvaCoin-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1015,8 +1015,8 @@ Adress: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting notEvilDime.</source>
-        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av notEvilDime.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EvaCoin.</source>
+        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av EvaCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1030,8 +1030,8 @@ Adress: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show notEvilDime addresses in the transaction list or not.</source>
-        <translation>Anger om notEvilDime-adresser skall visas i transaktionslistan.</translation>
+        <source>Whether to show EvaCoin addresses in the transaction list or not.</source>
+        <translation>Anger om EvaCoin-adresser skall visas i transaktionslistan.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1082,8 +1082,8 @@ Adress: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting notEvilDime.</source>
-        <translation>Denna inställning träder i kraft efter en omstart av notEvilDime.</translation>
+        <source>This setting will take effect after restarting EvaCoin.</source>
+        <translation>Denna inställning träder i kraft efter en omstart av EvaCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1101,8 +1101,8 @@ Adress: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the notEvilDime network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med notEvilDime-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EvaCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med EvaCoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1165,8 +1165,8 @@ Adress: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+108"/>
-        <source>Cannot start notevildime: click-to-pay handler</source>
-        <translation>Kan inte starta notevildime: klicka-och-betala handhavare</translation>
+        <source>Cannot start EvaCoin: click-to-pay handler</source>
+        <translation>Kan inte starta EvaCoin: klicka-och-betala handhavare</translation>
     </message>
 </context>
 <context>
@@ -1174,8 +1174,8 @@ Adress: %4
     <message>
         <location filename="../bitcoin.cpp" line="+92"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>notEvilDime</source>
-        <translation>notEvilDime</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1334,8 +1334,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the notEvilDime-Qt help message to get a list with possible notEvilDime command-line options.</source>
-        <translation>Visa notEvilDime-Qt hjälpmeddelande för att få en lista med möjliga notEvilDime kommandoradsalternativ.</translation>
+        <source>Show the EvaCoin help message to get a list with possible EvaCoin command-line options.</source>
+        <translation>Visa EvaCoin hjälpmeddelande för att få en lista med möjliga EvaCoin kommandoradsalternativ.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1354,13 +1354,13 @@ Adress: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>notEvilDime - Debug window</source>
-        <translation>notEvilDime - Debug fönster</translation>
+        <source>EvaCoin - Debug window</source>
+        <translation>EvaCoin - Debug fönster</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>notEvilDime Core</source>
-        <translation>notEvilDime Kärna</translation>
+        <source>EvaCoin Core</source>
+        <translation>EvaCoin Kärna</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1369,8 +1369,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the notEvilDime debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna notEvilDime debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
+        <source>Open the EvaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna EvaCoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1379,8 +1379,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the notEvilDime RPC console.</source>
-        <translation>Välkommen till notEvilDime RPC-konsollen.</translation>
+        <source>Welcome to the EvaCoin RPC console.</source>
+        <translation>Välkommen till EvaCoin RPC-konsollen.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1564,8 +1564,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ange en notEvilDime-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Ange en EvaCoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1629,7 +1629,7 @@ Adress: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this notEvilDime address</source>
+        <source>Sign the message to prove you own this EvaCoin address</source>
         <translation>Signera meddelandet för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -1665,8 +1665,8 @@ Adress: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified notEvilDime address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna notEvilDime-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified EvaCoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna EvaCoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1681,8 +1681,8 @@ Adress: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ange en notEvilDime-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Ange en EvaCoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1691,8 +1691,8 @@ Adress: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter notEvilDime signature</source>
-        <translation>Ange notEvilDime-signatur</translation>
+        <source>Enter EvaCoin signature</source>
+        <translation>Ange EvaCoin-signatur</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1765,8 +1765,8 @@ Adress: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The notEvilDime developers</source>
-        <translation>notEvilDime-utvecklarna</translation>
+        <source>The EvaCoin developers</source>
+        <translation>EvaCoin-utvecklarna</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2303,8 +2303,8 @@ Adress: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+98"/>
-        <source>notEvilDime version</source>
-        <translation>notEvilDime version</translation>
+        <source>EvaCoin version</source>
+        <translation>EvaCoin version</translation>
     </message>
     <message>
         <location line="+104"/>
@@ -2313,8 +2313,8 @@ Adress: %4
     </message>
     <message>
         <location line="-30"/>
-        <source>Send command to -server or notevildimed</source>
-        <translation>Skicka kommando till -server eller notevildimed</translation>
+        <source>Send command to -server or EvaCoind</source>
+        <translation>Skicka kommando till -server eller EvaCoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2333,13 +2333,13 @@ Adress: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: notevildime.conf)</source>
-        <translation>Ange konfigurationsfil (förvalt: notevildime.conf)</translation>
+        <source>Specify configuration file (default: EvaCoin.conf)</source>
+        <translation>Ange konfigurationsfil (förvalt: EvaCoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: notevildimed.pid)</source>
-        <translation>Ange pid fil (förvalt: notevildimed.pid)</translation>
+        <source>Specify pid file (default: EvaCoind.pid)</source>
+        <translation>Ange pid fil (förvalt: EvaCoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2416,24 +2416,24 @@ Adress: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=notevildimerpc
+rpcuser=EvaCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, du behöver sätta ett rpclösensord i konfigurationsfilen:
 %s
 Det är rekommenderat att använda följande slumpade lösenord:
-rpcuser=notevildimerpc
+rpcuser=EvaCoinrpc
 rpcpassword=%s
 (du behöver inte komma ihåg lösenordet)
 Användarnamnet och lösenordet FÅR INTE bara detsamma.
 Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.
 Det är också rekommenderat att sätta alertnotify så du meddelas om problem;
-till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
+till exempel: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2448,8 +2448,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. notEvilDime is probably already running.</source>
-        <translation>Kan inte låsa data-mappen %s. notEvilDime körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. EvaCoin is probably already running.</source>
+        <translation>Kan inte låsa data-mappen %s. EvaCoin körs förmodligen redan.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2464,7 +2464,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna notevildimes!</translation>
+        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna EvaCoins!</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2498,8 +2498,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong notEvilDime will not work properly.</source>
-        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer notEvilDime inte fungera korrekt.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EvaCoin will not work properly.</source>
+        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer EvaCoin inte fungera korrekt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2768,8 +2768,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the notEvilDime Wiki for SSL setup instructions)</source>
-        <translation>SSL-inställningar: (se notEvilDime-wikin för SSL-setup instruktioner)</translation>
+        <source>SSL options: (see the EvaCoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-inställningar: (se EvaCoin-wikin för SSL-setup instruktioner)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2953,13 +2953,13 @@ till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of notEvilDime</source>
-        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av notEvilDime</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EvaCoin</source>
+        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av EvaCoin</translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>Wallet needed to be rewritten: restart notEvilDime to complete</source>
-        <translation>Plånboken behöver skrivas om: Starta om notEvilDime för att färdigställa</translation>
+        <source>Wallet needed to be rewritten: restart EvaCoin to complete</source>
+        <translation>Plånboken behöver skrivas om: Starta om EvaCoin för att färdigställa</translation>
     </message>
     <message>
         <location line="-98"/>
@@ -3004,7 +3004,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin
     <message>
         <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med notevildimes</translation>
+        <translation>Otillräckligt med EvaCoins</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -3018,8 +3018,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. notEvilDime is probably already running.</source>
-        <translation>Det går inte att binda till %s på den här datorn. notEvilDime är förmodligen redan igång.</translation>
+        <source>Unable to bind to %s on this computer. EvaCoin is probably already running.</source>
+        <translation>Det går inte att binda till %s på den här datorn. EvaCoin är förmodligen redan igång.</translation>
     </message>
     <message>
         <location line="+64"/>

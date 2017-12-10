@@ -345,20 +345,20 @@ public:
         transactionFeeInfoLabel->setText(QApplication::translate("OptionsDialog", "Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.", Q_NULLPTR));
         transactionFeeLabel->setText(QApplication::translate("OptionsDialog", "Pay transaction &fee", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start notEvilDime after logging in to the system.", Q_NULLPTR));
+        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start EvaCoin after logging in to the system.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start notEvilDime on system login", Q_NULLPTR));
+        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start EvaCoin on system login", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         resetButton->setToolTip(QApplication::translate("OptionsDialog", "Reset all client options to default.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         resetButton->setText(QApplication::translate("OptionsDialog", "&Reset Options", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tabMain), QApplication::translate("OptionsDialog", "&Main", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the notEvilDime client port on the router. This only works when your router supports UPnP and it is enabled.", Q_NULLPTR));
+        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the EvaCoin client port on the router. This only works when your router supports UPnP and it is enabled.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         mapPortUpnp->setText(QApplication::translate("OptionsDialog", "Map port using &UPnP", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the notEvilDime network through a SOCKS proxy (e.g. when connecting through Tor).", Q_NULLPTR));
+        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the EvaCoin network through a SOCKS proxy (e.g. when connecting through Tor).", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         connectSocks->setText(QApplication::translate("OptionsDialog", "&Connect through SOCKS proxy:", Q_NULLPTR));
         proxyIpLabel->setText(QApplication::translate("OptionsDialog", "Proxy &IP:", Q_NULLPTR));
@@ -385,14 +385,14 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tabWindow), QApplication::translate("OptionsDialog", "&Window", Q_NULLPTR));
         langLabel->setText(QApplication::translate("OptionsDialog", "User Interface &language:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting notEvilDime.", Q_NULLPTR));
+        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting EvaCoin.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         unitLabel->setText(QApplication::translate("OptionsDialog", "&Unit to show amounts in:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         unit->setToolTip(QApplication::translate("OptionsDialog", "Choose the default subdivision unit to show in the interface and when sending coins.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        displayAddresses->setToolTip(QApplication::translate("OptionsDialog", "Whether to show notEvilDime addresses in the transaction list or not.", Q_NULLPTR));
+        displayAddresses->setToolTip(QApplication::translate("OptionsDialog", "Whether to show EvaCoin addresses in the transaction list or not.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         displayAddresses->setText(QApplication::translate("OptionsDialog", "&Display addresses in transaction list", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tabDisplay), QApplication::translate("OptionsDialog", "&Display", Q_NULLPTR));

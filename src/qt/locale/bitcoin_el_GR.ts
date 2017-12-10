@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About notEvilDime</source>
-        <translation>Σχετικά με το notEvilDime</translation>
+        <source>About EvaCoin</source>
+        <translation>Σχετικά με το EvaCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;notEvilDime&lt;/b&gt; version</source>
-        <translation>Έκδοση &lt;b&gt;notEvilDime&lt;/b&gt;</translation>
+        <source>&lt;b&gt;EvaCoin&lt;/b&gt; version</source>
+        <translation>Έκδοση &lt;b&gt;EvaCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The notEvilDime developers</source>
-        <translation>Οι notEvilDime προγραμματιστές </translation>
+        <source>The EvaCoin developers</source>
+        <translation>Οι EvaCoin προγραμματιστές </translation>
     </message>
 </context>
 <context>
@@ -66,8 +66,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your notEvilDime addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Αυτές είναι οι notEvilDime διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
+        <source>These are your EvaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Αυτές είναι οι EvaCoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -81,8 +81,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a notEvilDime address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση notEvilDime</translation>
+        <source>Sign a message to prove you own a EvaCoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση EvaCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -106,8 +106,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified notEvilDime address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση notEvilDime</translation>
+        <source>Verify a message to ensure it was signed with a specified EvaCoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση EvaCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -121,8 +121,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your notEvilDime addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Αυτές είναι οι notEvilDime διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
+        <source>These are your EvaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Αυτές είναι οι EvaCoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -275,8 +275,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>notEvilDime will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your notevildimes from being stolen by malware infecting your computer.</source>
-        <translation>Το notEvilDime θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα notevildimes σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικο.</translation>
+        <source>EvaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EvaCoins from being stolen by malware infecting your computer.</source>
+        <translation>Το EvaCoin θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα EvaCoins σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικο.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -321,7 +321,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>notEvilDimeGUI</name>
+    <name>EvaCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+254"/>
         <source>Sign &amp;message...</source>
@@ -374,8 +374,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about notEvilDime</source>
-        <translation>Εμφάνισε πληροφορίες σχετικά με το notEvilDime</translation>
+        <source>Show information about EvaCoin</source>
+        <translation>Εμφάνισε πληροφορίες σχετικά με το EvaCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-319"/>
-        <source>Send coins to a notEvilDime address</source>
-        <translation>Στείλε νομισματα σε μια διεύθυνση notevildime</translation>
+        <source>Send coins to a EvaCoin address</source>
+        <translation>Στείλε νομισματα σε μια διεύθυνση EvaCoin</translation>
     </message>
     <message>
         <location line="+52"/>
-        <source>Modify configuration options for notEvilDime</source>
-        <translation>Επεργασία  ρυθμισεων επιλογών για το notEvilDime</translation>
+        <source>Modify configuration options for EvaCoin</source>
+        <translation>Επεργασία  ρυθμισεων επιλογών για το EvaCoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -456,8 +456,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="-183"/>
         <location line="+6"/>
         <location line="+508"/>
-        <source>notEvilDime</source>
-        <translation>notEvilDime</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="-514"/>
@@ -483,8 +483,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+23"/>
         <location line="+2"/>
-        <source>&amp;About notEvilDime</source>
-        <translation>&amp;Σχετικα:notEvilDime</translation>
+        <source>&amp;About EvaCoin</source>
+        <translation>&amp;Σχετικα:EvaCoin</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -504,13 +504,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your notEvilDime addresses to prove you own them</source>
+        <source>Sign messages with your EvaCoin addresses to prove you own them</source>
         <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified notEvilDime addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση notEvilDime</translation>
+        <source>Verify messages to ensure they were signed with specified EvaCoin addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση EvaCoin</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -541,13 +541,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-5"/>
         <location line="+5"/>
-        <source>notEvilDime client</source>
-        <translation>Πελάτης notEvilDime</translation>
+        <source>EvaCoin client</source>
+        <translation>Πελάτης EvaCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+121"/>
-        <source>%n active connection(s) to notEvilDime network</source>
-        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο notEvilDime</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
+        <source>%n active connection(s) to EvaCoin network</source>
+        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο EvaCoin</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -663,8 +663,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid notEvilDime address or malformed URI parameters.</source>
-        <translation>Το URI δεν μπορεί να αναλυθεί! Αυτό μπορεί να προκληθεί από μια μη έγκυρη διεύθυνση notEvilDime ή ακατάλληλη παραμέτρο URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EvaCoin address or malformed URI parameters.</source>
+        <translation>Το URI δεν μπορεί να αναλυθεί! Αυτό μπορεί να προκληθεί από μια μη έγκυρη διεύθυνση EvaCoin ή ακατάλληλη παραμέτρο URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -678,8 +678,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. notEvilDime can no longer continue safely and will quit.</source>
-        <translation>Παρουσιάστηκε ανεπανόρθωτο σφάλμα. Το notEvilDime δεν μπορεί πλέον να συνεχίσει με ασφάλεια και θα τερματισθει.</translation>
+        <source>A fatal error occurred. EvaCoin can no longer continue safely and will quit.</source>
+        <translation>Παρουσιάστηκε ανεπανόρθωτο σφάλμα. Το EvaCoin δεν μπορεί πλέον να συνεχίσει με ασφάλεια και θα τερματισθει.</translation>
     </message>
 </context>
 <context>
@@ -744,8 +744,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid notEvilDime address.</source>
-        <translation>Η διεύθυνση &quot;%1&quot; δεν είναι έγκυρη notEvilDime διεύθυνση.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EvaCoin address.</source>
+        <translation>Η διεύθυνση &quot;%1&quot; δεν είναι έγκυρη EvaCoin διεύθυνση.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -791,8 +791,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+517"/>
         <location line="+13"/>
-        <source>notEvilDime-Qt</source>
-        <translation>notevildime-qt</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -844,17 +844,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to notEvilDime-Qt.</source>
+        <source>Welcome to EvaCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where notEvilDime-Qt will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where EvaCoin will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>notEvilDime-Qt will download and store a copy of the notEvilDime block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>EvaCoin will download and store a copy of the EvaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -907,12 +907,12 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start notEvilDime after logging in to the system.</source>
-        <translation>Αυτόματη εκκίνηση του notEvilDime μετά την εισαγωγή στο σύστημα</translation>
+        <source>Automatically start EvaCoin after logging in to the system.</source>
+        <translation>Αυτόματη εκκίνηση του EvaCoin μετά την εισαγωγή στο σύστημα</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start notEvilDime on system login</source>
+        <source>&amp;Start EvaCoin on system login</source>
         <translation>&amp;Έναρξη του Βιtcoin κατά την εκκίνηση του συστήματος</translation>
     </message>
     <message>
@@ -932,8 +932,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the notEvilDime client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών notEvilDime στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the EvaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών EvaCoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -942,8 +942,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the notEvilDime network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Σύνδεση στο notEvilDime δίκτυο μέσω διαμεσολαβητή SOCKS4 (π.χ. για σύνδεση μέσω Tor)</translation>
+        <source>Connect to the EvaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Σύνδεση στο EvaCoin δίκτυο μέσω διαμεσολαβητή SOCKS4 (π.χ. για σύνδεση μέσω Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1017,8 +1017,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting notEvilDime.</source>
-        <translation>Εδώ μπορεί να ρυθμιστεί η γλώσσα διεπαφής χρήστη. Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του notEvilDime.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EvaCoin.</source>
+        <translation>Εδώ μπορεί να ρυθμιστεί η γλώσσα διεπαφής χρήστη. Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του EvaCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1032,8 +1032,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show notEvilDime addresses in the transaction list or not.</source>
-        <translation>Επιλέξτε αν θέλετε να εμφανίζονται οι διευθύνσεις notEvilDime στη λίστα συναλλαγών.</translation>
+        <source>Whether to show EvaCoin addresses in the transaction list or not.</source>
+        <translation>Επιλέξτε αν θέλετε να εμφανίζονται οι διευθύνσεις EvaCoin στη λίστα συναλλαγών.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1084,8 +1084,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting notEvilDime.</source>
-        <translation>Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του notEvilDime.</translation>
+        <source>This setting will take effect after restarting EvaCoin.</source>
+        <translation>Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του EvaCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1103,8 +1103,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the notEvilDime network after a connection is established, but this process has not completed yet.</source>
-        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο notEvilDime μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EvaCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο EvaCoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1167,8 +1167,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+108"/>
-        <source>Cannot start notevildime: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του notEvilDime: click-to-pay handler</translation>
+        <source>Cannot start EvaCoin: click-to-pay handler</source>
+        <translation>Δεν είναι δυνατή η εκκίνηση του EvaCoin: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1176,8 +1176,8 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+92"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>notEvilDime</source>
-        <translation>notEvilDime</translation>
+        <source>EvaCoin</source>
+        <translation>EvaCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1336,8 +1336,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the notEvilDime-Qt help message to get a list with possible notEvilDime command-line options.</source>
-        <translation>Εμφανιση του notEvilDime-Qt μήνυματος βοήθειας για να πάρετε μια λίστα με τις πιθανές επιλογές notEvilDime γραμμής εντολών.</translation>
+        <source>Show the EvaCoin help message to get a list with possible EvaCoin command-line options.</source>
+        <translation>Εμφανιση του EvaCoin μήνυματος βοήθειας για να πάρετε μια λίστα με τις πιθανές επιλογές EvaCoin γραμμής εντολών.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1356,13 +1356,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>notEvilDime - Debug window</source>
-        <translation>notEvilDime - Παράθυρο αποσφαλμάτωσης</translation>
+        <source>EvaCoin - Debug window</source>
+        <translation>EvaCoin - Παράθυρο αποσφαλμάτωσης</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>notEvilDime Core</source>
-        <translation>notEvilDime Core</translation>
+        <source>EvaCoin Core</source>
+        <translation>EvaCoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1371,7 +1371,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the notEvilDime debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the EvaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ανοίξτε το αρχείο καταγραφής εντοπισμού σφαλμάτων από τον τρέχοντα κατάλογο δεδομένων. Αυτό μπορεί να πάρει μερικά δευτερόλεπτα για τα μεγάλα αρχεία καταγραφής. </translation>
     </message>
     <message>
@@ -1381,8 +1381,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the notEvilDime RPC console.</source>
-        <translation>Καλώς ήρθατε στην notEvilDime RPC κονσόλα.</translation>
+        <source>Welcome to the EvaCoin RPC console.</source>
+        <translation>Καλώς ήρθατε στην EvaCoin RPC κονσόλα.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1566,8 +1566,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση notEvilDime (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Εισάγετε μια διεύθυνση EvaCoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1590,7 +1590,7 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση notEvilDime (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Εισάγετε μια διεύθυνση EvaCoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1631,8 +1631,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this notEvilDime address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση notEvilDime</translation>
+        <source>Sign the message to prove you own this EvaCoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση EvaCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1663,12 +1663,12 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση notEvilDime (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Εισάγετε μια διεύθυνση EvaCoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified notEvilDime address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση notEvilDime</translation>
+        <source>Verify the message to ensure it was signed with the specified EvaCoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση EvaCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1683,8 +1683,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a notEvilDime address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση notEvilDime (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a EvaCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Εισάγετε μια διεύθυνση EvaCoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1693,8 +1693,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter notEvilDime signature</source>
-        <translation>Εισαγωγή υπογραφής notEvilDime</translation>
+        <source>Enter EvaCoin signature</source>
+        <translation>Εισαγωγή υπογραφής EvaCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1767,8 +1767,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The notEvilDime developers</source>
-        <translation>Οι notEvilDime προγραμματιστές </translation>
+        <source>The EvaCoin developers</source>
+        <translation>Οι EvaCoin προγραμματιστές </translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2305,8 +2305,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+98"/>
-        <source>notEvilDime version</source>
-        <translation>Έκδοση notEvilDime</translation>
+        <source>EvaCoin version</source>
+        <translation>Έκδοση EvaCoin</translation>
     </message>
     <message>
         <location line="+104"/>
@@ -2315,8 +2315,8 @@ Address: %4
     </message>
     <message>
         <location line="-30"/>
-        <source>Send command to -server or notevildimed</source>
-        <translation>Αποστολή εντολής στον εξυπηρετητή ή στο notevildimed</translation>
+        <source>Send command to -server or EvaCoind</source>
+        <translation>Αποστολή εντολής στον εξυπηρετητή ή στο EvaCoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2335,13 +2335,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: notevildime.conf)</source>
-        <translation>Ορίστε αρχείο ρυθμίσεων (προεπιλογή: notevildime.conf)</translation>
+        <source>Specify configuration file (default: EvaCoin.conf)</source>
+        <translation>Ορίστε αρχείο ρυθμίσεων (προεπιλογή: EvaCoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: notevildimed.pid)</source>
-        <translation>Ορίστε αρχείο pid (προεπιλογή: notevildimed.pid)</translation>
+        <source>Specify pid file (default: EvaCoind.pid)</source>
+        <translation>Ορίστε αρχείο pid (προεπιλογή: EvaCoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2418,24 +2418,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=notevildimerpc
+rpcuser=EvaCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=notevildimerpc
+rpcuser=EvaCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EvaCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2450,8 +2450,8 @@ for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. notEvilDime is probably already running.</source>
-        <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το notEvilDime να είναι ήδη ενεργό.</translation>
+        <source>Cannot obtain a lock on data directory %s. EvaCoin is probably already running.</source>
+        <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το EvaCoin να είναι ήδη ενεργό.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2501,8 +2501,8 @@ for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong notEvilDime will not work properly.</source>
-        <translation>Προειδοποίηση: Παρακαλώ βεβαιωθείτε πως η ημερομηνία κι ώρα του συστήματός σας είναι σωστές. Αν το ρολόι του υπολογιστή σας πάει λάθος, ενδέχεται να μη λειτουργεί σωστά το notEvilDime.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EvaCoin will not work properly.</source>
+        <translation>Προειδοποίηση: Παρακαλώ βεβαιωθείτε πως η ημερομηνία κι ώρα του συστήματός σας είναι σωστές. Αν το ρολόι του υπολογιστή σας πάει λάθος, ενδέχεται να μη λειτουργεί σωστά το EvaCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2771,8 +2771,8 @@ for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the notEvilDime Wiki for SSL setup instructions)</source>
-        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο notEvilDime Wiki για οδηγίες ρυθμίσεων SSL)</translation>
+        <source>SSL options: (see the EvaCoin Wiki for SSL setup instructions)</source>
+        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο EvaCoin Wiki για οδηγίες ρυθμίσεων SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2956,13 +2956,13 @@ for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of notEvilDime</source>
-        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του notEvilDime</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EvaCoin</source>
+        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του EvaCoin</translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>Wallet needed to be rewritten: restart notEvilDime to complete</source>
-        <translation>Απαιτείται η επανεγγραφή του Πορτοφολιού, η οποία θα ολοκληρωθεί στην επανεκκίνηση του notEvilDime</translation>
+        <source>Wallet needed to be rewritten: restart EvaCoin to complete</source>
+        <translation>Απαιτείται η επανεγγραφή του Πορτοφολιού, η οποία θα ολοκληρωθεί στην επανεκκίνηση του EvaCoin</translation>
     </message>
     <message>
         <location line="-98"/>
@@ -3021,8 +3021,8 @@ for example: alertnotify=echo %%s | mail -s &quot;notEvilDime Alert&quot; admin@
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. notEvilDime is probably already running.</source>
-        <translation>Αδύνατη η σύνδεση με τη θύρα %s αυτού του υπολογιστή. Το notEvilDime είναι πιθανώς ήδη ενεργό.</translation>
+        <source>Unable to bind to %s on this computer. EvaCoin is probably already running.</source>
+        <translation>Αδύνατη η σύνδεση με τη θύρα %s αυτού του υπολογιστή. Το EvaCoin είναι πιθανώς ήδη ενεργό.</translation>
     </message>
     <message>
         <location line="+64"/>

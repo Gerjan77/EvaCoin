@@ -1,4 +1,4 @@
-# Build notEvilDime on ubuntu 12.04
+# Build EvaCoin on ubuntu 12.04
 
 Used versions
 -------------
@@ -10,7 +10,7 @@ Used versions
 	OS type
 			32-bit
 	Software	
-			notEvilDime v1.0.0.0-g88ff655-beta
+			EvaCoin v1.0.0.0-g88ff655-beta
 			Qt version 4.8.1
 			OpenSSL 1.0.1 14 Mar 2012
 
@@ -71,11 +71,11 @@ boost
 
 	sudo apt-get install libboost1.48
 
-notEvilDime
+EvaCoin
 -----------
 
-	NED=$GIT/NotEvilDime
-	git clone https://github.com/Gerjan77/notEvilDime $NED
+	NED=$GIT/EvaCoin
+	git clone https://github.com/Gerjan77/EvaCoin $NED
 
 BerkeleyDB
 ----------
@@ -89,7 +89,7 @@ BerkeleyDB
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB
 	make install
 
-Configure notEvilDime Core to use our own-built instance of BDB
+Configure EvaCoin Core to use our own-built instance of BDB
 ---------------------------------------------------------------
 
 	cd $NED
@@ -99,7 +99,7 @@ Configure notEvilDime Core to use our own-built instance of BDB
 Location of Blockchain and wallet
 ---------------------------------
 
-	ls ~/.notevildime -l
+	ls ~/.EvaCoin -l
 
 	
 failed 
@@ -119,8 +119,8 @@ To commit this branch:
 
 	git branch ubuntu master
 	git checkout ubuntu
-	git add notevildime-qt
-	git add src/notevildimed
+	git add EvaCoin
+	git add src/EvaCoind
 	commit -a
 	git push origin ubuntu
 

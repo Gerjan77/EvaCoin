@@ -1,7 +1,7 @@
 WINDOWS BUILD NOTES
 ===================
 
-See [readme-qt.md](readme-qt.md) for instructions on building notEvilDime-Qt, the
+See [readme-qt.md](readme-qt.md) for instructions on building EvaCoin, the
 graphical user interface.
 
 Compilers Supported
@@ -73,10 +73,10 @@ MSYS shell:
 	mkdir miniupnpc
 	cp *.h miniupnpc/
 
-notEvilDime
+EvaCoin
 -------
 DOS prompt:
 
-	cd \notevildime\src
+	cd \EvaCoin\src
 	mingw32-make -f makefile.mingw
-	strip notevildimed.exe
+	strip EvaCoind.exe

@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = notevildime-qt
-macx:TARGET = "notEvilDime-Qt"
+TARGET = EvaCoin
+macx:TARGET = "EvaCoin"
 VERSION = 0.8.2
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
@@ -39,7 +39,7 @@ SOURCES += src/qt/test/test_main.cpp \
 HEADERS += src/qt/test/uritests.h
 DEPENDPATH += src/qt/test
 QT += testlib
-TARGET = notevildime-qt_test
+TARGET = EvaCoin_test
 DEFINES += BITCOIN_QT_TEST
 
 }
@@ -341,7 +341,7 @@ macx: CONFIG += app_bundle
 macx: CONFIG += create_prl
 macx: CONFIG += link_prl
 macx: CONFIG += lib_bundle
-macx: QMAKE_BUNDLE_EXTENSION = .notEvilDimeframework
+macx: QMAKE_BUNDLE_EXTENSION = .EvaCoinframework
 
 
 

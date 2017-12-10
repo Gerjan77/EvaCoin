@@ -1,11 +1,11 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build notevildimed(headless client) for OSX.
+This guide will show you how to build EvaCoind(headless client) for OSX.
 
 Notes
 -----
 
-* See [readme-qt.md](readme-qt.md) for instructions on building notEvilDime-Qt, the
+* See [readme-qt.md](readme-qt.md) for instructions on building EvaCoin, the
 graphical user interface.
 * Tested on OS X 10.5 through 10.8 on Intel processors only. PPC is not
 supported because it is big-endian.
@@ -90,15 +90,15 @@ and -lminiupnpc for the link
        sudo port install db48@+no_java
 
 
-Building the Deamon `notEvilDimed`
+Building the Deamon `EvaCoind`
 -------
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/Gerjan77/notEvilDime
-        cd notEvilDime
+        git clone https://github.com/Gerjan77/EvaCoin
+        cd EvaCoin
 
-2.  Build notevildimed:
+2.  Build EvaCoind:
 
         cd src
         make -f makefile.osx
@@ -111,10 +111,10 @@ Building the Deamon `notEvilDimed`
 Creating a release build
 ------------------------
 
-A notevildimed binary is not included in the notEvilDime-Qt.app bundle. You can ignore
-this section if you are building `notevildimed` for your own use.
+A EvaCoind binary is not included in the EvaCoin.app bundle. You can ignore
+this section if you are building `EvaCoind` for your own use.
 
-If you are building `notevildimed` for others, your build machine should be set up
+If you are building `EvaCoind` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -133,33 +133,33 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix. Some ports also seem to obey either `build_arch` or
 `macosx_deployment_target`, but not both at the same time. For example, building
-on an OS X 10.6 64-bit machine fails. Official release builds of notEvilDime-Qt are
+on an OS X 10.6 64-bit machine fails. Official release builds of EvaCoin are
 compiled on an OS X 10.6 32-bit machine to workaround that problem.
 
-Once dependencies are compiled, creating `notEvilDime-Qt.app` is easy:
+Once dependencies are compiled, creating `EvaCoin.app` is easy:
 
     make -f Makefile.osx RELEASE=1
 
 Running
 -------
 
-It's now available at `./notevildimed`, provided that you are still in the `src`
+It's now available at `./EvaCoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./notevildimed` to get the filename where it should be put, or just try these
+Run `./EvaCoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=notevildimerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/notEvilDime/notevildime.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/notEvilDime/notevildime.conf"
+    echo -e "rpcuser=EvaCoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/EvaCoin/EvaCoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/EvaCoin/EvaCoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours.
 
 Other commands:
 
-    ./notevildimed --help  # for a list of command-line options.
-    ./notevildimed -daemon # to start the notevildime daemon.
-    ./notevildimed help    # When the daemon is running, to get a list of RPC commands
+    ./EvaCoind --help  # for a list of command-line options.
+    ./EvaCoind -daemon # to start the EvaCoin daemon.
+    ./EvaCoind help    # When the daemon is running, to get a list of RPC commands
 
 
 The 2017 Boost library

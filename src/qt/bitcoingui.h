@@ -33,7 +33,7 @@ class QAction;
 QT_END_NAMESPACE
 
 /**
-  notEvilDime GUI main class. This class represents the main window of the notEvilDime UI. It communicates with both the client and
+  EvaCoin GUI main class. This class represents the main window of the EvaCoin UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
 class BitcoinGUI : public QMainWindow

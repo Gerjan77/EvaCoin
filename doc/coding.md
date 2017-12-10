@@ -85,7 +85,7 @@ Threads
  
 - ThreadRPCServer : Remote procedure call handler, listens on port 17934 for connections and services them.
  
-- ThreadnotEvilDimeMiner : Generates notevildimes
+- ThreadEvaCoinMiner : Generates EvaCoins
   
 - ThreadMapPort : Universal plug-and-play startup/shutdown
  

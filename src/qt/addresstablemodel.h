@@ -21,7 +21,7 @@ public:
 
     enum ColumnIndex {
         Label = 0,   /**< User specified label */
-        Address = 1  /**< notEvilDime address */
+        Address = 1  /**< EvaCoin address */
     };
 
     enum RoleIndex {

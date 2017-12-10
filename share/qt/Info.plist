@@ -15,7 +15,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>notEvilDime-Qt</string>
+        <string>EvaCoin</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.bitcoinfoundation.Bitcoin-Qt</string>
         <key>CFBundleURLTypes</key>
