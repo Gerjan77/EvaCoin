@@ -79,13 +79,7 @@ Object blockInfo(const CBlock& block, const CBlockIndex* blockindex)
     int iHeight = blockindex->nHeight;
     result.push_back(Pair("height", iHeight));
     result.push_back(Pair("time", sTimb));
-    result.push_back(Pair("nonce", (boost::uint64_t)block.nNonce));
     result.push_back(Pair("difficulty", GetDifficulty(blockindex)));
-    if (blockindex->pprev)
-        result.push_back(Pair("previousblockhash", blockindex->pprev->GetBlockHash().GetHex()));
-    CBlockIndex *pnext = blockindex->GetNextInMainChain();
-    if (pnext)
-        result.push_back(Pair("nextblockhash", pnext->GetBlockHash().GetHex()));
     return result;
 }
 
@@ -246,6 +240,172 @@ Value getblockinfo(const Array& params, bool fHelp)
         return strHex;
     }
     return blockInfo(block, pblockindex);
+}
+
+Value getnextworkinfo(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() < 1 || params.size() > 2)
+        throw runtime_error(
+            "getnextworkinfo <height> [verbose=true]\n"
+            "If verbose is false, returns a string that is serialized, hex-encoded data for block <height>.\n"
+            "If verbose is true, returns an Object with information about block <height>."
+        );
+    std::string strHash = hashBestChain.GetHex();
+    std::string sHeight = params[0].get_str();
+    int mult = 1;
+    int re = 0;
+    int len = sHeight.length();
+    for(int i = len -1 ; i >= 0 ; i--)
+    {
+         re = re + ((int)sHeight[i] -48)*mult;
+         mult = mult*10;
+    }
+    int iHeight = re;
+    uint256 hash(strHash);
+    bool fVerbose = true;
+    if (params.size() > 1)
+        fVerbose = params[1].get_bool();
+    if (mapBlockIndex.count(hash) == 0)
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
+    CBlock block;
+    CBlockIndex* pblockindex = mapBlockIndex[hash];
+    ReadBlockFromDisk(block, pblockindex);
+    for (int c = nBestHeight; c > iHeight; c--)
+    {
+        if (pblockindex->pprev) strHash = pblockindex->pprev->GetBlockHash().GetHex();
+        uint256 hash(strHash);
+        pblockindex = mapBlockIndex[hash];
+        ReadBlockFromDisk(block, pblockindex);
+    }
+    if (!fVerbose)
+    {
+        CDataStream ssBlock(SER_NETWORK, PROTOCOL_VERSION);
+        ssBlock << block;
+        std::string strHex = HexStr(ssBlock.begin(), ssBlock.end());
+        return strHex;
+    }
+    const CBlockHeader hblock = block.GetBlockHeader();
+    unsigned int iNextwork = GetNextWorkRequired(pblockindex, &hblock);
+    CBigNum bnDif = CBigNum().SetCompact(iNextwork);
+    double nextDif = Difficulty(bnDif.GetCompact());
+    return nextDif;
+}
+
+static const int64 nTargetTimespan = 600;
+static const int64 nTargetSpacing = 300;
+//static const int64 nLowerBound = 150;
+//static const int64 nUpperBound = 2400;
+static const int64 nLowerBound = 570;
+static const int64 nUpperBound = 660;
+
+static const int64 nInterval = 2;
+
+Value nextwork(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() > 0)
+        throw runtime_error(
+            "nextwork \n"
+            "Call info from GetNextWorkRequired from main.cpp\n"
+            "\n"
+        );
+    std::string strHash = hashBestChain.GetHex();
+    uint256 hash(strHash);
+    if (mapBlockIndex.count(hash) == 0)
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
+    CBlock block;
+    CBlockIndex* pblockindex = mapBlockIndex[hash];
+    ReadBlockFromDisk(block, pblockindex);
+    const CBlockHeader hblock = block.GetBlockHeader();
+    const CBlockHeader* pblock = &hblock;
+    const CBlockIndex* pindexLast = pblockindex;
+    Object result;
+
+    ///
+    /// start a copy from GetNextWorkRequired main.cpp
+    ///
+    ///
+    ///
+    ///
+    result.push_back(Pair("Starting", "GetNextWorkRequired main.cpp"));
+
+    unsigned int nProofOfWorkLimit = Params().ProofOfWorkLimit().GetCompact();
+
+    // Genesis block
+    if (pindexLast == NULL)
+    {
+        result.push_back(Pair("nProofOfWorkLimit", "Difficulty(nProofOfWorkLimit)"));
+        return result;
+    }
+    // Only change once per interval
+    if ((pindexLast->nHeight+1) % nInterval != 0)
+    {
+        if (TestNet())
+        {
+            // Special difficulty rule for testnet:
+            // If the new block's timestamp is more than 2* 10 minutes
+            // then allow mining of a min-difficulty block.
+            if (pblock->nTime > pindexLast->nTime + 600)
+            {
+                result.push_back(Pair("nProofOfWorkLimit", "Difficulty(nProofOfWorkLimit)"));
+                return result;
+            }
+            else
+            {
+                // Return the last non-special-min-difficulty-rules-block
+                const CBlockIndex* pindex = pindexLast;
+                while (pindex->pprev && pindex->nHeight % nInterval != 0 && pindex->nBits == nProofOfWorkLimit)
+                    pindex = pindex->pprev;
+                result.push_back(Pair("last normal block", "Difficulty(pindex->nBits)"));
+                return result;
+            }
+        }
+        result.push_back(Pair("last block", "Difficulty(pindexLast->nBits)"));
+        return result;
+    }
+
+    result.push_back(Pair("Starting", "Go back by what we want to be 14 days worth of blocks"));
+    // Go back by what we want to be 14 days worth of blocks
+    const CBlockIndex* pindexFirst = pindexLast;
+    for (int i = 0; pindexFirst && i < nInterval-1; i++)
+        pindexFirst = pindexFirst->pprev;
+    assert(pindexFirst);
+    // Limit adjustment step
+    int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
+    result.push_back(Pair("nActualTimespan before bounds",nActualTimespan));
+    printf("  nActualTimespan = %" PRI64d"  before bounds\n", nActualTimespan);
+    if (nActualTimespan < nLowerBound)
+        nActualTimespan = nLowerBound;
+    if (nActualTimespan > nUpperBound)
+        nActualTimespan = nUpperBound;
+
+    result.push_back(Pair("Starting", "Retarget"));
+    // Retarget
+    CBigNum bnNew;
+    bnNew.SetCompact(pindexLast->nBits);
+    bnNew *= nActualTimespan;
+    bnNew /= 600;
+
+    if (bnNew > Params().ProofOfWorkLimit())
+        bnNew = Params().ProofOfWorkLimit();
+
+    result.push_back(Pair("Starting", "Debug Print"));
+    /// debug print
+    printf("Difficulty before retarget %f. Difficulty after retarget %f\n",Difficulty(pindexLast->nBits),Difficulty(bnNew.GetCompact()));
+    printf("GetNextWorkRequired RETARGET\n");
+    int64 nCurrTime = pblock->nTime;
+    int64 nPrevTime = pindexFirst->nTime;
+    int64 nCurrentTimespan = nCurrTime - nPrevTime;
+    printf("Working on current block %" PRI64d" sec.\n",nCurrentTimespan);
+    printf("nTargetTimespan %d sec.  nActualTimespan %" PRI64d" sec. \n", 600, nActualTimespan);
+    printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
+    printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
+    result.push_back(Pair("nActualTimespan",nActualTimespan));
+    result.push_back(Pair("Working on current block secs",nCurrentTimespan));
+    result.push_back(Pair("Working on current block mins",nCurrentTimespan/60));
+    result.push_back(Pair("previous difficulty", Difficulty(pindexLast->nBits)));
+    result.push_back(Pair("next difficulty", Difficulty(bnNew.GetCompact())));
+    return result;
+    //return bnNew.GetCompact();
 }
 
 

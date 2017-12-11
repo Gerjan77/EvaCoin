@@ -210,6 +210,9 @@ extern json_spirit::Value getrawmempool(const json_spirit::Array& params, bool f
 extern json_spirit::Value getblockhash(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getblock(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getblockinfo(const json_spirit::Array& params, bool fHelp);
+extern json_spirit::Value getnextworkinfo(const json_spirit::Array& params, bool fHelp);
+extern json_spirit::Value nextwork(const json_spirit::Array& params, bool fHelp);
+extern json_spirit::Value GetNextWorkRequiredInfo(const CBlockIndex* pindexLast);
 extern json_spirit::Value gettxoutsetinfo(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value gettxout(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value verifychain(const json_spirit::Array& params, bool fHelp);
