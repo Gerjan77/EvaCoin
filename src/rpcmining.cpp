@@ -260,7 +260,10 @@ Value getnextdifficulty(const Array& params, bool fHelp)
             CBlockIndex* pindexPrevNew = pindexBest;
             nStart = GetTime();
 
-            // Create new block
+            // Create new block.
+            // call to miner.cpp Createnewblock(Creservekey& reservekey) l:369
+            // call to main.cpp GetNextWorkRequired()
+
             pblocktemplate = CreateNewBlock(*pMiningKey);
             if (!pblocktemplate)
                 throw JSONRPCError(RPC_OUT_OF_MEMORY, "Out of memory");
@@ -288,16 +291,21 @@ Value getnextdifficulty(const Array& params, bool fHelp)
         char phash1[64];
         FormatHashBuffers(pblock, pmidstate, pdata, phash1);
 
-        uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
+        //uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
         CBigNum bnDif = CBigNum().SetCompact(pblock->nBits);
+        boost::uint64_t tBlock = pblock->nTime;
+        int iNext = pindexPrev->nHeight;
+        string sTimb = rfcTime(tBlock);
         double nextDif = Difficulty(bnDif.GetCompact());
         Object result;
-        result.push_back(Pair("midstate", HexStr(BEGIN(pmidstate), END(pmidstate)))); // deprecated
-        result.push_back(Pair("data",     HexStr(BEGIN(pdata), END(pdata))));
-        result.push_back(Pair("hash1",    HexStr(BEGIN(phash1), END(phash1)))); // deprecated
-        result.push_back(Pair("target",   HexStr(BEGIN(hashTarget), END(hashTarget))));
-        result.push_back(Pair("nextdifficulty",  nextDif ));
+        result.push_back(Pair("next height", iNext+1             ));
+        result.push_back(Pair("best height", pindexBest->nHeight ));
+        result.push_back(Pair("time",        sTimb               ));
+        result.push_back(Pair("nextdif",     nextDif             ));
         return result;
+
+        //double nextDif = Difficulty(bnDif.GetCompact());
+        //return nextDif;
     }
     else
     {
@@ -325,7 +333,18 @@ Value getnextdifficulty(const Array& params, bool fHelp)
     }
 }
 
-
+string rfcTime(boost::uint64_t bTime)
+{
+    char buffert[64];
+    time_t tTime;
+    tTime = bTime;
+    struct tm* time_gmt = gmtime(&tTime);
+    string local(setlocale(LC_TIME, NULL));
+    setlocale(LC_TIME, "C");
+    strftime(buffert, sizeof(buffert), "%a, %d %b %Y %H:%M:%S +0000", time_gmt);
+    setlocale(LC_TIME, local.c_str());
+    return string(buffert);
+}
 
 Value getblocktemplate(const Array& params, bool fHelp)
 {

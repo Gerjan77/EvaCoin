@@ -69,6 +69,26 @@ Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex)
     return result;
 }
 
+Object blockInfo(const CBlock& block, const CBlockIndex* blockindex)
+{
+    Object result;
+    CMerkleTx txGen(block.vtx[0]);
+    txGen.SetMerkleBranch(&block);
+    boost::uint64_t tBlock = block.GetBlockTime();
+    string sTimb = rfcTime(tBlock);
+    int iHeight = blockindex->nHeight;
+    result.push_back(Pair("height", iHeight));
+    result.push_back(Pair("time", sTimb));
+    result.push_back(Pair("nonce", (boost::uint64_t)block.nNonce));
+    result.push_back(Pair("difficulty", GetDifficulty(blockindex)));
+    if (blockindex->pprev)
+        result.push_back(Pair("previousblockhash", blockindex->pprev->GetBlockHash().GetHex()));
+    CBlockIndex *pnext = blockindex->GetNextInMainChain();
+    if (pnext)
+        result.push_back(Pair("nextblockhash", pnext->GetBlockHash().GetHex()));
+    return result;
+}
+
 
 Value getblockcount(const Array& params, bool fHelp)
 {
@@ -181,6 +201,53 @@ Value getblock(const Array& params, bool fHelp)
 
     return blockToJSON(block, pblockindex);
 }
+
+Value getblockinfo(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() < 1 || params.size() > 2)
+        throw runtime_error(
+            "getblockinfo <height> [verbose=true]\n"
+            "If verbose is false, returns a string that is serialized, hex-encoded data for block <height>.\n"
+            "If verbose is true, returns an Object with information about block <height>."
+        );
+    std::string strHash = hashBestChain.GetHex();
+    std::string sHeight = params[0].get_str();
+    int mult = 1;
+    int re = 0;
+    int len = sHeight.length();
+    for(int i = len -1 ; i >= 0 ; i--)
+    {
+         re = re + ((int)sHeight[i] -48)*mult;
+         mult = mult*10;
+    }
+    int iHeight = re;
+
+    uint256 hash(strHash);
+    bool fVerbose = true;
+    if (params.size() > 1)
+        fVerbose = params[1].get_bool();
+    if (mapBlockIndex.count(hash) == 0)
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
+    CBlock block;
+    CBlockIndex* pblockindex = mapBlockIndex[hash];
+    ReadBlockFromDisk(block, pblockindex);
+    for (int c = nBestHeight; c > iHeight; c--)
+    {
+        if (pblockindex->pprev) strHash = pblockindex->pprev->GetBlockHash().GetHex();
+        uint256 hash(strHash);
+        pblockindex = mapBlockIndex[hash];
+        ReadBlockFromDisk(block, pblockindex);
+    }
+    if (!fVerbose)
+    {
+        CDataStream ssBlock(SER_NETWORK, PROTOCOL_VERSION);
+        ssBlock << block;
+        std::string strHex = HexStr(ssBlock.begin(), ssBlock.end());
+        return strHex;
+    }
+    return blockInfo(block, pblockindex);
+}
+
 
 Value gettxoutsetinfo(const Array& params, bool fHelp)
 {
