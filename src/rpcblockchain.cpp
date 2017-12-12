@@ -291,8 +291,8 @@ Value getnextworkinfo(const Array& params, bool fHelp)
     return nextDif;
 }
 
-static const int64 nTargetTimespan = 600;
-static const int64 nTargetSpacing = 300;
+//static const int64 nTargetTimespan = 600;
+//static const int64 nTargetSpacing = 300;
 //static const int64 nLowerBound = 150;
 //static const int64 nUpperBound = 2400;
 static const int64 nLowerBound = 570;
@@ -337,31 +337,36 @@ Value nextwork(const Array& params, bool fHelp)
         return result;
     }
     // Only change once per interval
-    if ((pindexLast->nHeight+1) % nInterval != 0)
-    {
-        if (TestNet())
-        {
+    //if ((pindexLast->nHeight+1) % nInterval != 0)
+    //{
+        //if (TestNet())
+      //  {
             // Special difficulty rule for testnet:
             // If the new block's timestamp is more than 2* 10 minutes
             // then allow mining of a min-difficulty block.
-            if (pblock->nTime > pindexLast->nTime + 600)
-            {
-                result.push_back(Pair("nProofOfWorkLimit", "Difficulty(nProofOfWorkLimit)"));
-                return result;
-            }
-            else
-            {
-                // Return the last non-special-min-difficulty-rules-block
-                const CBlockIndex* pindex = pindexLast;
-                while (pindex->pprev && pindex->nHeight % nInterval != 0 && pindex->nBits == nProofOfWorkLimit)
-                    pindex = pindex->pprev;
-                result.push_back(Pair("last normal block", "Difficulty(pindex->nBits)"));
-                return result;
-            }
-        }
-        result.push_back(Pair("last block", "Difficulty(pindexLast->nBits)"));
+    boost::uint64_t tBlock = pindexLast->nTime;
+    time_t now;
+    time(&now);
+    boost::uint64_t tNow = now;
+    //if (pblock->nTime > pindexLast->nTime + 600)
+    if (tNow-tBlock > 3600)
+    {
+        result.push_back(Pair("nProofOfWorkLimit", "Difficulty(nProofOfWorkLimit)"));
         return result;
     }
+            //else
+            //{
+                // Return the last non-special-min-difficulty-rules-block
+             //   const CBlockIndex* pindex = pindexLast;
+             //   while (pindex->pprev && pindex->nHeight % nInterval != 0 && pindex->nBits == nProofOfWorkLimit)
+             //       pindex = pindex->pprev;
+             //   result.push_back(Pair("last normal block", "Difficulty(pindex->nBits)"));
+             //   return result;
+            //}
+      //  }
+        //result.push_back(Pair("last block", "Difficulty(pindexLast->nBits)"));
+        //return result;
+    //}
 
     result.push_back(Pair("Starting", "Go back by what we want to be 14 days worth of blocks"));
     // Go back by what we want to be 14 days worth of blocks
@@ -404,10 +409,21 @@ Value nextwork(const Array& params, bool fHelp)
     result.push_back(Pair("Working on current block mins",nCurrentTimespan/60));
     result.push_back(Pair("previous difficulty", Difficulty(pindexLast->nBits)));
     result.push_back(Pair("next difficulty", Difficulty(bnNew.GetCompact())));
+    string sTim = rfcTime(tBlock);
+    char buffer[64];
+    struct tm* now_gmt = gmtime(&now);
+    string locale(setlocale(LC_TIME, NULL));
+    setlocale(LC_TIME, "C"); // we want POSIX (aka "C") weekday/month strings
+    strftime(buffer, sizeof(buffer), "%a, %d %b %Y %H:%M:%S +0000", now_gmt);
+    setlocale(LC_TIME, locale.c_str());
+    string sNow = string(buffer);
+    result.push_back(Pair("block", sTim));
+    result.push_back(Pair("now", sNow));
+    result.push_back(Pair("block age hrs ", (tNow-tBlock)/3600));
+
     return result;
     //return bnNew.GetCompact();
 }
-
 
 Value gettxoutsetinfo(const Array& params, bool fHelp)
 {

@@ -1330,27 +1330,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
 
-    // Only change once per interval
-    if ((pindexLast->nHeight+1) % nInterval != 0)
-    {
-        if (TestNet())
-        {
-            // Special difficulty rule for testnet:
-            // If the new block's timestamp is more than 2* 10 minutes
-            // then allow mining of a min-difficulty block.
-            if (pblock->nTime > pindexLast->nTime + 600)
-                return nProofOfWorkLimit;
-            else
-            {
-                // Return the last non-special-min-difficulty-rules-block
-                const CBlockIndex* pindex = pindexLast;
-                while (pindex->pprev && pindex->nHeight % nInterval != 0 && pindex->nBits == nProofOfWorkLimit)
-                    pindex = pindex->pprev;
-                return pindex->nBits;
-            }
-        }
-        return pindexLast->nBits;
-    }
+    boost::uint64_t tBlock = pindexLast->nTime;
+    time_t now;
+    time(&now);
+    boost::uint64_t tNow = now;
+    if (tNow-tBlock > 3600) return nProofOfWorkLimit;
 
     // Go back by what we want to be 14 days worth of blocks
     const CBlockIndex* pindexFirst = pindexLast;
@@ -1359,7 +1343,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     assert(pindexFirst);
     // Limit adjustment step
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
-    printf("  nActualTimespan = %" PRI64d"  before bounds\n", nActualTimespan);
+    //printf("  nActualTimespan = %" PRI64d"  before bounds\n", nActualTimespan);
     if (nActualTimespan < nLowerBound)
         nActualTimespan = nLowerBound;
     if (nActualTimespan > nUpperBound)
@@ -1374,16 +1358,16 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if (bnNew > Params().ProofOfWorkLimit())
         bnNew = Params().ProofOfWorkLimit();
 
-    /// debug print
-    printf("Difficulty before retarget %f. Difficulty after retarget %f\n",Difficulty(pindexLast->nBits),Difficulty(bnNew.GetCompact()));
-    printf("GetNextWorkRequired RETARGET\n");
-    int64 nCurrTime = pblock->nTime;
-    int64 nPrevTime = pindexFirst->nTime;
-    int64 nCurrentTimespan = nCurrTime - nPrevTime;
-    printf("Working on current block %" PRI64d" sec.\n",nCurrentTimespan);
-    printf("nTargetTimespan %d sec.  nActualTimespan %" PRI64d" sec. \n", 600, nActualTimespan);
-    printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
-    printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
+    // debug print
+    //printf("Difficulty before retarget %f. Difficulty after retarget %f\n",Difficulty(pindexLast->nBits),Difficulty(bnNew.GetCompact()));
+    //printf("GetNextWorkRequired RETARGET\n");
+    //int64 nCurrTime = pblock->nTime;
+    //int64 nPrevTime = pindexFirst->nTime;
+    //int64 nCurrentTimespan = nCurrTime - nPrevTime;
+    //printf("Working on current block %" PRI64d" sec.\n",nCurrentTimespan);
+    //printf("nTargetTimespan %d sec.  nActualTimespan %" PRI64d" sec. \n", 600, nActualTimespan);
+    //printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
+    //printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
 
     return bnNew.GetCompact();
 }
@@ -1603,21 +1587,9 @@ bool ConnectBestBlock(CValidationState &state) {
 void UpdateTime(CBlockHeader& block, const CBlockIndex* pindexPrev)
 {
     block.nTime = max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());
-
-    // Updating time can change work required on testnet:
-    if (TestNet())
-        block.nBits = GetNextWorkRequired(pindexPrev, &block);
+    // Updating time can change work required:
+    block.nBits = GetNextWorkRequired(pindexPrev, &block);
 }
-
-
-
-
-
-
-
-
-
-
 
 const CTxOut &CCoinsViewCache::GetOutputFor(const CTxIn& input)
 {

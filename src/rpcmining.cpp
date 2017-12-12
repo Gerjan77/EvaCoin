@@ -260,6 +260,7 @@ Value getnextdifficulty(const Array& params, bool fHelp)
             CBlockIndex* pindexPrevNew = pindexBest;
             nStart = GetTime();
 
+            // This is a copy from getwork.
             // Create new block.
             // call to miner.cpp Createnewblock(Creservekey& reservekey) l:369
             // call to main.cpp GetNextWorkRequired()
