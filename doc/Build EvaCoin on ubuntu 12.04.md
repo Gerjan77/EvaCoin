@@ -117,11 +117,11 @@ E: Unable to correct problems, you have held broken packages.
 To commit this branch:
 ----------------------
 
-	git branch ubuntu master
-	git checkout ubuntu
+	git branch 32-bit master
+	git checkout 32-bit
 	git add EvaCoin
 	git add src/EvaCoind
-	commit -a
-	git push origin ubuntu
+	git commit -a
+	git push origin 32-bit
 
 

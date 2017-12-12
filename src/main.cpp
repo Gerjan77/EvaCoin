@@ -1291,9 +1291,8 @@ int64 GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 10 * 60;
-static const int64 nTargetSpacing = 5 * 60;
-static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+static const int64 nLowerBound = 250;
+static const int64 nUpperBound = 950;
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -1302,85 +1301,114 @@ static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
 {
     const CBigNum &bnLimit = Params().ProofOfWorkLimit();
-    // Testnet has min-difficulty blocks
-    // after nTargetSpacing*2 time between blocks:
-    if (TestNet() && nTime > nTargetSpacing*2)
+    if (TestNet() && nTime > 600)
         return bnLimit.GetCompact();
-
+    
     CBigNum bnResult;
     bnResult.SetCompact(nBase);
     while (nTime > 0 && bnResult < bnLimit)
     {
-        // Maximum 400% adjustment...
-        bnResult *= 4;
-        // ... in best-case exactly 4-times-normal target time
-        nTime -= nTargetTimespan*4;
+        bnResult *= 600;
+        bnResult /= nLowerBound;
+        nTime -= nUpperBound;
     }
     if (bnResult > bnLimit)
         bnResult = bnLimit;
+    printf("Minimum work difficulty %f",Difficulty(bnResult.GetCompact()));
     return bnResult.GetCompact();
 }
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
     unsigned int nProofOfWorkLimit = Params().ProofOfWorkLimit().GetCompact();
-
+    
     // Genesis block
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
-
-    // Only change once per interval
-    if ((pindexLast->nHeight+1) % nInterval != 0)
+    
+    boost::uint64_t tBlock = pindexLast->nTime;
+    time_t now;
+    time(&now);
+    boost::uint64_t tNow = now;
+    if (tNow-tBlock > 3600) return nProofOfWorkLimit;
+    
+    // Go back by 144 blocks if possible
+    const CBlockIndex* pindexFirst = pindexLast;
+    const CBlockIndex* pindex = pindexLast;
+    int64 iHeight = pindexFirst->nHeight;
+    int64 iAdjustTimeSpan = 0;
+    if (iHeight > 145)
     {
-        if (TestNet())
+        double dHrate=0;
+        int j=0;
+        int k=0;
+        for (int i = 0; pindex && i < 144; i++)
         {
-            // Special difficulty rule for testnet:
-            // If the new block's timestamp is more than 2* 10 minutes
-            // then allow mining of a min-difficulty block.
-            if (pblock->nTime > pindexLast->nTime + nTargetSpacing*2)
-                return nProofOfWorkLimit;
-            else
+            int64 time2 = pindex->nTime;
+            double dDi = Difficulty(pindex->nBits);
+            pindex = pindex->pprev;
+            assert(pindex);
+            int64 time1 = pindex->nTime;
+            int64 time3 = time2 - time1;
+            if (time3 > 3600) k += time3 / 600;
+            if ((time3 > nLowerBound) && (time3 < nUpperBound))
             {
-                // Return the last non-special-min-difficulty-rules-block
-                const CBlockIndex* pindex = pindexLast;
-                while (pindex->pprev && pindex->nHeight % nInterval != 0 && pindex->nBits == nProofOfWorkLimit)
-                    pindex = pindex->pprev;
-                return pindex->nBits;
+                dHrate += HashRate(dDi,time3);
+                j++;
             }
         }
-        return pindexLast->nBits;
+        if (j > 0)
+        {
+            dHrate/=j;
+            int64 iMulti = 0x100000000;
+            double dNetworkDiff = dHrate*600/iMulti;
+            iAdjustTimeSpan = (int64)(((600 * Difficulty(pindexLast->nBits)) / dNetworkDiff) + 0.5);
+        }
     }
-
-    // Go back by what we want to be 14 days worth of blocks
-    const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < nInterval-1; i++)
-        pindexFirst = pindexFirst->pprev;
+    
+    pindexFirst = pindexFirst->pprev;
     assert(pindexFirst);
-
     // Limit adjustment step
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
-    printf("  nActualTimespan = %"PRI64d"  before bounds\n", nActualTimespan);
-    if (nActualTimespan < nTargetTimespan/4)
-        nActualTimespan = nTargetTimespan/4;
-    if (nActualTimespan > nTargetTimespan*4)
-        nActualTimespan = nTargetTimespan*4;
-
+    if (nActualTimespan < nLowerBound)
+        nActualTimespan = nLowerBound;
+    if (nActualTimespan > nUpperBound)
+        nActualTimespan = nUpperBound;
     // Retarget
+    if (iAdjustTimeSpan != 0 ) nActualTimespan = iAdjustTimeSpan;
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
     bnNew *= nActualTimespan;
-    bnNew /= nTargetTimespan;
-
+    bnNew /= 600;
     if (bnNew > Params().ProofOfWorkLimit())
         bnNew = Params().ProofOfWorkLimit();
-
-    /// debug print
-    printf("GetNextWorkRequired RETARGET\n");
-    printf("nTargetTimespan = %"PRI64d"    nActualTimespan = %"PRI64d"\n", nTargetTimespan, nActualTimespan);
-    printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
-    printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
-
+    
     return bnNew.GetCompact();
+}
+
+double Difficulty(unsigned int bnDiff)
+{
+    int nShift = (bnDiff >> 24) & 0xff;
+    double dDiff =
+    (double)0x0000ffff / (double)(bnDiff & 0x00ffffff);
+    while (nShift < 29)
+    {
+        dDiff *= 256.0;
+        nShift++;
+    }
+    while (nShift > 29)
+    {
+        dDiff /= 256.0;
+        nShift--;
+    }
+    return dDiff;
+}
+
+double HashRate(double dDiff, int64 iTime)
+{
+    int64 iMulti = 0x100000000;
+    double dRes = dDiff*iMulti/iTime;
+    return dRes;
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
@@ -1580,21 +1608,9 @@ bool ConnectBestBlock(CValidationState &state) {
 void UpdateTime(CBlockHeader& block, const CBlockIndex* pindexPrev)
 {
     block.nTime = max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());
-
-    // Updating time can change work required on testnet:
-    if (TestNet())
-        block.nBits = GetNextWorkRequired(pindexPrev, &block);
+    // Updating time can change work required 
+    block.nBits = GetNextWorkRequired(pindexPrev, &block);
 }
-
-
-
-
-
-
-
-
-
-
 
 const CTxOut &CCoinsViewCache::GetOutputFor(const CTxIn& input)
 {
