@@ -179,24 +179,16 @@ int64 GetBlockValue(int nHeight, int64 nFees);
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock);
 /** Get the difficulty in user readable format */
 double Difficulty(unsigned int bnDiff);
+/** Update current block time */
 void UpdateTime(CBlockHeader& block, const CBlockIndex* pindexPrev);
-
+/** Calculate the network hashrate */
+double HashRate(double dDiff, int64 iTime);
 /** Create a new block index entry for a given block hash */
 CBlockIndex * InsertBlockIndex(uint256 hash);
 /** Verify a signature */
 bool VerifySignature(const CCoins& txFrom, const CTransaction& txTo, unsigned int nIn, unsigned int flags, int nHashType);
 /** Abort with a message */
 bool AbortNode(const std::string &msg);
-
-
-
-
-
-
-
-
-
-
 
 bool GetWalletFile(CWallet* pwallet, std::string &strWalletFileOut);
 

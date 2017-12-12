@@ -1285,14 +1285,8 @@ int64 GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 600;
-static const int64 nTargetSpacing = 300;
-//static const int64 nLowerBound = 150;
-//static const int64 nUpperBound = 2400;
-static const int64 nLowerBound = 570;
-static const int64 nUpperBound = 660;
-
-static const int64 nInterval = 2;
+static const int64 nLowerBound = 250;
+static const int64 nUpperBound = 950;
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -1301,8 +1295,6 @@ static const int64 nInterval = 2;
 unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
 {
     const CBigNum &bnLimit = Params().ProofOfWorkLimit();
-    // Testnet has min-difficulty blocks
-    // after nTargetSpacing*2 time between blocks:
     if (TestNet() && nTime > 600)
         return bnLimit.GetCompact();
 
@@ -1310,10 +1302,8 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     bnResult.SetCompact(nBase);
     while (nTime > 0 && bnResult < bnLimit)
     {
-        // Maximum 400% adjustment...
         bnResult *= 600;
         bnResult /= nLowerBound;
-        // ... in best-case exactly 4-times-normal target time
         nTime -= nUpperBound;
     }
     if (bnResult > bnLimit)
@@ -1336,38 +1326,56 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     boost::uint64_t tNow = now;
     if (tNow-tBlock > 3600) return nProofOfWorkLimit;
 
-    // Go back by what we want to be 14 days worth of blocks
+    // Go back by 144 blocks if possible
     const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < nInterval-1; i++)
-        pindexFirst = pindexFirst->pprev;
+    const CBlockIndex* pindex = pindexLast;
+    int64 iHeight = pindexFirst->nHeight;
+    int64 iAdjustTimeSpan = 0;
+    if (iHeight > 145)
+    {
+        double dHrate=0;
+        int j=0;
+        int k=0;
+        for (int i = 0; pindex && i < 144; i++)
+        {
+            int64 time2 = pindex->nTime;
+            double dDi = Difficulty(pindex->nBits);
+            pindex = pindex->pprev;
+            assert(pindex);
+            int64 time1 = pindex->nTime;
+            int64 time3 = time2 - time1;
+            if (time3 > 3600) k += time3 / 600;
+            if ((time3 > nLowerBound) && (time3 < nUpperBound))
+            {
+                dHrate += HashRate(dDi,time3);
+                j++;
+            }
+        }
+        if (j > 0)
+        {
+            dHrate/=j;
+            int64 iMulti = 0x100000000;
+            double dNetworkDiff = dHrate*600/iMulti;
+            iAdjustTimeSpan = (int64)(((600 * Difficulty(pindexLast->nBits)) / dNetworkDiff) + 0.5);
+        }
+    }
+
+    pindexFirst = pindexFirst->pprev;
     assert(pindexFirst);
     // Limit adjustment step
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
-    //printf("  nActualTimespan = %" PRI64d"  before bounds\n", nActualTimespan);
     if (nActualTimespan < nLowerBound)
         nActualTimespan = nLowerBound;
     if (nActualTimespan > nUpperBound)
         nActualTimespan = nUpperBound;
-
     // Retarget
+    if (iAdjustTimeSpan != 0 ) nActualTimespan = iAdjustTimeSpan;
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
     bnNew *= nActualTimespan;
     bnNew /= 600;
-
     if (bnNew > Params().ProofOfWorkLimit())
         bnNew = Params().ProofOfWorkLimit();
-
-    // debug print
-    //printf("Difficulty before retarget %f. Difficulty after retarget %f\n",Difficulty(pindexLast->nBits),Difficulty(bnNew.GetCompact()));
-    //printf("GetNextWorkRequired RETARGET\n");
-    //int64 nCurrTime = pblock->nTime;
-    //int64 nPrevTime = pindexFirst->nTime;
-    //int64 nCurrentTimespan = nCurrTime - nPrevTime;
-    //printf("Working on current block %" PRI64d" sec.\n",nCurrentTimespan);
-    //printf("nTargetTimespan %d sec.  nActualTimespan %" PRI64d" sec. \n", 600, nActualTimespan);
-    //printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
-    //printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
 
     return bnNew.GetCompact();
 }
@@ -1388,6 +1396,13 @@ double Difficulty(unsigned int bnDiff)
         nShift--;
     }
     return dDiff;
+}
+
+double HashRate(double dDiff, int64 iTime)
+{
+    int64 iMulti = 0x100000000;
+    double dRes = dDiff*iMulti/iTime;
+    return dRes;
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)

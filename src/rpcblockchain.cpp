@@ -291,14 +291,9 @@ Value getnextworkinfo(const Array& params, bool fHelp)
     return nextDif;
 }
 
-//static const int64 nTargetTimespan = 600;
-//static const int64 nTargetSpacing = 300;
-//static const int64 nLowerBound = 150;
-//static const int64 nUpperBound = 2400;
-static const int64 nLowerBound = 570;
-static const int64 nUpperBound = 660;
 
-static const int64 nInterval = 2;
+static const int64 nLowerBound = 250;
+static const int64 nUpperBound = 950;
 
 Value nextwork(const Array& params, bool fHelp)
 {
@@ -336,79 +331,82 @@ Value nextwork(const Array& params, bool fHelp)
         result.push_back(Pair("nProofOfWorkLimit", "Difficulty(nProofOfWorkLimit)"));
         return result;
     }
-    // Only change once per interval
-    //if ((pindexLast->nHeight+1) % nInterval != 0)
-    //{
-        //if (TestNet())
-      //  {
-            // Special difficulty rule for testnet:
-            // If the new block's timestamp is more than 2* 10 minutes
-            // then allow mining of a min-difficulty block.
     boost::uint64_t tBlock = pindexLast->nTime;
     time_t now;
     time(&now);
     boost::uint64_t tNow = now;
-    //if (pblock->nTime > pindexLast->nTime + 600)
     if (tNow-tBlock > 3600)
     {
         result.push_back(Pair("nProofOfWorkLimit", "Difficulty(nProofOfWorkLimit)"));
-        return result;
-    }
-            //else
-            //{
-                // Return the last non-special-min-difficulty-rules-block
-             //   const CBlockIndex* pindex = pindexLast;
-             //   while (pindex->pprev && pindex->nHeight % nInterval != 0 && pindex->nBits == nProofOfWorkLimit)
-             //       pindex = pindex->pprev;
-             //   result.push_back(Pair("last normal block", "Difficulty(pindex->nBits)"));
-             //   return result;
-            //}
-      //  }
-        //result.push_back(Pair("last block", "Difficulty(pindexLast->nBits)"));
         //return result;
-    //}
-
-    result.push_back(Pair("Starting", "Go back by what we want to be 14 days worth of blocks"));
-    // Go back by what we want to be 14 days worth of blocks
+    }
+    result.push_back(Pair("Starting", "Go back by 144 blocks"));
+    // Go back by 144 blocks if possible
     const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < nInterval-1; i++)
-        pindexFirst = pindexFirst->pprev;
+    const CBlockIndex* pindex = pindexLast;
+    int64 iHeight = pindexFirst->nHeight;
+    int64 iAdjustTimeSpan = 0;
+    double dHrate=0;
+    int j=0;
+    int k=0;
+    double dNetworkDiff=0;
+    if (iHeight > 144)
+    {
+        for (int i = 0; pindex && i < 144; i++)
+        {
+            int64 time2 = pindex->nTime;
+            double dDi = Difficulty(pindex->nBits);
+            pindex = pindex->pprev;
+            assert(pindex);
+            int64 time1 = pindex->nTime;
+            int64 time3 = time2 - time1;
+            if (time3 > 3600) k += time3 / 600;
+            if ((time3 > 250) && (time3 < 950))
+            {
+                dHrate += HashRate(dDi,time3);
+                j++;
+            }
+        }
+        if (j > 0)
+        {
+            dHrate/=j;
+            int64 iMulti = 0x100000000;
+            dNetworkDiff = dHrate*600/iMulti;
+            iAdjustTimeSpan = (int64)(((600 * Difficulty(pindexLast->nBits)) / dNetworkDiff) + 0.5);
+        }
+    }
+
+    pindexFirst = pindexFirst->pprev;
     assert(pindexFirst);
     // Limit adjustment step
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
-    result.push_back(Pair("nActualTimespan before bounds",nActualTimespan));
-    printf("  nActualTimespan = %" PRI64d"  before bounds\n", nActualTimespan);
+    int64 iTimespan = nActualTimespan;
     if (nActualTimespan < nLowerBound)
         nActualTimespan = nLowerBound;
     if (nActualTimespan > nUpperBound)
         nActualTimespan = nUpperBound;
-
-    result.push_back(Pair("Starting", "Retarget"));
     // Retarget
+    if (iAdjustTimeSpan != 0 ) nActualTimespan = iAdjustTimeSpan;
+
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
     bnNew *= nActualTimespan;
     bnNew /= 600;
-
     if (bnNew > Params().ProofOfWorkLimit())
         bnNew = Params().ProofOfWorkLimit();
 
-    result.push_back(Pair("Starting", "Debug Print"));
     /// debug print
-    printf("Difficulty before retarget %f. Difficulty after retarget %f\n",Difficulty(pindexLast->nBits),Difficulty(bnNew.GetCompact()));
-    printf("GetNextWorkRequired RETARGET\n");
     int64 nCurrTime = pblock->nTime;
     int64 nPrevTime = pindexFirst->nTime;
     int64 nCurrentTimespan = nCurrTime - nPrevTime;
-    printf("Working on current block %" PRI64d" sec.\n",nCurrentTimespan);
-    printf("nTargetTimespan %d sec.  nActualTimespan %" PRI64d" sec. \n", 600, nActualTimespan);
-    printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
-    printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
-    result.push_back(Pair("nActualTimespan",nActualTimespan));
-    result.push_back(Pair("Working on current block secs",nCurrentTimespan));
-    result.push_back(Pair("Working on current block mins",nCurrentTimespan/60));
+    result.push_back(Pair("Network Difficulty ", dNetworkDiff));
+    result.push_back(Pair("Network Hashrate ", dHrate));
+    result.push_back(Pair("Based on blocks /144 ", j));
+    result.push_back(Pair("blocks reset ", k));
     result.push_back(Pair("previous difficulty", Difficulty(pindexLast->nBits)));
     result.push_back(Pair("next difficulty", Difficulty(bnNew.GetCompact())));
+    result.push_back(Pair("height", iHeight));
+
     string sTim = rfcTime(tBlock);
     char buffer[64];
     struct tm* now_gmt = gmtime(&now);
