@@ -55,10 +55,10 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 666, 165));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 660, 149));
         verticalLayout_2 = new QVBoxLayout(scrollAreaWidgetContents);
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         entries = new QVBoxLayout();
         entries->setSpacing(6);
         entries->setObjectName(QStringLiteral("entries"));
@@ -154,7 +154,7 @@ public:
 #endif // QT_NO_TOOLTIP
         clearButton->setText(QApplication::translate("SendCoinsDialog", "Clear &All", Q_NULLPTR));
         label->setText(QApplication::translate("SendCoinsDialog", "Balance:", Q_NULLPTR));
-        labelBalance->setText(QApplication::translate("SendCoinsDialog", "123.456 NED", Q_NULLPTR));
+        labelBalance->setText(QApplication::translate("SendCoinsDialog", "123.456 Eva", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         sendButton->setToolTip(QApplication::translate("SendCoinsDialog", "Confirm the send action", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

@@ -125,7 +125,7 @@ public:
         labelBalance->setObjectName(QStringLiteral("labelBalance"));
         labelBalance->setFont(font);
         labelBalance->setCursor(QCursor(Qt::IBeamCursor));
-        labelBalance->setText(QStringLiteral("0 NED"));
+        labelBalance->setText(QStringLiteral("0 Eva"));
         labelBalance->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         formLayout_2->setWidget(0, QFormLayout::FieldRole, labelBalance);
@@ -139,7 +139,7 @@ public:
         labelUnconfirmed->setObjectName(QStringLiteral("labelUnconfirmed"));
         labelUnconfirmed->setFont(font);
         labelUnconfirmed->setCursor(QCursor(Qt::IBeamCursor));
-        labelUnconfirmed->setText(QStringLiteral("0 NED"));
+        labelUnconfirmed->setText(QStringLiteral("0 Eva"));
         labelUnconfirmed->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         formLayout_2->setWidget(1, QFormLayout::FieldRole, labelUnconfirmed);
@@ -152,7 +152,7 @@ public:
         labelImmature = new QLabel(frame);
         labelImmature->setObjectName(QStringLiteral("labelImmature"));
         labelImmature->setFont(font);
-        labelImmature->setText(QStringLiteral("0 NED"));
+        labelImmature->setText(QStringLiteral("0 Eva"));
         labelImmature->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         formLayout_2->setWidget(2, QFormLayout::FieldRole, labelImmature);
@@ -166,7 +166,7 @@ public:
         labelTotal->setObjectName(QStringLiteral("labelTotal"));
         labelTotal->setFont(font);
         labelTotal->setCursor(QCursor(Qt::IBeamCursor));
-        labelTotal->setText(QStringLiteral("0 NED"));
+        labelTotal->setText(QStringLiteral("0 Eva"));
         labelTotal->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         formLayout_2->setWidget(4, QFormLayout::FieldRole, labelTotal);
