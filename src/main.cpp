@@ -1359,7 +1359,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         }
         if (j > 0)
         {
-            dHrate/=j;
+            dHrate/=(j+k);
             int64 iMulti = 0x100000000;
             double dNetworkDiff = dHrate*600/iMulti;
             iAdjustTimeSpan = (int64)(((600 * Difficulty(pindexLast->nBits)) / dNetworkDiff) + 0.5);
