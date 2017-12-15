@@ -7,17 +7,17 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>$VERSION, Copyright © 2009-$YEAR The Bitcoin developers</string>
+	<string>V1.0, Copyright © 2009-2017 The EvaCoin developers</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$VERSION</string>
+	<string>V1.0</string>
 	<key>CFBundleVersion</key>
-	<string>$VERSION</string>
+	<string>V1.0</string>
 	<key>CFBundleSignature</key>
-	<string>????</string>
+	<string>Deprecated</string>
 	<key>CFBundleExecutable</key>
-        <string>EvaCoin</string>
+	<string>EvaCoin</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.bitcoinfoundation.Bitcoin-Qt</string>
+	<string>com.goodjobunit.EvaCoin</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
