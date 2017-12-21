@@ -10,14 +10,14 @@ Used versions
     OS type
         64-bit
     Software
-        EvaCoin         v1.0
-        Qt version      5.9.3
-        OpenSSL         1.0.2n
-        berkeley-db@4   4.8.30 NC
-        boost           1.65.1
-        miniupnpc       1.9
-        Qt Creator      4.5.0
-        Qt              5.9.3 + MinGW 53_32
+        EvaCoin         v1.0                            Cryptocurrency client
+        Qt version      5.9.3 + MinGW 53_32             Interface developer toolkit
+        OpenSSL         1.0.2n                          Open source implementation of the SSL/TLS protocol (networking)
+        berkeley-db@4   4.8.30 NC                       Key-Value pair database library
+        boost           1.65.1                          cpp libraries for filesystem, time and date
+        miniupnpc       1.9                             easy port forwarding client for NAT router 
+        Qt Creator      4.5.0                           Interface developer                            
+        
         
 Compilers Supported
 -------------------
@@ -163,10 +163,11 @@ Deploy
 
 Copy EvaCoin.exe to a new 'deploy' folder
 
-DOS shell
+DOS shell. Note that a Berkeley Database dll is missed by the Qt deploy tool.
 
     set PATH=%PATH%;D:\Qt\5.9.3\mingw53_32\bin
     windeployqt D:\GitHub\EvaCoin\deploy\EvaCoin.exe
+    copy D:\Qt\5.9.3\mingw53_32\bin\libdb_cxx-4.8.dll D:\GitHub\EvaCoin\deploy\
 
 Compress the contents of the 'deploy' folder to EvaCoin.zip
 Drag and drop to the current github release - assets
