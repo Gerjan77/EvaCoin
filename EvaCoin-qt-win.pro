@@ -19,7 +19,7 @@ win32:OPENSSL_LIB_PATH = D:\openssl-1.0.2n-mgw
 win32:OPENSSL_INCLUDE_PATH = D:\openssl-1.0.2n-mgw\include
 win32:BDB_LIB_PATH = D:\db-4.8.30.NC-mgw\build_unix\.libs
 win32:BDB_INCLUDE_PATH = D:\db-4.8.30.NC-mgw\build_unix
-win32:BOOST_LIB_PATH = D:\boost-1.65.1-mgw\libs
+win32:BOOST_LIB_PATH = D:\boost-1.65.1-mgw\stage\lib
 win32:BOOST_INCLUDE_PATH = D:\boost-1.65.1-mgw
 win32:MINIUPNPC_LIB_PATH = D:\upnpc-exe-win32-20150918
 win32:MINIUPNPC_INCLUDE_PATH = D:\upnpc-exe-win32-20150918
@@ -142,7 +142,8 @@ LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
         QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
     }
     LIBS += -lshlwapi
-    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
+    #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
+
 }
 genleveldb.target = $$PWD/src/leveldb/libleveldb.a
 genleveldb.depends = FORCE
@@ -404,6 +405,7 @@ isEmpty(BDB_LIB_PATH) {
 
 isEmpty(BDB_LIB_SUFFIX) {
     macx:BDB_LIB_SUFFIX = -4.8
+    win32:BDB_LIB_SUFFIX = -4.8
 }
 
 isEmpty(BDB_INCLUDE_PATH) {

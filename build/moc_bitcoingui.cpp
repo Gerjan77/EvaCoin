@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_BitcoinGUI_t {
-    QByteArrayData data[38];
-    char stringdata0[442];
+    QByteArrayData data[41];
+    char stringdata0[501];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -65,10 +65,13 @@ QT_MOC_LITERAL(30, 310, 18), // "gotoSignMessageTab"
 QT_MOC_LITERAL(31, 329, 20), // "gotoVerifyMessageTab"
 QT_MOC_LITERAL(32, 350, 14), // "optionsClicked"
 QT_MOC_LITERAL(33, 365, 12), // "aboutClicked"
-QT_MOC_LITERAL(34, 378, 21), // "showNormalIfMinimized"
-QT_MOC_LITERAL(35, 400, 13), // "fToggleHidden"
-QT_MOC_LITERAL(36, 414, 12), // "toggleHidden"
-QT_MOC_LITERAL(37, 427, 14) // "detectShutdown"
+QT_MOC_LITERAL(34, 378, 17), // "trayIconActivated"
+QT_MOC_LITERAL(35, 396, 33), // "QSystemTrayIcon::ActivationRe..."
+QT_MOC_LITERAL(36, 430, 6), // "reason"
+QT_MOC_LITERAL(37, 437, 21), // "showNormalIfMinimized"
+QT_MOC_LITERAL(38, 459, 13), // "fToggleHidden"
+QT_MOC_LITERAL(39, 473, 12), // "toggleHidden"
+QT_MOC_LITERAL(40, 486, 14) // "detectShutdown"
 
     },
     "BitcoinGUI\0setNumConnections\0\0count\0"
@@ -81,7 +84,8 @@ QT_MOC_LITERAL(37, 427, 14) // "detectShutdown"
     "gotoReceiveCoinsPage\0gotoSendCoinsPage\0"
     "addr\0gotoSignMessageTab\0gotoVerifyMessageTab\0"
     "optionsClicked\0aboutClicked\0"
-    "showNormalIfMinimized\0fToggleHidden\0"
+    "trayIconActivated\0QSystemTrayIcon::ActivationReason\0"
+    "reason\0showNormalIfMinimized\0fToggleHidden\0"
     "toggleHidden\0detectShutdown"
 };
 #undef QT_MOC_LITERAL
@@ -92,7 +96,7 @@ static const uint qt_meta_data_BitcoinGUI[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      24,   14, // methods
+      25,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -100,30 +104,31 @@ static const uint qt_meta_data_BitcoinGUI[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,  134,    2, 0x0a /* Public */,
-       4,    2,  137,    2, 0x0a /* Public */,
-       6,    1,  142,    2, 0x0a /* Public */,
-       8,    4,  145,    2, 0x0a /* Public */,
-       8,    3,  154,    2, 0x2a /* Public | MethodCloned */,
-      13,    2,  161,    2, 0x0a /* Public */,
-      16,    1,  166,    2, 0x0a /* Public */,
-      18,    5,  169,    2, 0x0a /* Public */,
-      24,    0,  180,    2, 0x08 /* Private */,
-      25,    0,  181,    2, 0x08 /* Private */,
-      26,    0,  182,    2, 0x08 /* Private */,
-      27,    0,  183,    2, 0x08 /* Private */,
-      28,    1,  184,    2, 0x08 /* Private */,
-      28,    0,  187,    2, 0x28 /* Private | MethodCloned */,
-      30,    1,  188,    2, 0x08 /* Private */,
-      30,    0,  191,    2, 0x28 /* Private | MethodCloned */,
-      31,    1,  192,    2, 0x08 /* Private */,
-      31,    0,  195,    2, 0x28 /* Private | MethodCloned */,
-      32,    0,  196,    2, 0x08 /* Private */,
-      33,    0,  197,    2, 0x08 /* Private */,
-      34,    1,  198,    2, 0x08 /* Private */,
-      34,    0,  201,    2, 0x28 /* Private | MethodCloned */,
-      36,    0,  202,    2, 0x08 /* Private */,
-      37,    0,  203,    2, 0x08 /* Private */,
+       1,    1,  139,    2, 0x0a /* Public */,
+       4,    2,  142,    2, 0x0a /* Public */,
+       6,    1,  147,    2, 0x0a /* Public */,
+       8,    4,  150,    2, 0x0a /* Public */,
+       8,    3,  159,    2, 0x2a /* Public | MethodCloned */,
+      13,    2,  166,    2, 0x0a /* Public */,
+      16,    1,  171,    2, 0x0a /* Public */,
+      18,    5,  174,    2, 0x0a /* Public */,
+      24,    0,  185,    2, 0x08 /* Private */,
+      25,    0,  186,    2, 0x08 /* Private */,
+      26,    0,  187,    2, 0x08 /* Private */,
+      27,    0,  188,    2, 0x08 /* Private */,
+      28,    1,  189,    2, 0x08 /* Private */,
+      28,    0,  192,    2, 0x28 /* Private | MethodCloned */,
+      30,    1,  193,    2, 0x08 /* Private */,
+      30,    0,  196,    2, 0x28 /* Private | MethodCloned */,
+      31,    1,  197,    2, 0x08 /* Private */,
+      31,    0,  200,    2, 0x28 /* Private | MethodCloned */,
+      32,    0,  201,    2, 0x08 /* Private */,
+      33,    0,  202,    2, 0x08 /* Private */,
+      34,    1,  203,    2, 0x08 /* Private */,
+      37,    1,  206,    2, 0x08 /* Private */,
+      37,    0,  209,    2, 0x28 /* Private | MethodCloned */,
+      39,    0,  210,    2, 0x08 /* Private */,
+      40,    0,  211,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    3,
@@ -146,7 +151,8 @@ static const uint qt_meta_data_BitcoinGUI[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool,   35,
+    QMetaType::Void, 0x80000000 | 35,   36,
+    QMetaType::Void, QMetaType::Bool,   38,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -180,10 +186,11 @@ void BitcoinGUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 17: _t->gotoVerifyMessageTab(); break;
         case 18: _t->optionsClicked(); break;
         case 19: _t->aboutClicked(); break;
-        case 20: _t->showNormalIfMinimized((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 21: _t->showNormalIfMinimized(); break;
-        case 22: _t->toggleHidden(); break;
-        case 23: _t->detectShutdown(); break;
+        case 20: _t->trayIconActivated((*reinterpret_cast< QSystemTrayIcon::ActivationReason(*)>(_a[1]))); break;
+        case 21: _t->showNormalIfMinimized((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 22: _t->showNormalIfMinimized(); break;
+        case 23: _t->toggleHidden(); break;
+        case 24: _t->detectShutdown(); break;
         default: ;
         }
     }
@@ -214,13 +221,13 @@ int BitcoinGUI::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 24)
+        if (_id < 25)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 24;
+        _id -= 25;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 24)
+        if (_id < 25)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 24;
+        _id -= 25;
     }
     return _id;
 }

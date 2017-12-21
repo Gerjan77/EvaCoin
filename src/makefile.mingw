@@ -21,15 +21,31 @@ USE_UPNP:=-
 USE_IPV6:=1
 
 DEPSDIR?=/usr/local
-BOOST_SUFFIX?=-mgw46-mt-s-1_52
+BOOST_SUFFIX?=-mgw63-mt-s-1_65_1
+OPENSSL_LIB_PATH?=D:\openssl-1.0.2n-mgw
+OPENSSL_INCLUDE_PATH?=D:\openssl-1.0.2n-mgw\include
+BDB_LIB_PATH?=D:\db-4.8.30.NC-mgw\build_unix\.libs
+BDB_INCLUDE_PATH?=D:\db-4.8.30.NC-mgw\build_unix
+BOOST_LIB_PATH?=D:\boost-1.65.1-mgw\libs
+BOOST_INCLUDE_PATH?=D:\boost-1.65.1-mgw
+MINIUPNPC_LIB_PATH?=D:\upnpc-exe-win32-20150918
+MINIUPNPC_INCLUDE_PATH?=D:\upnpc-exe-win32-20150918
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
- -I"$(DEPSDIR)/include"
+ -I"$(DEPSDIR)/include" \
+ -I"$(OPENSSL_INCLUDE_PATH)" \
+ -I"$(BDB_INCLUDE_PATH)" \
+ -I"$(BOOST_INCLUDE_PATH)" \
+ -I"$(MINIUPNPC_INCLUDE_PATH)"
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
- -L"$(DEPSDIR)/lib"
+ -L"$(DEPSDIR)/lib")" \
+ -L"$(OPENSSL_LIB_PATH)" \
+ -L"$(BDB_LIB_PATH)" \
+ -L"$(BOOST_LIB_PATH)" \
+ -L"$(MINIUPNPC_LIB_PATH)"
 
 LIBS= \
  -l leveldb \
