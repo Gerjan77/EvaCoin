@@ -12,17 +12,19 @@ Used versions
     Software
         EvaCoin         v1.0
         Qt version      5.9.3
-        OpenSSL         1.0.2m  2 Nov 2017
+        OpenSSL         1.0.2n
         berkeley-db@4   4.8.30 NC
         boost           1.65.1
-        miniupnpc       2.0.20171102
+        miniupnpc       1.9
         Qt Creator      4.5.0
         Qt              5.9.3 + MinGW 53_32
         
 Compilers Supported
 -------------------
 
-Use the mingw installer to install MinGW and get MSYS 
+    MinGW 6.3.0
+    
+Use the mingw installer to install MinGWget 6.2 and get MSYS 
    
     MSYS-> MinGW Developer Toolkit -> msys-perl
     MSYS-> MSYS System Builder -> msys-w32api
@@ -148,7 +150,8 @@ MSYS shell
 EvaCoin
 ------- 
 
-Open Qt project 'EvaCoin-qt-win.pro' in Qt Creator
+Open Qt project 'EvaCoin-qt-win.pro' in Qt Creator. Set the build directory to D:/GitHub/EvaCoin. 
+Configure the project's toolchain.
     
     copy D:\GitHub\EvaCoin\build\*.moc D:\GitHub\EvaCoin\src\qt\*.moc 
     
