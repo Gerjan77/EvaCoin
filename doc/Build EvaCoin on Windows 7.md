@@ -60,18 +60,20 @@ should be
     
 in the MinGW shell and the windows terminal / dos prompt.
 
+Untar the sources in an MSYS shell. Start D:\MinGW\msys\1.0\msys.bat
+
+    tar xfz openssl-1.0.0m.tar.gz
+    tar xfz openssl-1.0.0n.tar.gz
+    tar xfz boost_1_65_1.tar.gz
+    tar xfz db-4.8.30.NC.tar.gz
+    tar xfz miniupnpc-1.9.20150917.tar.gz
+    tar xfz miniupnpc-2.0.20171102.tar.gz
+    
 Notes
 -----
 The UI layout is edited with wxFormBuilder.  The project file is
 uiproject.fbp.  It generates uibase.cpp and uibase.h, which define base
 classes that do the rote work of constructing all the UI elements.
-
-wxWidgets
----------
-DOS shell:
-    
-    cd \wxWidgets-2.9.1-mgw\build\msw
-    mingw32-make -f makefile.gcc
 
 OpenSSL
 -------
@@ -81,11 +83,9 @@ change 'MAKE' env. variable from 'D:\MinGW32\bin\mingw32-make.exe' to '/d/MinGW3
 
      MAKE=/d/MinGW32/bin/mingw32-make.exe
      echo $MAKE
-
-     cd /d/openssl-1.0.0c-mgw
+     cd /d/openssl-1.0.0m-mgw
      ./config
      make
-
      perl util/mkdef.pl crypto 32 libeay enable-static-engine > libeay32.def
      dllwrap --dllname libeay32.dll --output-lib libeay32.a --def libeay32.def libcrypto.a -lws2_32 -lgdi32
 
