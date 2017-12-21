@@ -81,13 +81,13 @@ MSYS shell:
 un-tar sources with MSYS 'tar xfz' to avoid issue with symlinks (OpenSSL ticket 2377)
 change 'MAKE' env. variable from 'D:\MinGW32\bin\mingw32-make.exe' to '/d/MinGW32/bin/mingw32-make.exe'
 
-     MAKE=/d/MinGW32/bin/mingw32-make.exe
-     echo $MAKE
-     cd /d/openssl-1.0.2m-mgw
-     ./config
-     make
-     perl util/mkdef.pl crypto 32 libeay enable-static-engine > libeay32.def
-     dllwrap --dllname libeay32.dll --output-lib libeay32.a --def libeay32.def libcrypto.a -lws2_32 -lgdi32
+    MAKE=/d/MinGW32/bin/mingw32-make.exe
+    echo $MAKE
+    cd /d/openssl-1.0.2m-mgw
+    ./config
+    make
+    perl util/mkdef.pl crypto 32 libeay enable-static-engine > libeay32.def
+    dllwrap --dllname libeay32.dll --output-lib libeay32.a --def libeay32.def libcrypto.a -lws2_32 -lgdi32
 
 after that openssl libeay is in main source dir (openssl-1.0.0c-mgw)
 
@@ -95,41 +95,46 @@ Berkeley DB
 -----------
 MSYS shell:
 
-     cd /c/db-4.8.30.NC-mgw/build_unix
-     sh ../dist/configure --enable-mingw --enable-cxx
-     make
+    cd /c/db-4.8.30.NC-mgw/build_unix
+    sh ../dist/configure --enable-mingw --enable-cxx
+    make
 
 Boost
 -----
 MSYS shell
 
-     cd d/boost-1.65.1-mgw
-     ./bootstrap.sh gcc
-     ./b2 toolset=gcc --build-type=complete stage
+    cd d/boost-1.65.1-mgw
+    ./bootstrap.sh gcc
+    ./b2 toolset=gcc --build-type=complete stage
 
 
 MiniUPnPc
 ---------
-If building miniupnpc2.0 fails, it is expected that a binary copy will be used.
+
+MSYS shell
+
+    cd /d/miniupnpc-2.0.20171102
+    make -f Makefile.mingw
+    strip upnpc-static.exe
+    upx --best upnpc-static.exe
+    strip upnpc-shared.exe
+    upx --best upnpc-shared.exe
+
+
+If building miniupnpc v2.0 fails, it is expected that a binary copy of v1.9 will be used.
 See http://miniupnp.tuxfamily.org/forum/viewtopic.php?t=642
 UPnP support is optional, make with USE_UPNP= to disable it.
 
-Get upnpc-exe-win32-20150918.zip
-
-miniupnp.free.fr/files/download.php?file=upnpc-exe-win32-20150918.zip
-
+Get upnpc-exe-win32-20150918.zip http://miniupnp.free.fr/files/download.php?file=upnpc-exe-win32-20150918.zip
 and unzip it to \upnpc-exe-win32-20150918
 
-Get miniupnpc-1.9.20150917.tar.gz 
-
-http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20150917.tar.gz
-
+Get miniupnpc-1.9.20150917.tar.gz http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20150917.tar.gz
 and copy *.h to \upnpc-exe-win32-20150918\miniupnpc
 
 Building LevelDB On Windows
 ---------------------------
 
-Method 1: MSYS shell (recommended)
+MSYS shell 
 
     cd /d/github/EvaCoin/src/leveldb
     TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
