@@ -62,8 +62,8 @@ in the MinGW shell and the windows terminal / dos prompt.
 
 Untar the sources in an MSYS shell. Start D:\MinGW\msys\1.0\msys.bat
 
-    tar xfz openssl-1.0.0m.tar.gz
-    tar xfz openssl-1.0.0n.tar.gz
+    tar xfz openssl-1.0.2m.tar.gz
+    tar xfz openssl-1.0.2n.tar.gz
     tar xfz boost_1_65_1.tar.gz
     tar xfz db-4.8.30.NC.tar.gz
     tar xfz miniupnpc-1.9.20150917.tar.gz
