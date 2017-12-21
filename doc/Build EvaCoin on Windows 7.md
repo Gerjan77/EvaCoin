@@ -153,3 +153,21 @@ Open Qt project 'EvaCoin-qt-win.pro' in Qt Creator
     copy D:\GitHub\EvaCoin\build\*.moc D:\GitHub\EvaCoin\src\qt\*.moc 
     
 and build for release.
+
+
+Deploy
+------
+
+Copy EvaCoin.exe to a new 'deploy' folder
+DOS shell
+
+    set PATH=%PATH%;D:\Qt\5.9.3\mingw53_32\bin
+    windeployqt D:\GitHub\EvaCoin\deploy\EvaCoin.exe
+
+Compress the contents of the 'deploy' folder to EvaCoin.zip
+
+
+
+https://wiki.qt.io/Deploy_an_Application_on_Windows
+
+http://doc.qt.io/qt-5/windows-deployment.html
