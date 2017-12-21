@@ -137,7 +137,7 @@ Method 1: MSYS shell (recommended)
 Two other methods will be listed in the footnotes.
      
 EvaCoin
--------
+------- 
 
 DOS prompt:
    
