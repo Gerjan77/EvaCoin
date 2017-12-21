@@ -15,14 +15,14 @@ CONFIG += c++11
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH,
 #    MINIUPNPC_INCLUDE_PATH and MINIUPNPC_LIB_PATH.
 
-win32:OPENSSL_LIB_PATH = D:\openssl-1.0.0c-mgw
-win32:OPENSSL_INCLUDE_PATH = D:\openssl-1.0.0c-mgw\include
-win32:BDB_LIB_PATH = D:\db-4.7.25.NC-mgw\build_unix\.libs
-win32:BDB_INCLUDE_PATH = D:\db-4.7.25.NC-mgw\build_unix
-win32:BOOST_LIB_PATH = D:\boost-1.43.0-mgw\libs
-win32:BOOST_INCLUDE_PATH = D:\boost-1.43.0-mgw
-win32:MINIUPNPC_LIB_PATH = D:\upnpc-exe-win32-20110215
-win32:MINIUPNPC_INCLUDE_PATH = D:\upnpc-exe-win32-20110215
+win32:OPENSSL_LIB_PATH = D:\openssl-1.0.2n-mgw
+win32:OPENSSL_INCLUDE_PATH = D:\openssl-1.0.2n-mgw\include
+win32:BDB_LIB_PATH = D:\db-4.8.30.NC-mgw\build_unix\.libs
+win32:BDB_INCLUDE_PATH = D:\db-4.8.30.NC-mgw\build_unix
+win32:BOOST_LIB_PATH = D:\boost-1.65.1-mgw\libs
+win32:BOOST_INCLUDE_PATH = D:\boost-1.65.1-mgw
+win32:MINIUPNPC_LIB_PATH = D:\upnpc-exe-win32-20150918
+win32:MINIUPNPC_INCLUDE_PATH = D:\upnpc-exe-win32-20150918
 
 macx:OPENSSL_LIB_PATH = /usr/local/opt/openssl/lib
 macx:OPENSSL_INCLUDE_PATH = /usr/local/opt/openssl/include
@@ -33,7 +33,7 @@ macx:BOOST_INCLUDE_PATH = /usr/local/opt/boost/include
 macx:MINIUPNPC_LIB_PATH = /opt/local/lib
 macx:MINIUPNPC_INCLUDE_PATH = /opt/local/include
 
-# staticlib=> ERROR: no file at "/usr/lib/libminiupnpc.8.dylib"
+# upnpc 1.9
 
 OBJECTS_DIR = build
 MOC_DIR = build
