@@ -19,31 +19,22 @@ Used versions
         
 Compilers Supported
 -------------------
-TDM-GCC with gcc 4.5.1 was used to build this release.
-MSYS 1.0.11 was also used (sh needed to compile some dependencies)
 
-    MinGW GCC  https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/Previous/1.1006.0/tdm64-gcc-4.5.1.exe/download
-uncheck updates when installing, and use the mingw installer to get 
+Use the mingw installer to install MinGW and get MSYS 
    
     MSYS-> MinGW Developer Toolkit -> msys-perl
     MSYS-> MSYS System Builder -> msys-w32api
-
-Candidate releases were built with MSVC 10.0 (2010), but
-compiling with Visual C++ caused rendering artifacts when
-bitcoin was run.
-
 
 Dependencies
 ------------
 Libraries you need to download separately and build:
 
     dependency      default path               download
-    wxWidgets       \wxwidgets-2.9.1-mgw       https://sourceforge.net/projects/wxwindows/files/2.9.1/wxWidgets-2.9.1.zip/download
-    OpenSSL         \openssl-1.0.0c-mgw        https://www.openssl.org/source/old/1.0.0/openssl-1.0.0c.tar.gz
-    Berkeley DB     \db-4.7.25.NC-mgw          http://download.oracle.com/berkeley-db/db-4.7.25.NC.tar.gz
-    Boost           \boost-1.43.0-mgw          https://sourceforge.net/projects/boost/files/boost/1.43.0/boost_1_43_0.zip/download
-    Boost jam       \boost-jam-3.1.18          https://sourceforge.net/projects/boost/files/boost-jam/3.1.18/boost-jam-3.1.18.zip/download
-    miniupnpc       \upnpc-exe-win32-20110215  http://miniupnp.tuxfamily.org/files/
+    OpenSSL         \openssl-1.0.2n-mgw        https://www.openssl.org/source/openssl-1.0.2n.tar.gz
+    OpenSSL         \openssl-1.0.2m-mgw        https://www.openssl.org/source/old/1.0.2/openssl-1.0.2m.tar.gz
+    Berkeley DB     \db-4.8.30.NC-mgw          http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
+    Boost           \boost-1.65.1-mgw          https://sourceforge.net/projects/boost/files/boost/1.65.1/boost_1_65_1.tar.gz/download
+    miniupnpc       \upnpc-exe-win32-20171102  http://miniupnp.tuxfamily.org/files/download.php?file=miniupnpc-2.0.20171102.tar.gz
 
 Their licenses:
 
@@ -52,28 +43,20 @@ Their licenses:
     Berkeley DB    New BSD license with additional requirement that linked software must be free open source
     Boost          MIT-like license
     miniupnpc      New (3-clause) BSD license
-
-Versions used in this release:
-
-    wxWidgets    2.9.1
-    OpenSSL      1.0.0c
-    Berkeley DB  4.7.25.NC
-    Boost        1.43.0
-    Boost jam    3.1.18
-    miniupnpc    1.5-20110215
-    
+   
+Navigate to All Controll Panel Items -> System -> Advanced System Settings -> Environment Variables
+Set the PATH variable to D:\MinGW\bin;C:\system32\cmd.exe
 The output of
     
     mingw32-make --version
     
 should be
 
-    GNU Make 3.82
-    Built for i386-pc-mingw32
-    Copyright (C) 2010  Free Software Foundation, Inc.
+    C:\Users\Admin>mingw32-make --version
+    GNU Make 3.82.90
+    Built for i686-pc-mingw32
+    Copyright (C) 1988-2012 Free Software Foundation, Inc.
     License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-    This is free software: you are free to change and redistribute it.
-    There is NO WARRANTY, to the extent permitted by law.
     
 in the MinGW shell and the windows terminal / dos prompt.
 
@@ -127,21 +110,21 @@ MSYS shell with mingw 6.2, newest version of the compiler:
 
 MiniUPnPc
 ---------
-Building miniupnpc failed on Windows Server 2003, thus it is expected that a binary copy will be used.
+If building miniupnpc fails, it is expected that a binary copy will be used.
 See http://miniupnp.tuxfamily.org/forum/viewtopic.php?t=642
 UPnP support is optional, make with USE_UPNP= to disable it.
 
-Get upnpc-exe-win32-20110215.zip 
+Get upnpc-exe-win32-20150918.zip
 
-http://miniupnp.free.fr/files/download.php?file=upnpc-exe-win32-20110215.zip
+miniupnp.free.fr/files/download.php?file=upnpc-exe-win32-20150918.zip
 
-and unzip it to \upnpc-exe-win32-20110215
+and unzip it to \upnpc-exe-win32-20150918
 
-Get miniupnpc-1.5.20110215.tar.gz 
+Get miniupnpc-1.9.20150917.tar.gz 
 
-http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.5.20110215.tar.gz
+http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20150917.tar.gz
 
-and copy *.h to \upnpc-exe-win32-20110215\miniupnpc
+and copy *.h to \upnpc-exe-win32-20150918\miniupnpc
 
 Building LevelDB On Windows
 ---------------------------
