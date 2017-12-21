@@ -389,7 +389,8 @@ OTHER_FILES += README.md \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    win32:BOOST_LIB_SUFFIX = -mgw44-mt-s-1_50
+#    win32:BOOST_LIB_SUFFIX = -mgw44-mt-s-1_50
+    win32:BOOST_LIB_SUFFIX = -mgw63-mt-s-1_65_1
 # boost 1.65.1 is build with gcc-mingw-6.3.0
 }
 
