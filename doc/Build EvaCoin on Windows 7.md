@@ -16,6 +16,8 @@ Used versions
         berkeley-db@4   4.8.30 NC
         boost           1.65.1
         miniupnpc       2.0.20171102
+        Qt Creator      4.5.0
+        Qt              5.9.3 + MinGW 53_32
         
 Compilers Supported
 -------------------
@@ -148,8 +150,4 @@ Two other methods will be listed in the footnotes.
 EvaCoin
 ------- 
 
-DOS prompt:
-   
-    cd \github\EvaCoin\src
-    mingw32-make -f makefile.mingw
-    strip EvaCoind.exe
+Open Qt project in Qt Creator
