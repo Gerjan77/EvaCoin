@@ -145,11 +145,10 @@ MSYS shell
     cd /d/github/EvaCoin/src/leveldb
     TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
     
-     
 EvaCoin
 ------- 
 
-Open Qt project in Qt Creator
+Open Qt project 'EvaCoin-qt-win.pro' in Qt Creator
     
     copy D:\GitHub\EvaCoin\build\*.moc D:\GitHub\EvaCoin\src\qt\*.moc 
     
