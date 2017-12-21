@@ -107,6 +107,10 @@ MSYS shell
     ./bootstrap.sh gcc
     ./b2 toolset=gcc --build-type=complete stage
 
+This will build boost 1.65.1 with gcc-mingw-6.3.0, we would expect the boost library suffix to be -mgw63-mt-s-1_65_1
+The meaning is: toolset -mgw63 enable multithreading -mt static linked library -s version -1_65_1
+See http://www.boost.org/doc/libs/1_66_0/more/getting_started/windows.html#library-naming
+
 
 MiniUPnPc
 ---------
