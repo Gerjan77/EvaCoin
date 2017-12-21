@@ -1,6 +1,22 @@
 WINDOWS BUILD NOTES
 ===================
 
+Used versions
+----------------
+    Processor
+        3,4 GHz Intel Core i7
+    OS
+        Windows 7 Professional Service Pack 1
+    OS type
+        64-bit
+    Software
+        EvaCoin         v1.0
+        Qt version      5.9.3
+        OpenSSL         1.0.2m  2 Nov 2017
+        berkeley-db@4   4.8.30 NC
+        boost           1.65.1
+        miniupnpc       2.0.20171102
+        
 Compilers Supported
 -------------------
 TDM-GCC with gcc 4.5.1 was used to build this release.
