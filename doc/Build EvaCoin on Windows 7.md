@@ -158,6 +158,24 @@ and build for release.
 Deploy
 ------
 
+DOS shell
+
+    set PATH=%PATH%;D:\Qt\5.9.3\mingw53_32\bin
+    windeployqt D:\GitHub\EvaCoin\deploy\EvaCoin.exe
+
+Compress the contents of the 'deploy' folder.
+
+
+
+
+
+
+
+
+
+
+N.B. Alternative depoy methods:
+
 Initial deployment 
 
     Close Qt Creator.
