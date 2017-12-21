@@ -158,47 +158,15 @@ and build for release.
 Deploy
 ------
 
+Copy EvaCoin.exe to a new 'deploy' folder
 DOS shell
 
     set PATH=%PATH%;D:\Qt\5.9.3\mingw53_32\bin
     windeployqt D:\GitHub\EvaCoin\deploy\EvaCoin.exe
 
-Compress the contents of the 'deploy' folder.
+Compress the contents of the 'deploy' folder to EvaCoin.zip
 
 
-
-
-
-
-
-
-
-
-N.B. Alternative depoy methods:
-
-Initial deployment 
-
-    Close Qt Creator.
-    Copy the following into C:\Deployment\
-        The release version of MyApp.exe
-        All the .dll files from C:\Qt\5.2.1\mingw48_32\bin\
-        All the folders from C:\Qt\5.2.1\mingw48_32\plugins\
-        (If you used QML) All the folders from C:\Qt\5.2.1\mingw48_32\qml\
-    Rename C:\Qt\ to C:\QtHidden\ (This turns your PC into a clean environment, just like one that doesn't have Qt installed).
-    Launch C:\Deployment\MyApp.exe.
-
-Final deployment 
-
-Do the deletion steps below in C:\Deployment\ and all of its subdirectories. After each deletion, launch C:\Deployment\MyApp.exe and test it. If it stops working, restore the files you just deleted.
-
-    Launch MyApp.exe. While it is running, try to delete all DLLs. The DLLs that aren't used will go to the recycle bin, leaving behind only the DLLs that you need. (This trick doesn't work for .qml and qmldir files, however).
-    (If you used QML) Delete a few .qml files and try relaunching MyApp.exe. Repeat until you try all .qml files.
-    (If you used QML) Delete qmldir files from the folders that have no more DLLs or .qml files
-
-When you have removed all the files that you don't need,
-
-    Rename C:\QtHidden\ back to C:\Qt\ to restore your installation.
-    Distribute your app.
 
 https://wiki.qt.io/Deploy_an_Application_on_Windows
 
