@@ -33,7 +33,7 @@ macx:BOOST_INCLUDE_PATH = /usr/local/opt/boost/include
 macx:MINIUPNPC_LIB_PATH = /opt/local/lib
 macx:MINIUPNPC_INCLUDE_PATH = /opt/local/include
 
-# upnpc 1.9
+# upnpc 1.9 boost 1.65.1 build with gcc-mingw-6.3.0
 
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -390,6 +390,7 @@ OTHER_FILES += README.md \
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
     win32:BOOST_LIB_SUFFIX = -mgw44-mt-s-1_50
+# boost 1.65.1 is build with gcc-mingw-6.3.0
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
