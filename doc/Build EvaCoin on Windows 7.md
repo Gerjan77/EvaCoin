@@ -183,4 +183,5 @@ When you have removed all the files that you don't need,
     Distribute your app.
 
 https://wiki.qt.io/Deploy_an_Application_on_Windows
+
 http://doc.qt.io/qt-5/windows-deployment.html
