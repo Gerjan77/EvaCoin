@@ -125,16 +125,10 @@ If building miniupnpc v2.0 fails, it is expected that a binary copy of v1.9 will
 See http://miniupnp.tuxfamily.org/forum/viewtopic.php?t=642
 UPnP support is optional, make with USE_UPNP= to disable it.
 
-Get upnpc-exe-win32-20150918.zip
-
-miniupnp.free.fr/files/download.php?file=upnpc-exe-win32-20150918.zip
-
+Get upnpc-exe-win32-20150918.zip http://miniupnp.free.fr/files/download.php?file=upnpc-exe-win32-20150918.zip
 and unzip it to \upnpc-exe-win32-20150918
 
-Get miniupnpc-1.9.20150917.tar.gz 
-
-http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20150917.tar.gz
-
+Get miniupnpc-1.9.20150917.tar.gz http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20150917.tar.gz
 and copy *.h to \upnpc-exe-win32-20150918\miniupnpc
 
 Building LevelDB On Windows
