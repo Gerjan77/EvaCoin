@@ -9,9 +9,13 @@ Used versions
     OS type
         64-bit
     Software
-        EvaCoin v1.0.0.0-g88ff655-beta
-        Qt version 5.9.3
-        OpenSSL OpenSSL 1.0.2m  2 Nov 2017
+        EvaCoin         v1.0
+        Qt version      5.9.3
+        OpenSSL         1.0.2m  2 Nov 2017
+        berkeley-db@4   4.8.30 NC
+        boost           1.65.1
+        miniupnpc       2.0.20171102
+        
         
 Set the build directory
 
@@ -66,6 +70,11 @@ edit the location of BerkeleyDb in src/makefile.osx
 Check the versions:
 
     brew ls --versions
+    
+    berkeley-db@4 4.8.30
+    boost 1.65.1
+    miniupnpc 2.0.20171102
+    openssl 1.0.2n 1.0.2m
 
 Libminiupnpc:
 -------------
