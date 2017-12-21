@@ -151,5 +151,6 @@ EvaCoin
 ------- 
 
 Open Qt project in Qt Creator
-copy D:\GitHub\EvaCoin\build\*.moc to D:\GitHub\EvaCoin\src\*.moc 
+    
+    copy D:\GitHub\EvaCoin\build\*.moc D:\GitHub\EvaCoin\src\qt\*.moc 
 
