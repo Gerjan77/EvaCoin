@@ -143,7 +143,33 @@ Deploy the Boost library
      sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/QtWidgets.framework
  
  Codesign all dynamic libraries.
- 
+
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/platforms/libqcocoa.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/printsupport/libcocoaprintersupport.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/bearer/libqcorewlanbearer.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/bearer/libqgenericbearer.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/iconengines/libqsvgicon.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqgif.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqwbmp.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqwebp.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqico.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqsvg_debug.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqjpeg.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqtiff.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqsvg.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqicns.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqtga.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/PlugIns/imageformats/libqmacjp2.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libboost_chrono-mt.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libminiupnpc.8.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libboost_filesystem-mt.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libboost_thread-mt.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libboost_system-mt.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libdb_cxx-4.8.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libcrypto.1.0.0.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libssl.1.0.0.dylib
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/libboost_program_options-mt.dylib
+
  Remove all symbolic links from the app bundle's root and codesign the app bundle
  
      sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app
