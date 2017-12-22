@@ -115,36 +115,38 @@ Deploy the bundle
     
 with the deploy deploy tool
 
-    ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app
+    sudo ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt EvaCoin.app
 
 Deploy MiniUPnPC
 
-    ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app -libpath=/opt/local/lib -verbose=3
+    sudo ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt EvaCoin.app -libpath=/opt/local/lib -verbose=3
     
 Deploy Openssl
 
-    ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app -libpath=/usr/local/opt/openssl/lib -verbose=3
+    sudo ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt EvaCoin.app -libpath=/usr/local/opt/openssl/lib -verbose=3
     
 Deploy BerkeleyDB
 
-    ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app -libpath=/usr/local/opt/berkeley-db@4/lib -verbose=3
+    sudo ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt EvaCoin.app -libpath=/usr/local/opt/berkeley-db@4/lib -verbose=3
     
 Deploy the Boost library
 
-    ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app -libpath=/usr/local/opt/boost/lib -verbose=3
+    sudo ~/Qt5.9.3/5.9.3/clang_64/bin/macdeployqt EvaCoin.app -libpath=/usr/local/opt/boost/lib -verbose=3
     
  Codesign the Qt frameworks
  
-     codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app/Contents/Frameworks/QtCore.framework
-     codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app/Contents/Frameworks/QtGui.framework
-     codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app/Contents/Frameworks/QtNetwork.framework
-     codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app/Contents/Frameworks/QtPrintSupport.framework
-     codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app/Contents/Frameworks/QtSvg.framework
-     codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app/Contents/Frameworks/QtWidgets.framework
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/QtCore.framework
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/QtGui.framework
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/QtNetwork.framework
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/QtPrintSupport.framework
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/QtSvg.framework
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app/Contents/Frameworks/QtWidgets.framework
+ 
+ Codesign all dynamic libraries.
  
  Remove all symbolic links from the app bundle's root and codesign the app bundle
  
-     codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" ~/Documents/GitHub/EvaCoin/EvaCoin/EvaCoin.app
+     sudo codesign -s "3rd Party Mac Developer Application: G.J.A. Uijtdewilligen (CK92ZX6P5T)" EvaCoin.app
 
 Make sure ˜/Documents/GitHub/EvaCoin/EvaCoin.app/Contents/Resources/qt.conf contains the following lines:
 
