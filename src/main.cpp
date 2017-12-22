@@ -1320,6 +1320,12 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
 
+    boost::uint64_t tBlock = pindexLast->nTime;
+    time_t now;
+    time(&now);
+    boost::uint64_t tNow = now;
+    if (tNow-tBlock > 3600) return nProofOfWorkLimit;
+
     // Go back by 144 blocks if possible
     const CBlockIndex* pindexFirst = pindexLast;
     const CBlockIndex* pindex = pindexLast;
@@ -2418,9 +2424,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
         pindexPrev = (*mi).second;
         nHeight = pindexPrev->nHeight+1;
 
-        // Check proof of work
-        if (block.nBits != GetNextWorkRequired(pindexPrev, &block))
-            return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
+        // Check proof of work. If the time between two blocks is greater than one hour, the Diff equals 1.0
+        // if (block.nBits != GetNextWorkRequired(pindexPrev, &block))
+        //    return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
 
         // Check timestamp against prev
         if (block.GetBlockTime() <= pindexPrev->GetMedianTimePast())
