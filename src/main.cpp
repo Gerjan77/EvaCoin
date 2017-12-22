@@ -1320,12 +1320,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
 
-    boost::uint64_t tBlock = pindexLast->nTime;
-    time_t now;
-    time(&now);
-    boost::uint64_t tNow = now;
-    if (tNow-tBlock > 3600) return nProofOfWorkLimit;
-
     // Go back by 144 blocks if possible
     const CBlockIndex* pindexFirst = pindexLast;
     const CBlockIndex* pindex = pindexLast;
